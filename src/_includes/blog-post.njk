@@ -1,0 +1,463 @@
+{% set shareUrl = "https://blog.konihaus.ch" + page.url %}
+{% set altUrl = "https://blog.konihaus.ch" + permalinkalt %}
+{% set ogImage = image or "/images/insights/" + ogimage %}
+<!DOCTYPE html>
+<html lang="{{ language }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <!-- Hide content until JS loads and sets language -->
+  <script>
+    document.documentElement.classList.add('no-js');
+    document.documentElement.classList.add("fonts-loading");
+  </script>
+  <style>
+    html.no-js body {
+      display: none;
+    }
+    html.fonts-loading body {
+      visibility: hidden;
+    }
+  </style>
+  <meta name="theme-color" content="#2a4a35">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon_sm.svg">
+  <link rel="apple-touch-icon" href="/assets/favicon.svg">
+  <title>{{ title }} - Konihaus</title>
+  <meta name="description" content="{{ excerpt or title }}">
+  <meta name="author" content="Konrad Hefelle">
+
+  <!-- Canonical + language alternates -->
+  <link rel="canonical" href="{{ shareUrl }}">
+  {% if language === 'de' %}
+  <link rel="alternate" hreflang="de" href="{{ shareUrl }}">
+  <link rel="alternate" hreflang="en" href="{{ altUrl }}">
+  {% else %}
+  <link rel="alternate" hreflang="en" href="{{ shareUrl }}">
+  <link rel="alternate" hreflang="de" href="{{ altUrl }}">
+  {% endif %}
+  <link rel="alternate" hreflang="x-default" href="{{ shareUrl }}">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ excerpt or title }} - Konihaus">
+  <meta property="og:description" content="{{ excerpt or title }}">
+  <meta property="og:url" content="{{ shareUrl }}">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://blog.konihaus.ch{{ ogImage }}">
+  <meta property="og:locale" content="{% if language === 'de' %}de_CH{% else %}en_US{% endif %}">
+  <meta property="og:locale:alternate" content="{% if language === 'de' %}en_US{% else %}de_CH{% endif %}">
+  <meta property="article:published_time" content="{{ date }}">
+  {% if dateModified %}<meta property="article:modified_time" content="{{ dateModified }}">{% endif %}
+  <meta property="article:author" content="Konrad Hefelle">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ excerpt or title }} - Konihaus">
+  <meta name="twitter:description" content="{{ excerpt or title }}">
+  <meta name="twitter:image" content="https://blog.konihaus.ch{{ ogImage }}">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": {{ title | dump | safe }},
+    "description": {{ (excerpt or title) | dump | safe }},
+    "image": {{ ("https://blog.konihaus.ch" + ogImage) | dump | safe }},
+    "datePublished": {{ date | dump | safe }},
+    "dateModified": {{ (dateModified or date) | dump | safe }},
+    "inLanguage": {{ language | dump | safe }},
+    "mainEntityOfPage": {{ shareUrl | dump | safe }},
+    "author": {
+      "@type": "Person",
+      "name": "Konrad Hefelle"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Konihaus",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://blog.konihaus.ch/assets/logo.png"
+      }
+    }
+  }
+  </script>
+
+  <link
+    rel="preload"
+    href="/fonts/outfit-latin-normal.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  >
+  <link
+    rel="preload"
+    href="/fonts/cormorant-garamond-latin-normal.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  >
+  <link
+    rel="preload"
+    href="/fonts/cormorant-garamond-latin-italic.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  >
+  <link rel="stylesheet" href="/assets/styles.css">
+  <link rel="stylesheet" href="/assets/post.css">
+</head>
+<body>
+
+ <nav class="nav  nav--solid" id="nav">
+    <div class="container">
+      <div class="nav__inner ">
+        <a href="https://blog.konihaus.ch" class="logo" aria-label="Konihaus blog">
+          <div class="logo-image"></div>
+          <div class="wordmark">konihaus blog</div>
+        </a>
+        <ul class="nav__links">
+          <li><a href="https://konihaus.ch/#intro" data-i18n="nav.intro">Was ist Konihaus</a></li>
+          <li><a href="https://konihaus.ch/#packages" data-i18n="nav.packages">Pakete</a></li>
+          <li><a href="https://konihaus.ch/#contact" data-i18n="nav.contact">Kontakt</a></li>
+          <li><a href="https://konihaus.ch/#about" data-i18n="nav.about">Über Koni</a></li>
+        </ul>
+        <div class="language-picker">
+          <button
+            type="button"
+            class="language-trigger"
+            aria-expanded="false"
+            aria-controls="language-options"
+            aria-label="Language: Deutsch"
+          >
+            <span class="language-current">DE</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </button>
+
+          <div id="language-options" class="language-options" hidden>
+            <button type="button" class="language-option" data-lang="de" onclick="switchToDe()">
+              <span>Deutsch</span>
+              <span class="language-code">DE</span>
+            </button>
+            <button type="button" class="language-option" data-lang="en" onclick="switchToEn()">
+              <span>English</span>
+              <span class="language-code">EN</span>
+            </button>
+          </div>
+
+          <select id="lang-selector" hidden>
+            <option value="de">DE</option>
+            <option value="en">EN</option>
+          </select>
+        </div>
+        <a href="https://konihaus.ch/#contact" class="btn nav__cta" data-i18n="nav.cta">Kostenlose Beratung</a>
+        <button class="nav__hamburger" id="hamburger" aria-label="Menü öffnen">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE DRAWER -->
+  <div class="nav__drawer" id="drawer">
+    <ul>
+      <li><a href="https://konihaus.ch/#intro" class="drawer-link" data-i18n="nav.intro">Was ist Konihaus</a></li>
+      <li><a href="https://konihaus.ch/#packages" class="drawer-link" data-i18n="nav.packages">Pakete</a></li>
+      <li><a href="https://konihaus.ch/#contact" class="drawer-link" data-i18n="nav.contact">Kontakt</a></li>
+      <li><a href="https://konihaus.ch/#about" class="drawer-link active" data-i18n="nav.about">Über Koni</a></li>
+    </ul>
+    <a href="https://konihaus.ch/#contact" class="drawer-cta drawer-link" data-i18n="nav.cta">Kostenlose Beratung →</a>
+  </div>
+
+
+  <main class="blog-post__container">
+
+    <header class="blog-post__link">
+      {% if language === 'de' %}
+        <a href="/de/insights/" class="blog-post__back-link">← Zurück zu den Artikeln</a>
+      {% else %}
+        <a href="/en/insights/" class="blog-post__back-link">← Back to Insights</a>
+      {% endif %}
+    </header>
+
+    <article>
+      <header class="blog-post__header">
+        <h1 class="blog-post__title"><span>{{ title }}</span></h1>
+        <time class="blog-post__meta" datetime="{{ date }}">
+          {% if language === 'de' %}
+            {{ date | dateFormatDE }}
+          {% else %}
+            {{ date | dateFormat }}
+          {% endif %}
+        </time><span class="blog-post__meta">&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;{{ readingtime }}</span>
+        {% if language === 'de' %}
+          &nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;<span class="blog-post__meta">von</span> {{ author }}
+        {% else %}
+          &nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;<span class="blog-post__meta">by</span> {{ author }}
+        {% endif %}
+
+        <div class="blog-post__share">
+          <span class="blog-post__share-label">{% if language === 'de' %}Teilen{% else %}Share{% endif %}</span>
+          <a class="share-icon share-icon--x" data-share="x" href="#" target="_blank" rel="noopener noreferrer" aria-label="Share on X" title="Share on X">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor">
+              <path d="M214.75,211.71l-62.6-98.38,61.77-67.95a8,8,0,0,0-11.84-10.76L143.24,99.34,102.75,35.71A8,8,0,0,0,96,32H48a8,8,0,0,0-6.75,12.3l62.6,98.37-61.77,68a8,8,0,1,0,11.84,10.76l58.84-64.72,40.49,63.63A8,8,0,0,0,160,224h48a8,8,0,0,0,6.75-12.29ZM164.39,208,62.57,48h29L193.43,208Z"/>
+            </svg>
+          </a>
+          <a class="share-icon" data-share="linkedin" href="#" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn" title="Share on LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.6"/>
+              <circle cx="7.6" cy="8.2" r="1.15" fill="currentColor"/>
+              <path d="M7.6 11v6.3M11.3 11v6.3M11.3 13.6c0-1.6 1-2.6 2.3-2.6 1.3 0 2 .9 2 2.5v3.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </a>
+          <a class="share-icon" data-share="facebook" href="#" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook" title="Share on Facebook">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 8.5h2.2V5.2h-2.4c-2.5 0-4.1 1.6-4.1 4.1v2H8.6v3.3h2.1V21h3.3v-6.4h2.2l.4-3.3h-2.6V9.6c0-.7.2-1.1 1-1.1Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a class="share-icon" data-share="whatsapp" href="#" target="_blank" rel="noopener noreferrer" aria-label="Share on WhatsApp" title="Share on WhatsApp">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 4.5A9.6 9.6 0 0 0 4.4 15.9L3.5 20.5l4.7-1.2A9.6 9.6 0 1 0 20 4.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M8.8 9.4c.2 3 3.1 5.8 6 6 1 .1 1.4-.6 1.4-1.2l-.2-1.2-1.9-.8c-.3-.1-.6 0-.8.2l-.5.6a5.9 5.9 0 0 1-2.6-2.6l.6-.5c.2-.2.3-.5.2-.8L10.2 7l-1.2-.2c-.6 0-1.3.4-1.2 1.4Z" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a class="share-icon" data-share="email" href="#" aria-label="Share by email" title="Share by email">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/>
+              <path d="m4 6.5 8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <button type="button" class="share-icon share-icon--copy" data-copy-link aria-label="Copy link" title="Copy link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="9" y="9" width="11" height="11" rx="2" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M15 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h3" stroke="currentColor" stroke-width="1.6"/>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+
+      <div class="blog-post__content">
+        {{ content | safe }}
+      </div>
+
+      {% if related and related.length %}
+        {% set relatedCollection = collections.insightsDE if language === 'de' else collections.insightsEN %}
+        {% set relatedCount = 0 %}
+        {% for slug in related %}
+          {% for post in relatedCollection %}
+            {% if post.fileSlug === slug %}
+              {% set relatedCount = relatedCount + 1 %}
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+        {% if relatedCount > 0 %}
+          <section class="blog-post__related" aria-label="{% if language === 'de' %}Weiterlesen{% else %}Related reading{% endif %}">
+            <h2 class="blog-post__related-title">{% if language === 'de' %}Weiterlesen{% else %}Related reading{% endif %}</h2>
+            <div class="blog-post__related-grid">
+              {% for slug in related %}
+                {% for post in relatedCollection %}
+                  {% if post.fileSlug === slug %}
+                    <a class="blog-post__related-card" href="{{ post.url }}">
+                      <span class="blog-post__related-card-title">{{ post.data.title }}</span>
+                      {% if post.data.readingtime %}
+                        <span class="blog-post__related-card-meta">{{ post.data.readingtime }}</span>
+                      {% endif %}
+                    </a>
+                  {% endif %}
+                {% endfor %}
+              {% endfor %}
+            </div>
+          </section>
+        {% endif %}
+      {% endif %}
+
+      <footer class="blog-post__footer">
+        {% if language === 'de' %}
+          <a href="/de/insights/" class="blog-post__back-link">← Zurück zu den Artikeln</a>
+        {% else %}
+          <a href="/en/insights/" class="blog-post__back-link">← Back to Insights</a>
+        {% endif %}
+
+        <div class="blog-post__share blog-post__share--footer">
+          <a class="share-icon share-icon--x" data-share="x" href="#" target="_blank" rel="noopener noreferrer" aria-label="Share on X" title="Share on X">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor">
+              <path d="M214.75,211.71l-62.6-98.38,61.77-67.95a8,8,0,0,0-11.84-10.76L143.24,99.34,102.75,35.71A8,8,0,0,0,96,32H48a8,8,0,0,0-6.75,12.3l62.6,98.37-61.77,68a8,8,0,1,0,11.84,10.76l58.84-64.72,40.49,63.63A8,8,0,0,0,160,224h48a8,8,0,0,0,6.75-12.29ZM164.39,208,62.57,48h29L193.43,208Z"/>
+            </svg>
+          </a>
+          <a class="share-icon" data-share="facebook" href="#" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook" title="Share on Facebook">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 8.5h2.2V5.2h-2.4c-2.5 0-4.1 1.6-4.1 4.1v2H8.6v3.3h2.1V21h3.3v-6.4h2.2l.4-3.3h-2.6V9.6c0-.7.2-1.1 1-1.1Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a class="share-icon" data-share="linkedin" href="#" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn" title="Share on LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.6"/>
+              <circle cx="7.6" cy="8.2" r="1.15" fill="currentColor"/>
+              <path d="M7.6 11v6.3M11.3 11v6.3M11.3 13.6c0-1.6 1-2.6 2.3-2.6 1.3 0 2 .9 2 2.5v3.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </a>
+          <button type="button" class="share-icon share-icon--copy" data-copy-link aria-label="Copy link" title="Copy link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="9" y="9" width="11" height="11" rx="2" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M15 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h3" stroke="currentColor" stroke-width="1.6"/>
+            </svg>
+          </button>
+        </div>
+      </footer>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <a href="https://blog.konihaus.ch" class="logo" aria-label="Konihaus blog">
+            <div class="logo-image"></div>
+            <div class="wordmark">konihaus blog</div>
+          </a>
+          <p class="footer__tagline" data-i18n="footer.tagline">Smart home managed service für Senioren, Mieter und
+            Ferienhausbesitzer in der
+            Schweiz.</p>
+          <div class="footer__social" aria-label="Social Media">
+            <a href="https://www.instagram.com/ch.konihaus/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2.5" y="2.5" width="19" height="19" rx="5" stroke="currentColor" stroke-width="1.6"/>
+                <circle cx="12" cy="12" r="4.4" stroke="currentColor" stroke-width="1.6"/>
+                <circle cx="17.6" cy="6.4" r="1.1" fill="currentColor"/>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/konihaus.ch" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 8.5h2.2V5.2h-2.4c-2.5 0-4.1 1.6-4.1 4.1v2H8.6v3.3h2.1V21h3.3v-6.4h2.2l.4-3.3h-2.6V9.6c0-.7.2-1.1 1-1.1Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="https://x.com/konihaus" class="social-icon social-icon--x" target="_blank" rel="noopener noreferrer" aria-label="X">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor">
+                <path d="M214.75,211.71l-62.6-98.38,61.77-67.95a8,8,0,0,0-11.84-10.76L143.24,99.34,102.75,35.71A8,8,0,0,0,96,32H48a8,8,0,0,0-6.75,12.3l62.6,98.37-61.77,68a8,8,0,1,0,11.84,10.76l58.84-64.72,40.49,63.63A8,8,0,0,0,160,224h48a8,8,0,0,0,6.75-12.29ZM164.39,208,62.57,48h29L193.43,208Z"/>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/company/konihaus" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.6"/>
+                <circle cx="7.6" cy="8.2" r="1.15" fill="currentColor"/>
+                <path d="M7.6 11v6.3M11.3 11v6.3M11.3 13.6c0-1.6 1-2.6 2.3-2.6 1.3 0 2 .9 2 2.5v3.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <div class="fcol-title" data-i18n="footer.col1_title">Service</div>
+          <ul class="flinks">
+            <li><a href="https://konihaus.ch/#packages" data-i18n="footer.col1_l1">Pakete & Preise</a></li>
+            <li><a href="https://konihaus.ch/#devices" data-i18n="footer.col1_l2">Geräte & Technik</a></li>
+            <li><a href="https://konihaus.ch/#faq" data-i18n="footer.col1_l3">Häufige Fragen</a></li>
+            <li><a href="https://konihaus.ch/#contact" data-i18n="footer.col1_l4">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="fcol-title" data-i18n="footer.col2_title">Unternehmen</div>
+          <ul class="flinks">
+            <li><a href="https://konihaus.ch/#intro" data-i18n="footer.col2_l1">Was ist Konihaus</a></li>
+            <li><a href="https://konihaus.ch/#process" data-i18n="footer.col2_l2">So funktioniert's</a></li>
+            <li><a href="https://konihaus.ch/#why" data-i18n="footer.col2_l3">Warum Konihaus</a></li>
+            <li><a href="https://konihaus.ch/#about" data-i18n="footer.col2_l4">Über Koni</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="fcol-title" data-i18n="footer.col3_title">Rechtliches</div>
+          <ul class="flinks">
+            <li><a href="https://konihaus.ch/impressum" data-i18n="footer.col3_l1">Impressum</a></li>
+            <li><a href="https://konihaus.ch/datenschutz" data-legal="privacy" data-i18n="footer.col3_l2">Datenschutz</a></li>
+            <li><a href="https://konihaus.ch/#cookie-declaration" data-cc-open data-i18n="footer.col3_l3">Cookie-Erklärung</a></li>
+            <li><a href="https://konihaus.ch/agb" data-i18n="footer.col3_l4">AGB</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy" data-i18n="footer.copy">© 2026 Konihaus · Affoltern am Albis, Schweiz
+        </p>
+        <p class="fch" data-i18n="footer.ch">🇨🇭 Made in Switzerland</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/scripts.js"></script>
+  <script src="/assets/cookie-consent.js"></script>
+  <script>
+    const lang = "{{language}}";
+
+    function switchToDe() {
+      if (lang === 'de') return;
+      location.href = '{{permalinkalt}}'
+    }
+
+    function switchToEn() {
+      if (lang === 'en') return;
+      location.href = '{{permalinkalt}}'
+    }
+
+    (function () {
+      const shareUrl = "{{ shareUrl }}";
+      const shareTitle = {{ (excerpt or title) | dump | safe }};
+      const encodedUrl = encodeURIComponent(shareUrl);
+      const encodedTitle = encodeURIComponent(shareTitle);
+
+      const links = {
+        x: `https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`,
+        linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`,
+        facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
+        whatsapp: `https://wa.me/?text=${encodedTitle}%20${encodedUrl}`,
+        email: `mailto:?subject=${encodedTitle}&body=${encodedUrl}`,
+      };
+ 
+      document.querySelectorAll('[data-share]').forEach((el) => {
+        const platform = el.getAttribute('data-share');
+        if (links[platform]) el.href = links[platform];
+      });
+
+      /*if (navigator.share) {
+        const fbIcons = document.querySelectorAll('[data-share="facebook"]');
+        fbIcons.forEach((el) => {
+          el.addEventListener('click', (e) => {
+            e.preventDefault();
+            navigator.share({ title: shareTitle, url: shareUrl }).catch(() => {});
+          });
+        });
+      }*/
+
+      const isTouchMobile = window.matchMedia('(pointer: coarse)').matches
+        && /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+      if (isTouchMobile && navigator.share) {
+        document.querySelectorAll('[data-share="native"]').forEach((el) => {
+          el.addEventListener('click', (e) => {
+            e.preventDefault();
+            navigator.share({ title: shareTitle, url: shareUrl }).catch(() => {});
+          });
+        });
+        const fbIcons = document.querySelectorAll('[data-share="facebook"]');
+        fbIcons.forEach((el) => {
+          el.addEventListener('click', (e) => {
+            e.preventDefault();
+            navigator.share({ title: shareTitle, url: shareUrl }).catch(() => {});
+          });
+        });
+      }
+
+      document.querySelectorAll('[data-copy-link]').forEach((btn) => {
+        btn.addEventListener('click', async () => {
+          try {
+            await navigator.clipboard.writeText(shareUrl);
+            btn.setAttribute('data-copied', 'true');
+            setTimeout(() => btn.removeAttribute('data-copied'), 2000);
+          } catch {
+            
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

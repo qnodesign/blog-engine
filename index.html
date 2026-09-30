@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Konihaus Insights</title>
+</head>
+<body>
+  <script>
+    (function () {
+      function getLangFromCookie() {
+        const match = document.cookie.match(/(?:^|; )konihaus-language=([^;]*)/);
+        return match ? decodeURIComponent(match[1]) : null;
+      }
+      function getBrowserLang() {
+        const langs = navigator.languages || [navigator.language || 'en'];
+        for (const l of langs) {
+          if (l.toLowerCase().startsWith('de')) return 'de';
+        }
+        return 'en';
+      }
+      const lang = getLangFromCookie() || getBrowserLang();
+      const target = lang === 'de'
+        ? '/de/insights/'
+        : '/en/insights/';
+      window.location.replace(target);
+    })();
+  </script>
+  <noscript>
+    <p>
+      <a href="/en/insights/">Continue in English</a> ·
+      <a href="/de/insights/">Weiter auf Deutsch</a>
+    </p>
+  </noscript>
+</body>
+</html>
