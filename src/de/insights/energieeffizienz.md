@@ -1,5 +1,5 @@
 ---
-title: Energieeffizienz
+title: Warm bei Ankunft, sparsam bei Abwesenheit
 date: 2026-09-02
 language: de
 tags: energieeffizienz, heizung, automation, ferienhaus
@@ -85,10 +85,6 @@ Das muss nicht abstrakt bleiben. Das eingebaute Energie-Dashboard von Home Assis
 </figure>
 
 Eine Ebene tiefer zeigen dieselben Daten, welche einzelnen Geräte tatsächlich für die Rechnung verantwortlich sind, Stunde für Stunde – ein normal laufender Kühlschrank und ein Ofen, der beim Frühstück kurz ausschlägt, lassen sich so leicht von etwas unterscheiden, das im Hintergrund still Strom verschwendet.
-
-<figure class="blog-post__figure">
-  <img src="/images/insights/energy-efficiency/home-assistant-device-breakdown.png" alt="Ein Home-Assistant-Diagramm mit dem Stromverbrauch einzelner Geräte, darunter PC, Server, Kühlschrank, Ofen, Media-Center und Waschmaschine" width="1200" height="858" loading="lazy" decoding="async">
-</figure>
 
 Genau das macht den Unterschied zwischen einer Monatsrechnung und einer echten Erklärung: Eine Rechnung zeigt, was man ausgegeben hat – das hier zeigt, warum.
 

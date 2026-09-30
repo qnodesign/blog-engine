@@ -1,5 +1,5 @@
 ---
-title: Energy Efficiency
+title: Warm When You Arrive, Quiet When You Leave
 date: 2026-09-02
 language: en
 tags: energy-efficiency, heating, automation, holiday-home
@@ -85,10 +85,6 @@ None of this needs to stay abstract. Home Assistant's built-in energy dashboard 
 </figure>
 
 Break it down further and the same data shows which individual devices are actually driving the bill, hour by hour, so a fridge running normally and an oven spiking at breakfast are easy to tell apart from something that's quietly wasting power in the background.
-
-<figure class="blog-post__figure">
-  <img src="/images/insights/energy-efficiency/home-assistant-device-breakdown.png" alt="A Home Assistant chart breaking down electricity use by individual device, including PC, server, fridge, oven, media center, and washing machine" width="1200" height="858" loading="lazy" decoding="async">
-</figure>
 
 This is what makes the difference between a monthly bill and an actual explanation: a bill tells you what you spent, this tells you why.
 

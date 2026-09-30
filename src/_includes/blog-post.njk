@@ -1,3 +1,19 @@
+{#- Category label: explicit `category` front matter, else the first tag.
+    (Named categoryLabel and fed with values, because a macro called `category`
+    would shadow the `category` front matter field in this template.) -#}
+{% macro categoryLabel(c, tags) -%}
+  {%- if not c and tags -%}
+    {%- set first = tags if tags is string else tags[0] -%}
+    {%- set c = (first.split(',')[0]) | trim -%}
+  {%- endif -%}
+  {%- if c %}{{ c | replace("-", " ") }}{% endif -%}
+{%- endmacro %}
+
+{#- Open every link in the article body in a new window, except in-page anchors
+    (#...), mailto: and tel: links, and links that already set a target. -#}
+{% macro openLinksInNewTab(html) -%}
+  {{- html | replace(r/<a\s+(?![^>]*\btarget=)(?![^>]*\bhref="(?:#|mailto:|tel:))([^>]*)>/g, '<a target="_blank" rel="noopener noreferrer" $1>') | safe -}}
+{%- endmacro %}
 {% set shareUrl = "https://blog.konihaus.ch" + page.url %}
 {% set altUrl = "https://blog.konihaus.ch" + permalinkalt %}
 {% set ogImage = image or "/images/insights/" + ogimage %}
@@ -183,6 +199,8 @@
 
     <article>
       <header class="blog-post__header">
+        {% set cat = categoryLabel(category, tags) %}
+        {% if cat | length %}<p class="blog-post__category">{{ cat }}</p>{% endif %}
         <h1 class="blog-post__title"><span>{{ title }}</span></h1>
         <time class="blog-post__meta" datetime="{{ date }}">
           {% if language === 'de' %}
@@ -239,7 +257,7 @@
 
 
       <div class="blog-post__content">
-        {{ content | safe }}
+        {{ openLinksInNewTab(content) }}
       </div>
 
       {% if related and related.length %}

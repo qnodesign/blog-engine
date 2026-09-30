@@ -1,6 +1,6 @@
 ---
-title: Persönlicher Service
-date: 2026-09-10
+title: Smart Home mit einem Menschen dahinter
+date: 2026-09-20
 language: de
 tags: persönlicher-service, support, beratung, smart-home
 layout: blog-post.njk
