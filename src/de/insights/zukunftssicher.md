@@ -1,6 +1,6 @@
 ---
 title: Läuft das auch in zehn Jahren noch?
-date: 2026-09-14
+date: 2026-09-10
 language: de
 tags: zukunftssicher, offene-standards, home-assistant, planung
 layout: blog-post.njk

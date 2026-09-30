@@ -83,7 +83,7 @@ permalink: /en/insights/index.html
           </button>
 
           <div id="language-options" class="language-options" hidden>
-            <button type="button" class="language-option" data-lang="de" onclick="location.href='/de/insights/'">
+            <button type="button" class="language-option" data-lang="de" onclick="location.href=devHref('/de/insights/')">
               <span>Deutsch</span>
               <span class="language-code">DE</span>
             </button>
@@ -142,7 +142,7 @@ permalink: /en/insights/index.html
        its image is only loaded for the one post that is actually shown. #}
 
     {% if posts.length %}
-    <div class="insights-featured-slot" data-scheduled-label="Geplant">
+    <div class="insights-featured-slot" data-scheduled-label="Scheduled">
       {% for post in posts %}
       <template data-post-url="{{ post.url }}">
         <article class="insights-featured">
@@ -157,9 +157,10 @@ permalink: /en/insights/index.html
               <a href="{{ post.url }}">{{ post.data.title }}</a>
             </h2>
             <p class="insights-featured__meta">
-              <time datetime="{{ post.date.toISOString().slice(0, 10) }}">{{ post.data.date | dateFormatDE }}</time>&nbsp;·&nbsp;{{ post.data.readingtime }}&nbsp;·&nbsp;Von Koni            </p>
+              <time datetime="{{ post.date.toISOString().slice(0, 10) }}">{{ post.data.date | dateFormat }}</time>&nbsp;·&nbsp;{{ post.data.readingtime }}&nbsp;·&nbsp;By Koni
+            </p>
             <p class="insights-featured__excerpt">{{ post.data.excerpt }}</p>
-            <a href="{{ post.url }}" class="insights-featured__link" aria-hidden="true" tabindex="-1">Artikel lesen <span>→</span></a>
+            <a href="{{ post.url }}" class="insights-featured__link" aria-hidden="true" tabindex="-1">Read article <span>→</span></a>
           </div>
         </article>
       </template>
@@ -179,7 +180,7 @@ permalink: /en/insights/index.html
               <a href="{{ post.url }}">{{ post.data.title }}</a>
             </h3>
             <p class="insights-card__meta">
-              <time datetime="{{ post.date.toISOString().slice(0, 10) }}">{{ post.data.date | dateFormatDE }}</time>&nbsp;·&nbsp;{{ post.data.readingtime }}<span class="insights-card__author">&nbsp;·&nbsp;Von Koni</span>
+              <time datetime="{{ post.date.toISOString().slice(0, 10) }}">{{ post.data.date | dateFormat }}</time>&nbsp;·&nbsp;{{ post.data.readingtime }}<span class="insights-card__author">&nbsp;·&nbsp;By Koni</span>
             </p>
             <div class="insights-card__excerpt-container">
               <p class="insights-card__excerpt">{{ post.data.excerpt }}</p>

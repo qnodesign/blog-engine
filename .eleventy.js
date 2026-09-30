@@ -1,6 +1,10 @@
 module.exports = function(eleventyConfig) {
   // Copy assets (images, etc.) to output
-  eleventyConfig.addPassthroughCopy("assets/cookie-consent.js");
+  eleventyConfig.addPassthroughCopy("assets/apple-touch-icon.png");
+  eleventyConfig.addPassthroughCopy("assets/icon-maskable-512.png");
+  eleventyConfig.addPassthroughCopy("assets/icon-maskable-192.png");
+  eleventyConfig.addPassthroughCopy("assets/icon-512.png");
+  eleventyConfig.addPassthroughCopy("assets/icon-192.png");
   eleventyConfig.addPassthroughCopy("assets/favicon_sm.svg");
   eleventyConfig.addPassthroughCopy("assets/favicon.svg");
   eleventyConfig.addPassthroughCopy("assets/insights.css");
@@ -12,6 +16,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("fonts");
   eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy("index.html");
+  eleventyConfig.addPassthroughCopy("manifest.json");
   eleventyConfig.addPassthroughCopy("translations");
 
   // Add a filter to format dates

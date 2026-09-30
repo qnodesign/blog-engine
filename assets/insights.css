@@ -28,7 +28,7 @@ body {
   position: absolute;
   z-index: 80;
   display: block;
-  margin: 0 0 .5rem;
+  margin: .5rem;
   padding: .2rem .6rem;
   border: 1px dashed #9a5f1c !important;
   border-radius: 999px;
@@ -39,8 +39,11 @@ body {
   color: #9a5f1c;
   background: #fff;
 }
-.insights-featured.is-scheduled .insights-scheduled { margin-bottom: .75rem; }
-.insights-card.is-scheduled { outline: 2px dashed rgba(154, 95, 28, .5); outline-offset: -2px; }
+.insights-featured.is-scheduled .insights-scheduled { margin: .75rem; }
+.insights-featured.is-scheduled,
+.insights-card.is-scheduled { 
+    outline: 2px dashed rgba(154, 95, 28, .5); outline-offset: -2px; 
+}
 
 /* ------------------------------------------------------------------
    Hero / introduction
@@ -100,7 +103,7 @@ body {
 .insights-featured {
     position: relative;
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 4fr 3fr;
     margin-bottom: 2.5rem;
     background: var(--forest-tint, #eef2ec);
     border-radius: 16px;

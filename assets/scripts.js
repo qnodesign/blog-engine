@@ -919,7 +919,7 @@ function openBlogPrivacy() {
     en: '/en/insights/privacy-by-default/'
   };
   const language = localStorage.getItem('lang') || 'de';
-  window.location.href = link[language];
+  window.location.href = devHref(link[language]);
 }
 
 function openBlogNoVendor() {
@@ -928,7 +928,51 @@ function openBlogNoVendor() {
     en: '/en/insights/no-vendor-lock-in/'
   };
   const language = localStorage.getItem('lang') || 'de';
-  window.location.href = link[language];
+  window.location.href = devHref(link[language]);
+}
+
+// ---------------------------------------------------------------------------
+// Dev mode: ?devmode=super shows scheduled (future-dated) posts and is carried
+// along on every link that stays on the blog.
+// ---------------------------------------------------------------------------
+const DEVMODE = new URLSearchParams(window.location.search).get('devmode') === 'super';
+const BLOG_HOSTS = [window.location.hostname, 'blog.konihaus.ch'];
+
+function devHref(url) {
+  if (!DEVMODE || !url) return url;
+  const raw = String(url).trim();
+  if (raw.startsWith('#')) return url;
+  let u;
+  try { u = new URL(raw, window.location.href); } catch { return url; }
+  if (!/^https?:$/.test(u.protocol) || !BLOG_HOSTS.includes(u.hostname)) return url;
+  if (u.searchParams.get('devmode') !== 'super') u.searchParams.set('devmode', 'super');
+  return /^https?:\/\//i.test(raw) ? u.href : u.pathname + u.search + u.hash;
+}
+
+function applyDevmodeLinks() {
+  if (!DEVMODE) return;
+  document.querySelectorAll('a[href]').forEach((a) => {
+    if (a.hasAttribute('data-share')) return;
+    a.setAttribute('href', devHref(a.getAttribute('href')));
+  });
+}
+
+// Blog post page: drop related posts that are not published yet, mark a scheduled preview.
+function setupScheduledPost() {
+  const pad = (n) => String(n).padStart(2, '0');
+  const now = new Date();
+  const today = `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}`;
+
+  if (!DEVMODE) {
+    document.querySelectorAll('.blog-post__related-card[data-post-date]').forEach((card) => {
+      if (card.dataset.postDate > today) card.remove();
+    });
+    const section = document.querySelector('.blog-post__related');
+    if (section && !section.querySelector('.blog-post__related-card')) section.remove();
+  }
+  if (window.__scheduledPost && DEVMODE) {
+    document.title = `[${window.__scheduledPost}] ${document.title}`;
+  }
 }
 
 // Insights index: hide posts dated after today; ?devmode=super shows them (marked as scheduled).
@@ -986,6 +1030,8 @@ function setupInsightsSchedule() {
 
 document.addEventListener('DOMContentLoaded', () => {
   setupInsightsSchedule(); // before the page is revealed, so nothing flashes
+  setupScheduledPost();
+  applyDevmodeLinks();
   i18n.init().then(() => {
     if (typeof cookieConsent !== 'undefined') cookieConsent.init();
 

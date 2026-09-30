@@ -1,8 +1,9 @@
 ---
 layout: null
-title: Insights
+title: Seite nicht gefunden
 language: de
-permalink: /de/insights/index.html
+permalink: /404.html
+eleventyExcludeFromCollections: true
 ---
 <!DOCTYPE html>
 <html lang="de">
@@ -25,8 +26,9 @@ permalink: /de/insights/index.html
   <meta name="theme-color" content="#2a4a35">
   <link rel="icon" type="image/svg+xml" href="/assets/favicon_sm.svg">
   <link rel="apple-touch-icon" href="/assets/favicon.svg">
-  <title>Insights — Konihaus</title>
-  <meta name="description" content="Tiefere Einblicke in Smart-Home-Architektur, Datenschutz und Konihaus-Design.">
+  <title>404 — Konihaus</title>
+  <meta name="description" content="Diese Seite wurde nicht gefunden. / Page not found.">
+  <meta name="robots" content="noindex">
   <meta name="author" content="Konrad Hefelle">
   
   <link
@@ -88,7 +90,7 @@ permalink: /de/insights/index.html
               <span>Deutsch</span>
               <span class="language-code">DE</span>
             </button>
-            <button type="button" class="language-option" data-lang="en" onclick="location.href=devHref('/en/insights/')">
+            <button type="button" class="language-option" data-lang="en">
               <span>English</span>
               <span class="language-code">EN</span>
             </button>
@@ -118,80 +120,67 @@ permalink: /de/insights/index.html
     <a href="https://konihaus.ch/#contact" class="drawer-cta drawer-link" data-i18n="nav.cta">Kostenlose Beratung →</a>
   </div>
 
-{% macro category(post) -%}
-  {%- set c = post.data.category -%}
-  {%- if not c and post.data.tags -%}
-    {%- set t = post.data.tags -%}
-    {%- if t is string -%}{%- set c = (t.split(',')[0]) | trim -%}{%- else -%}{%- set c = t[0] -%}{%- endif -%}
-  {%- endif -%}
-  {%- if c %}{{ c | replace("-", " ") }}{% endif -%}
-{%- endmacro %}
+  <style>
+    .notfound__code {
+      margin: 0 0 .25rem;
+      font-family: var(--serif);
+      font-size: clamp(5rem, 18vw, 9rem);
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1;
+      color: var(--marine);
+      opacity: .14;
+    }
+    .notfound__actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1.25rem 1.75rem;
+      margin-top: 2rem;
+    }
+    .notfound__link {
+      color: var(--forest, #2a4a35);
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 2px solid var(--gold, #c9a45c);
+      padding-bottom: 2px;
+    }
+    @media (max-width: 768px) {
+      .notfound__actions { justify-content: center; }
+    }
+  </style>
 
   <main class="insights-container">
     <header class="insights__header">
       <p class="insights__eyebrow">Konihaus Journal</p>
-      <h1 class="insights__title">Willkommen auf dem <em>Konihaus</em> Blog!</h1>
-      <p class="insights__intro">Tiefere Einblicke in Smart-Home-Architektur, Datenschutz und Konihaus-Design.</p>
+      <div class="notfound__code" aria-hidden="true">404</div>
+
+      <!-- language blocks are switched by scripts.js (applyLanguageBlocks) -->
+      <div data-legal-doc data-fallback="de">
+        <div data-lang="de">
+          <h1 class="insights__title">Diese Seite gibt es <em>nicht</em>.</h1>
+          <p class="insights__intro">Der Link ist vielleicht veraltet, falsch getippt, oder der Artikel ist noch nicht erschienen. Von hier aus geht es weiter:</p>
+          <div class="notfound__actions">
+            <a class="btn" href="/de/insights/">Zu den Artikeln</a>
+            <a class="notfound__link" href="https://konihaus.ch">Zur Startseite</a>
+            <a class="notfound__link" href="https://konihaus.ch/#contact">Sprechen Sie mit Koni</a>
+          </div>
+        </div>
+        <div data-lang="en" hidden>
+          <h1 class="insights__title">This page <em>doesn't exist</em>.</h1>
+          <p class="insights__intro">The link may be outdated or mistyped, or the article has not been published yet. Here is where to go next:</p>
+          <div class="notfound__actions">
+            <a class="btn" href="/en/insights/">Browse the articles</a>
+            <a class="notfound__link" href="https://konihaus.ch">Back to the home page</a>
+            <a class="notfound__link" href="https://konihaus.ch/#contact">Talk to Koni</a>
+          </div>
+        </div>
+      </div>
+
       <div class="insights__mark">
-        <img src="/images/funny.png" />
+        <img src="/images/funny.png" alt="" />
       </div>
     </header>
-
-    {# Scheduling: every post is rendered; scripts.js (setupInsightsSchedule) removes posts dated
-       after today unless the URL has ?devmode=super. Featured markup lives in <template> so
-       its image is only loaded for the one post that is actually shown. #}
-    {% set posts = collections.insightsDE | sort(true, false, 'data.date') %}
-
-    {% if posts.length %}
-    <div class="insights-featured-slot" data-scheduled-label="Geplant">
-      {% for post in posts %}
-      <template data-post-url="{{ post.url }}">
-        <article class="insights-featured">
-          <div class="insights-featured__media">
-            <div class="insights-featured__clip">
-              <img src="{{ "/images/insights/" + post.data.ogimage }}" alt="" width="1200" height="800" fetchpriority="high" />
-            </div>
-            <span class="insights-badge">Neu im Blog</span>
-          </div>
-          <div class="insights-featured__content">
-            <h2 class="insights-featured__title">
-              <a href="{{ post.url }}">{{ post.data.title }}</a>
-            </h2>
-            <p class="insights-featured__meta">
-              <time datetime="{{ post.date.toISOString().slice(0, 10) }}">{{ post.data.date | dateFormatDE }}</time>&nbsp;·&nbsp;{{ post.data.readingtime }}&nbsp;·&nbsp;Von Koni
-            </p>
-            <p class="insights-featured__excerpt">{{ post.data.excerpt }}</p>
-            <a href="{{ post.url }}" class="insights-featured__link" aria-hidden="true" tabindex="-1">Artikel lesen <span>→</span></a>
-          </div>
-        </article>
-      </template>
-      {% endfor %}
-    </div>
-
-    <div class="insights__grid">
-      {% for post in posts %}
-        <article class="insights-card" data-post-url="{{ post.url }}" data-post-date="{{ post.date.toISOString().slice(0, 10) }}">
-          <div class="insights-card__media">
-            <img src="{{ "/images/insights/" + post.data.ogimage }}" alt="" width="1200" height="675" loading="lazy" decoding="async" />
-          </div>
-          <div class="insights-card__body">
-            {% set cat = category(post) %}
-            {% if cat | length %}<p class="insights-card__category">{{ cat }}</p>{% endif %}
-            <h3 class="insights-card__title">
-              <a href="{{ post.url }}">{{ post.data.title }}</a>
-            </h3>
-            <p class="insights-card__meta">
-              <time datetime="{{ post.date.toISOString().slice(0, 10) }}">{{ post.data.date | dateFormatDE }}</time>&nbsp;·&nbsp;{{ post.data.readingtime }}<span class="insights-card__author">&nbsp;·&nbsp;Von Koni</span>
-            </p>
-            <div class="insights-card__excerpt-container">
-              <p class="insights-card__excerpt">{{ post.data.excerpt }}</p>
-            </div>
-            <a href="{{ post.url }}" class="insights-card__link" aria-hidden="true" tabindex="-1">Artikel lesen <span>→</span></a>
-          </div>
-        </article>
-      {% endfor %}
-    </div>
-    {% endif %}
   </main>
   <footer class="footer">
     <div class="container">

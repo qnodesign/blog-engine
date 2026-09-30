@@ -21,6 +21,22 @@
 <html lang="{{ language }}">
 <head>
   <meta charset="UTF-8">
+  <!-- Scheduled posts: before their publication date the page behaves like a 404,
+       unless the URL has ?devmode=super. Runs first so nothing is shown. -->
+  <script>
+    (function () {
+      var dev = new URLSearchParams(location.search).get('devmode') === 'super';
+      var d = new Date();
+      var p = function (n) { return String(n).padStart(2, '0'); };
+      var today = d.getFullYear() + '-' + p(d.getMonth() + 1) + '-' + p(d.getDate());
+      var published = '{{ page.date.toISOString().slice(0, 10) }}';
+      window.__scheduledPost = published > today ? published : null;
+      if (window.__scheduledPost && !dev) {
+        document.documentElement.style.display = 'none';
+        location.replace('/404.html');
+      }
+    })();
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <!-- Hide content until JS loads and sets language -->
   <script>
@@ -277,7 +293,7 @@
               {% for slug in related %}
                 {% for post in relatedCollection %}
                   {% if post.fileSlug === slug %}
-                    <a class="blog-post__related-card" href="{{ post.url }}">
+                    <a class="blog-post__related-card" href="{{ post.url }}" data-post-date="{{ post.date.toISOString().slice(0, 10) }}">
                       <span class="blog-post__related-card-title">{{ post.data.title }}</span>
                       {% if post.data.readingtime %}
                         <span class="blog-post__related-card-meta">{{ post.data.readingtime }}</span>
@@ -408,12 +424,12 @@
 
     function switchToDe() {
       if (lang === 'de') return;
-      location.href = '{{permalinkalt}}'
+      location.href = devHref('{{permalinkalt}}');
     }
 
     function switchToEn() {
       if (lang === 'en') return;
-      location.href = '{{permalinkalt}}'
+      location.href = devHref('{{permalinkalt}}');
     }
 
     (function () {
