@@ -24,6 +24,24 @@ body {
     padding: 3rem 1.5rem 4rem;
 }
 
+.insights-scheduled {
+  position: absolute;
+  z-index: 80;
+  display: block;
+  margin: 0 0 .5rem;
+  padding: .2rem .6rem;
+  border: 1px dashed #9a5f1c !important;
+  border-radius: 999px;
+  font-size: .7rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #9a5f1c;
+  background: #fff;
+}
+.insights-featured.is-scheduled .insights-scheduled { margin-bottom: .75rem; }
+.insights-card.is-scheduled { outline: 2px dashed rgba(154, 95, 28, .5); outline-offset: -2px; }
+
 /* ------------------------------------------------------------------
    Hero / introduction
 ------------------------------------------------------------------ */

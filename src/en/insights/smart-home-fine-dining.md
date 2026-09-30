@@ -1,7 +1,7 @@
 ---
 layout: blog-post.njk
 title: Smart Home Is Today's Fine Dining
-date: 2026-08-26
+date: 2026-09-15
 language: en
 tags: insights,smart-home,home-automation,philosophy,energy-efficiency
 ogimage: fine-dining/og.jpg

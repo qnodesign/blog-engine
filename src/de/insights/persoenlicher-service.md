@@ -1,6 +1,6 @@
 ---
-title: Smart Home mit einem Menschen dahinter
-date: 2026-09-20
+title: Smart Home mit einem Menschen dahinter 
+date: 2026-10-01
 language: de
 tags: persönlicher-service, support, beratung, smart-home
 layout: blog-post.njk

@@ -137,46 +137,51 @@ permalink: /de/insights/index.html
       </div>
     </header>
 
+    {# Scheduling: every post is rendered; scripts.js (setupInsightsSchedule) removes posts dated
+       after today unless the URL has ?devmode=super. Featured markup lives in <template> so
+       its image is only loaded for the one post that is actually shown. #}
     {% set posts = collections.insightsDE | sort(true, false, 'data.date') %}
-    {% set featured = posts | first %}
 
-    {% if featured %}
-    <article class="insights-featured">
-      <div class="insights-featured__media">
-        <div class="insights-featured__clip">
-          <img src="{{ "/images/insights/" + featured.data.ogimage }}" alt="" width="1200" height="800" fetchpriority="high" />
-        </div>
-        <span class="insights-badge">Neu im Blog</span>
-      </div>
-      <div class="insights-featured__content">
-        <h2 class="insights-featured__title">
-          <a href="{{ featured.url }}">{{ featured.data.title }}</a>
-        </h2>
-        <p class="insights-featured__meta">
-          <time datetime="{{ featured.data.date }}">{{ featured.data.date | dateFormatDE }}</time>&nbsp;·&nbsp;{{ featured.data.readingtime }}&nbsp;·&nbsp;Von Koni
-        </p>
-        <p class="insights-featured__excerpt">{{ featured.data.excerpt }}</p>
-        <a href="{{ featured.url }}" class="insights-featured__link" aria-hidden="true" tabindex="-1">Artikel lesen <span>→</span></a>
-      </div>
-    </article>
-    {% endif %}
+    {% if posts.length %}
+    <div class="insights-featured-slot" data-scheduled-label="Geplant">
+      {% for post in posts %}
+      <template data-post-url="{{ post.url }}">
+        <article class="insights-featured">
+          <div class="insights-featured__media">
+            <div class="insights-featured__clip">
+              <img src="{{ "/images/insights/" + post.data.ogimage }}" alt="" width="1200" height="800" fetchpriority="high" />
+            </div>
+            <span class="insights-badge">Neu im Blog</span>
+          </div>
+          <div class="insights-featured__content">
+            <h2 class="insights-featured__title">
+              <a href="{{ post.url }}">{{ post.data.title }}</a>
+            </h2>
+            <p class="insights-featured__meta">
+              <time datetime="{{ post.date.toISOString().slice(0, 10) }}">{{ post.data.date | dateFormatDE }}</time>&nbsp;·&nbsp;{{ post.data.readingtime }}&nbsp;·&nbsp;Von Koni
+            </p>
+            <p class="insights-featured__excerpt">{{ post.data.excerpt }}</p>
+            <a href="{{ post.url }}" class="insights-featured__link" aria-hidden="true" tabindex="-1">Artikel lesen <span>→</span></a>
+          </div>
+        </article>
+      </template>
+      {% endfor %}
+    </div>
 
-    {% if posts.length > 1 %}
     <div class="insights__grid">
       {% for post in posts %}
-        {% if not loop.first %}
-        <article class="insights-card">
+        <article class="insights-card" data-post-url="{{ post.url }}" data-post-date="{{ post.date.toISOString().slice(0, 10) }}">
           <div class="insights-card__media">
             <img src="{{ "/images/insights/" + post.data.ogimage }}" alt="" width="1200" height="675" loading="lazy" decoding="async" />
           </div>
           <div class="insights-card__body">
             {% set cat = category(post) %}
-            {% if cat %}<p class="insights-card__category">{{ cat }}</p>{% endif %}
+            {% if cat | length %}<p class="insights-card__category">{{ cat }}</p>{% endif %}
             <h3 class="insights-card__title">
               <a href="{{ post.url }}">{{ post.data.title }}</a>
             </h3>
             <p class="insights-card__meta">
-              <time datetime="{{ post.data.date }}">{{ post.data.date | dateFormatDE }}</time>&nbsp;·&nbsp;{{ post.data.readingtime }}<span class="insights-card__author">&nbsp;·&nbsp;Von Koni</span>
+              <time datetime="{{ post.date.toISOString().slice(0, 10) }}">{{ post.data.date | dateFormatDE }}</time>&nbsp;·&nbsp;{{ post.data.readingtime }}<span class="insights-card__author">&nbsp;·&nbsp;Von Koni</span>
             </p>
             <div class="insights-card__excerpt-container">
               <p class="insights-card__excerpt">{{ post.data.excerpt }}</p>
@@ -184,7 +189,6 @@ permalink: /de/insights/index.html
             <a href="{{ post.url }}" class="insights-card__link" aria-hidden="true" tabindex="-1">Artikel lesen <span>→</span></a>
           </div>
         </article>
-        {% endif %}
       {% endfor %}
     </div>
     {% endif %}

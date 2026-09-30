@@ -931,7 +931,61 @@ function openBlogNoVendor() {
   window.location.href = link[language];
 }
 
+// Insights index: hide posts dated after today; ?devmode=super shows them (marked as scheduled).
+function setupInsightsSchedule() {
+  const main = document.querySelector('.insights-container');
+  if (!main) return;
+
+  const devMode = new URLSearchParams(window.location.search).get('devmode') === 'super';
+  const pad = (n) => String(n).padStart(2, '0');
+  const now = new Date();
+  const today = `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}`;
+  const isLive = (date) => date <= today; // ISO dates compare correctly as strings
+
+  const slot = main.querySelector('.insights-featured-slot');
+  const grid = main.querySelector('.insights__grid');
+  const label = (slot && slot.dataset.scheduledLabel) || 'Scheduled';
+
+  function markScheduled(el, date) {
+    el.classList.add('is-scheduled');
+    const tag = document.createElement('span');
+    tag.className = 'insights-scheduled';
+    tag.textContent = `${label} · ${date}`;
+    el.prepend(tag);
+  }
+
+  // Cards are rendered newest first, so the first visible one is the featured post.
+  const cards = [...main.querySelectorAll('.insights-card[data-post-date]')];
+  const visible = cards.filter((card) => devMode || isLive(card.dataset.postDate));
+  const featuredCard = visible[0];
+
+  cards.forEach((card) => {
+    if (!visible.includes(card) || card === featuredCard) {
+      card.remove();
+    } else if (!isLive(card.dataset.postDate)) {
+      markScheduled(card, card.dataset.postDate);
+    }
+  });
+
+  if (slot) {
+    const templates = [...slot.querySelectorAll('template[data-post-url]')];
+    if (featuredCard) {
+      const tpl = templates.find((t) => t.dataset.postUrl === featuredCard.dataset.postUrl);
+      if (tpl) {
+        const node = tpl.content.firstElementChild.cloneNode(true);
+        if (!isLive(featuredCard.dataset.postDate)) markScheduled(node, featuredCard.dataset.postDate);
+        slot.replaceChildren(node);
+      }
+    } else {
+      slot.remove();
+    }
+  }
+
+  if (grid && !grid.children.length) grid.remove();
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+  setupInsightsSchedule(); // before the page is revealed, so nothing flashes
   i18n.init().then(() => {
     if (typeof cookieConsent !== 'undefined') cookieConsent.init();
 
