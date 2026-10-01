@@ -1,6 +1,7 @@
 ---
 title: Datenschutz by Default
 date: 2026-10-05
+time: '10:00'
 language: de
 tags: datenschutz, architektur, sicherheit
 layout: blog-post.njk

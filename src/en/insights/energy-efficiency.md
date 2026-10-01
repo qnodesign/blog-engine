@@ -1,6 +1,7 @@
 ---
 title: Warm When You Arrive, Quiet When You Leave
 date: 2026-09-02
+time: '10:00'
 language: en
 tags: energy-efficiency, heating, automation, holiday-home
 layout: blog-post.njk

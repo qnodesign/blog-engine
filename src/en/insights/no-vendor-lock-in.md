@@ -1,6 +1,7 @@
 ---
 title: No Vendor Lock-In
 date: 2026-09-29
+time: '10:00'
 language: en
 tags: interoperability, devices, standards
 layout: blog-post.njk

@@ -1,6 +1,7 @@
 ---
 title: Privacy by Default
 date: 2026-10-05
+time: '10:00'
 language: en
 tags: privacy, architecture, security
 layout: blog-post.njk

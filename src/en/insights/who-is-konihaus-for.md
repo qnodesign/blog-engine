@@ -1,6 +1,7 @@
 ---
 title: "Who Is Konihaus For? Four Homes, One Principle"
 date: 2026-10-08
+time: '18:00'
 language: en
 tags: use-cases, seniors, renters, holiday-home, zurich
 layout: blog-post.njk

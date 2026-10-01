@@ -2,6 +2,7 @@
 layout: blog-post.njk
 title: "Smart Home ist das Fine Dining von heute"
 date: 2026-09-15
+time: '10:00'
 language: de
 tags: insights
 permalink: /de/insights/smart-home-wie-fine-dining/

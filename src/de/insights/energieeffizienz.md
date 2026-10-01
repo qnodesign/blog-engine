@@ -1,6 +1,7 @@
 ---
 title: Warm bei Ankunft, sparsam bei Abwesenheit
 date: 2026-09-02
+time: '10:00'
 language: de
 tags: energieeffizienz, heizung, automation, ferienhaus
 layout: blog-post.njk

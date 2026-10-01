@@ -1,6 +1,7 @@
 ---
 title: "Für wen ist Konihaus? Vier Zuhause, ein Prinzip"
 date: 2026-10-08
+time: '18:00'
 language: de
 tags: anwendungsfaelle, senioren, mieter, ferienhaus, zuerich
 layout: blog-post.njk

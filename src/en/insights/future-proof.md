@@ -1,6 +1,7 @@
 ---
 title: Will It Still Work in Ten Years?
 date: 2026-09-10
+time: '10:00'
 language: en
 tags: future-proof, open-standards, home-assistant, planning
 layout: blog-post.njk

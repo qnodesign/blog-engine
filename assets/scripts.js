@@ -957,21 +957,50 @@ function applyDevmodeLinks() {
   });
 }
 
+// ---------------------------------------------------------------------------
+// Publish time: a post goes live at its date + optional time (data-post-time="HH:MM",
+// window.__scheduledPostTime). Without a time it goes live at 07:00. All times are
+// Swiss time (Europe/Zurich), independent of the visitor's own time zone.
+// ---------------------------------------------------------------------------
+const DEFAULT_PUBLISH_TIME = '07:00';
+const PUBLISH_TZ = 'Europe/Zurich';
+
+function normalizePostTime(time) {
+  const m = /^(\d{1,2}):(\d{2})/.exec(String(time || '').trim());
+  if (!m) return DEFAULT_PUBLISH_TIME;
+  const h = parseInt(m[1], 10);
+  const min = parseInt(m[2], 10);
+  if (h > 23 || min > 59) return DEFAULT_PUBLISH_TIME;
+  return `${String(h).padStart(2, '0')}:${m[2]}`;
+}
+
+// "YYYY-MM-DDTHH:MM" in Swiss time; ISO strings compare correctly as plain strings.
+function nowStamp() {
+  const parts = {};
+  new Intl.DateTimeFormat('en-CA', {
+    timeZone: PUBLISH_TZ,
+    year: 'numeric', month: '2-digit', day: '2-digit',
+    hour: '2-digit', minute: '2-digit', hourCycle: 'h23',
+  }).formatToParts(new Date()).forEach((p) => { parts[p.type] = p.value; });
+  return `${parts.year}-${parts.month}-${parts.day}T${parts.hour}:${parts.minute}`;
+}
+
+function isPostLive(date, time) {
+  return `${date}T${normalizePostTime(time)}` <= nowStamp();
+}
+
 // Blog post page: drop related posts that are not published yet, mark a scheduled preview.
 function setupScheduledPost() {
-  const pad = (n) => String(n).padStart(2, '0');
-  const now = new Date();
-  const today = `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}`;
-
   if (!DEVMODE) {
     document.querySelectorAll('.blog-post__related-card[data-post-date]').forEach((card) => {
-      if (card.dataset.postDate > today) card.remove();
+      if (!isPostLive(card.dataset.postDate, card.dataset.postTime)) card.remove();
     });
     const section = document.querySelector('.blog-post__related');
     if (section && !section.querySelector('.blog-post__related-card')) section.remove();
   }
   if (window.__scheduledPost && DEVMODE) {
-    document.title = `[${window.__scheduledPost}] ${document.title}`;
+    const time = normalizePostTime(window.__scheduledPostTime);
+    document.title = `[${window.__scheduledPost} ${time}] ${document.title}`;
   }
 }
 
@@ -981,10 +1010,8 @@ function setupInsightsSchedule() {
   if (!main) return;
 
   const devMode = new URLSearchParams(window.location.search).get('devmode') === 'super';
-  const pad = (n) => String(n).padStart(2, '0');
-  const now = new Date();
-  const today = `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}`;
-  const isLive = (date) => date <= today; // ISO dates compare correctly as strings
+  const isLive = (card) => isPostLive(card.dataset.postDate, card.dataset.postTime);
+  const stampOf = (card) => `${card.dataset.postDate} ${normalizePostTime(card.dataset.postTime)}`;
 
   const slot = main.querySelector('.insights-featured-slot');
   const grid = main.querySelector('.insights__grid');
@@ -1000,14 +1027,14 @@ function setupInsightsSchedule() {
 
   // Cards are rendered newest first, so the first visible one is the featured post.
   const cards = [...main.querySelectorAll('.insights-card[data-post-date]')];
-  const visible = cards.filter((card) => devMode || isLive(card.dataset.postDate));
+  const visible = cards.filter((card) => devMode || isLive(card));
   const featuredCard = visible[0];
 
   cards.forEach((card) => {
     if (!visible.includes(card) || card === featuredCard) {
       card.remove();
-    } else if (!isLive(card.dataset.postDate)) {
-      markScheduled(card, card.dataset.postDate);
+    } else if (!isLive(card)) {
+      markScheduled(card, stampOf(card));
     }
   });
 
@@ -1017,7 +1044,7 @@ function setupInsightsSchedule() {
       const tpl = templates.find((t) => t.dataset.postUrl === featuredCard.dataset.postUrl);
       if (tpl) {
         const node = tpl.content.firstElementChild.cloneNode(true);
-        if (!isLive(featuredCard.dataset.postDate)) markScheduled(node, featuredCard.dataset.postDate);
+        if (!isLive(featuredCard)) markScheduled(node, stampOf(featuredCard));
         slot.replaceChildren(node);
       }
     } else {

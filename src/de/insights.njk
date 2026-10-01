@@ -137,8 +137,8 @@ permalink: /de/insights/index.html
       </div>
     </header>
 
-    {# Scheduling: every post is rendered; scripts.js (setupInsightsSchedule) removes posts dated
-       after today unless the URL has ?devmode=super. Featured markup lives in <template> so
+    {# Scheduling: every post is rendered; scripts.js (setupInsightsSchedule) removes posts whose date + optional
+       front matter `time: "HH:MM"` (default 07:00, Swiss time) is still in the future unless the URL has ?devmode=super. Featured markup lives in <template> so
        its image is only loaded for the one post that is actually shown. #}
     {% set posts = collections.insightsDE | sort(true, false, 'data.date') %}
 
@@ -170,7 +170,7 @@ permalink: /de/insights/index.html
 
     <div class="insights__grid">
       {% for post in posts %}
-        <article class="insights-card" data-post-url="{{ post.url }}" data-post-date="{{ post.date.toISOString().slice(0, 10) }}">
+        <article class="insights-card" data-post-url="{{ post.url }}" data-post-date="{{ post.date.toISOString().slice(0, 10) }}"{% if post.data.time %} data-post-time="{{ post.data.time }}"{% endif %}>
           <div class="insights-card__media">
             <img src="{{ "/images/insights/" + post.data.ogimage }}" alt="" width="1200" height="675" loading="lazy" decoding="async" />
           </div>

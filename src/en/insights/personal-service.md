@@ -1,6 +1,7 @@
 ---
 title: Smart Home, Human Support
 date: 2026-10-01
+time: '18:00'
 language: en
 tags: personal-service, support, advice, smart-home
 layout: blog-post.njk
