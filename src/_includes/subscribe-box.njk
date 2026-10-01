@@ -1,0 +1,57 @@
+{#- Newsletter signup card for the blog (insights index + below each article).
+    Usage: {% include "subscribe-box.njk" %}
+    Needs the page's `language` ("de" | "en"). Behaviour: setupBlogSubscribe() in scripts.js,
+    styles: /assets/subscribe.css. -#}
+{% if language === 'de' %}
+  {% set sEyebrow = 'Newsletter' %}
+  {% set sTitle = 'Neue Artikel direkt <em>ins Postfach.</em>' %}
+  {% set sText = 'Ich schreibe über Smart Home, Datenschutz und das, was im Alltag wirklich funktioniert. Sie erhalten eine E-Mail, sobald ein neuer Artikel erscheint.' %}
+  {% set sLabel = 'E-Mail-Adresse' %}
+  {% set sPlaceholder = 'Ihre E-Mail-Adresse' %}
+  {% set sButton = 'Abonnieren' %}
+  {% set sNote = 'Abmeldung jederzeit möglich. Mehr dazu in der <a href="https://konihaus.ch/datenschutz" target="_blank" rel="noopener noreferrer">Datenschutzerklärung</a>.' %}
+  {% set sOk = 'Danke! Sie erhalten eine E-Mail, sobald ein neuer Artikel erscheint.' %}
+  {% set sDuplicate = 'Diese Adresse ist bereits angemeldet. Danke!' %}
+  {% set sInvalid = 'Bitte geben Sie eine gültige E-Mail-Adresse ein.' %}
+  {% set sLimit = 'Zu viele Anmeldungen von dieser Adresse. Bitte versuchen Sie es später erneut.' %}
+  {% set sError = 'Das hat leider nicht geklappt. Bitte versuchen Sie es später erneut.' %}
+{% else %}
+  {% set sEyebrow = 'Newsletter' %}
+  {% set sTitle = 'New articles straight to <em>your inbox.</em>' %}
+  {% set sText = 'I write about smart homes, privacy and what really works in everyday life. You get an email as soon as a new article is published.' %}
+  {% set sLabel = 'Email address' %}
+  {% set sPlaceholder = 'Your email address' %}
+  {% set sButton = 'Subscribe' %}
+  {% set sNote = 'Unsubscribe any time. More in the <a href="https://konihaus.ch/datenschutz" target="_blank" rel="noopener noreferrer">privacy policy</a>.' %}
+  {% set sOk = 'Thank you! You will get an email as soon as a new article is published.' %}
+  {% set sDuplicate = 'This address is already subscribed. Thank you!' %}
+  {% set sInvalid = 'Please enter a valid email address.' %}
+  {% set sLimit = 'Too many signups from this address. Please try again later.' %}
+  {% set sError = 'Something went wrong. Please try again later.' %}
+{% endif %}
+<aside class="subscribe subscribe--card" aria-label="{{ sEyebrow }}">
+  <div class="subscribe__intro">
+    <p class="subscribe__eyebrow">{{ sEyebrow }}</p>
+    <h2 class="subscribe__title">{{ sTitle | safe }}</h2>
+    <p class="subscribe__text">{{ sText }}</p>
+  </div>
+  <form class="subscribe__form" data-blog-subscribe novalidate
+        data-endpoint="https://project-zovba.vercel.app/api/blog-subscribe"
+        data-lang="{{ language }}"
+        data-msg-ok="{{ sOk }}"
+        data-msg-duplicate="{{ sDuplicate }}"
+        data-msg-invalid="{{ sInvalid }}"
+        data-msg-limit="{{ sLimit }}"
+        data-msg-error="{{ sError }}">
+    <div class="subscribe__row">
+      <label class="subscribe__sr" for="subscribe-email">{{ sLabel }}</label>
+      <input class="subscribe__input" id="subscribe-email" type="email" name="email"
+             autocomplete="email" inputmode="email" placeholder="{{ sPlaceholder }}" required>
+      {# honeypot: hidden from people, filled by bots #}
+      <input class="subscribe__hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="subscribe__button" type="submit">{{ sButton }}</button>
+    </div>
+    <p class="subscribe__note">{{ sNote | safe }}</p>
+    <p class="subscribe__status" role="status" aria-live="polite" hidden></p>
+  </form>
+</aside>

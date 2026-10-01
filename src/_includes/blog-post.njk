@@ -21,16 +21,24 @@
 <html lang="{{ language }}">
 <head>
   <meta charset="UTF-8">
-  <!-- Scheduled posts: before their publication date the page behaves like a 404,
-       unless the URL has ?devmode=super. Runs first so nothing is shown. -->
+  <!-- Scheduled posts: before their publication date + time (front matter `time: "HH:MM"`,
+       default 07:00, Swiss time) the page behaves like a 404, unless the URL has ?devmode=super.
+       Runs first so nothing is shown. Same rule as isPostLive() in scripts.js. -->
   <script>
     (function () {
       var dev = new URLSearchParams(location.search).get('devmode') === 'super';
-      var d = new Date();
-      var p = function (n) { return String(n).padStart(2, '0'); };
-      var today = d.getFullYear() + '-' + p(d.getMonth() + 1) + '-' + p(d.getDate());
+      var parts = {};
+      new Intl.DateTimeFormat('en-CA', {
+        timeZone: 'Europe/Zurich',
+        year: 'numeric', month: '2-digit', day: '2-digit',
+        hour: '2-digit', minute: '2-digit', hourCycle: 'h23'
+      }).formatToParts(new Date()).forEach(function (x) { parts[x.type] = x.value; });
+      var now = parts.year + '-' + parts.month + '-' + parts.day + 'T' + parts.hour + ':' + parts.minute;
       var published = '{{ page.date.toISOString().slice(0, 10) }}';
-      window.__scheduledPost = published > today ? published : null;
+      var m = /^(\d{1,2}):(\d{2})/.exec('{{ time }}');
+      var at = (m && +m[1] < 24 && +m[2] < 60) ? (m[1].length < 2 ? '0' : '') + m[1] + ':' + m[2] : '07:00';
+      window.__scheduledPost = (published + 'T' + at) > now ? published : null;
+      window.__scheduledPostTime = at;
       if (window.__scheduledPost && !dev) {
         document.documentElement.style.display = 'none';
         location.replace('/404.html');
@@ -137,6 +145,7 @@
   >
   <link rel="stylesheet" href="/assets/styles.css">
   <link rel="stylesheet" href="/assets/post.css">
+  <link rel="stylesheet" href="/assets/subscribe.css">
 </head>
 <body>
 
@@ -276,6 +285,8 @@
         {{ openLinksInNewTab(content) }}
       </div>
 
+      {% include "subscribe-box.njk" %}
+
       {% if related and related.length %}
         {% set relatedCollection = collections.insightsDE if language === 'de' else collections.insightsEN %}
         {% set relatedCount = 0 %}
@@ -293,7 +304,7 @@
               {% for slug in related %}
                 {% for post in relatedCollection %}
                   {% if post.fileSlug === slug %}
-                    <a class="blog-post__related-card" href="{{ post.url }}" data-post-date="{{ post.date.toISOString().slice(0, 10) }}">
+                    <a class="blog-post__related-card" href="{{ post.url }}" data-post-date="{{ post.date.toISOString().slice(0, 10) }}"{% if post.data.time %} data-post-time="{{ post.data.time }}"{% endif %}>
                       <span class="blog-post__related-card-title">{{ post.data.title }}</span>
                       {% if post.data.readingtime %}
                         <span class="blog-post__related-card-meta">{{ post.data.readingtime }}</span>

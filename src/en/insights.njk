@@ -52,6 +52,7 @@ permalink: /en/insights/index.html
   >
   <link rel="stylesheet" href="/assets/styles.css">
   <link rel="stylesheet" href="/assets/insights.css">
+  <link rel="stylesheet" href="/assets/subscribe.css">
 </head>
 <body>
 
@@ -166,6 +167,8 @@ permalink: /en/insights/index.html
       </template>
       {% endfor %}
     </div>
+
+    {% include "subscribe-box.njk" %}
 
     <div class="insights__grid">
       {% for post in posts %}

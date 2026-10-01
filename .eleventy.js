@@ -1,19 +1,6 @@
 module.exports = function(eleventyConfig) {
   // Copy assets (images, etc.) to output
-  eleventyConfig.addPassthroughCopy("assets/apple-touch-icon.png");
-  eleventyConfig.addPassthroughCopy("assets/cookie-consent.js");
-  eleventyConfig.addPassthroughCopy("assets/icon-maskable-512.png");
-  eleventyConfig.addPassthroughCopy("assets/icon-maskable-192.png");
-  eleventyConfig.addPassthroughCopy("assets/icon-512.png");
-  eleventyConfig.addPassthroughCopy("assets/icon-192.png");
-  eleventyConfig.addPassthroughCopy("assets/favicon_sm.svg");
-  eleventyConfig.addPassthroughCopy("assets/favicon.svg");
-  eleventyConfig.addPassthroughCopy("assets/insights.css");
-  eleventyConfig.addPassthroughCopy("assets/logo.png");
-  eleventyConfig.addPassthroughCopy("assets/post.css");
-  eleventyConfig.addPassthroughCopy("assets/scripts.js");
-  eleventyConfig.addPassthroughCopy("assets/styles.css");
-  eleventyConfig.addPassthroughCopy("assets/sw.js");
+  eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("fonts");
   eleventyConfig.addPassthroughCopy("CNAME");
   eleventyConfig.addPassthroughCopy("images");

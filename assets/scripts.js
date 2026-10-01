@@ -1055,10 +1055,92 @@ function setupInsightsSchedule() {
   if (grid && !grid.children.length) grid.remove();
 }
 
+// ---------------------------------------------------------------------------
+// Blog newsletter signup. Markup: _includes/subscribe-box.njk
+//   <form data-blog-subscribe data-endpoint data-lang data-msg-ok|duplicate|invalid|limit|error>
+// Posts email + language to the Vercel endpoint (writes blog-emails.json).
+// ---------------------------------------------------------------------------
+function setupBlogSubscribe() {
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  document.querySelectorAll('form[data-blog-subscribe]').forEach((form) => {
+    const box = form.closest('.subscribe');
+    const input = form.querySelector('input[type="email"]');
+    const button = form.querySelector('button[type="submit"]');
+    const status = form.querySelector('.subscribe__status');
+    const honeypot = form.querySelector('[name="website"]');
+    if (!input || !button || !status) return;
+
+    const msg = (key) => form.dataset[`msg${key}`] || '';
+    const show = (text, kind) => {
+      status.textContent = text;
+      status.className = `subscribe__status subscribe__status--${kind}`;
+      status.hidden = !text;
+    };
+    const finish = (text, kind) => {
+      show(text, kind);
+      if (box) box.classList.add('is-done');
+    };
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const email = input.value.trim().toLowerCase();
+
+      if (!emailPattern.test(email)) {
+        show(msg('Invalid'), 'error');
+        input.focus();
+        return;
+      }
+
+      // Bots (honeypot filled / submitted instantly): pretend success, send nothing.
+      if ((honeypot && honeypot.value) || Date.now() - FORM_LOAD_TIME < 1500) {
+        finish(msg('Ok'), 'ok');
+        return;
+      }
+
+      button.disabled = true;
+      button.setAttribute('aria-busy', 'true');
+      show('', 'info');
+
+      try {
+        const response = await fetch(form.dataset.endpoint, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email, language: form.dataset.lang || i18n.currentLang }),
+        });
+
+        if (response.ok) {
+          finish(msg('Ok'), 'ok');
+          return;
+        }
+
+        let data = {};
+        try { data = await response.json(); } catch { /* no JSON body */ }
+
+        if (response.status === 400 && /already/i.test(data.message || '')) {
+          finish(msg('Duplicate'), 'info');
+        } else if (response.status === 400) {
+          show(msg('Invalid'), 'error');
+        } else if (response.status === 429) {
+          show(msg('Limit'), 'error');
+        } else {
+          show(msg('Error'), 'error');
+        }
+      } catch (error) {
+        show(msg('Error'), 'error');
+      } finally {
+        button.disabled = false;
+        button.removeAttribute('aria-busy');
+      }
+    });
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   setupInsightsSchedule(); // before the page is revealed, so nothing flashes
   setupScheduledPost();
   applyDevmodeLinks();
+  setupBlogSubscribe(); // independent of translations, works even if they fail to load
   i18n.init().then(() => {
     if (typeof cookieConsent !== 'undefined') cookieConsent.init();
 
