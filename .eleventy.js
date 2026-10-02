@@ -1,4 +1,5 @@
 module.exports = function(eleventyConfig) {
+  require('./newsletter-email.cjs').register(eleventyConfig, __dirname);
   // Copy assets (images, etc.) to output
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("fonts");
