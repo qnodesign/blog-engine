@@ -8,7 +8,7 @@ layout: blog-post.njk
 permalink: /de/insights/fuer-wen-ist-konihaus/
 permalinkalt: /en/insights/who-is-konihaus-for/
 ogimage: who-is-konihaus-for/og.jpg
-excerpt: Ein Senior, der allein wohnt, eine Mieterin, die nicht bohren darf, ein Ferienhausbesitzer in der Ferne und ein ganz normales Zuhause. Vier Situationen, ein Prinzip - persönlich, lokal, privat.
+excerpt: "Ein alleinlebender Senior, eine Mieterin mit Bohrverbot, ein Ferienhausbesitzer in der Ferne und ein normales Zuhause. Vier Situationen, ein Prinzip: persönlich, lokal, privat."
 readingtime: 6 Min. Lesezeit
 related: [persoenlicher-service]
 author: Koni

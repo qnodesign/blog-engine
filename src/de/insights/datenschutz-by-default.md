@@ -1,5 +1,5 @@
 ---
-title: Datenschutz by Default
+title: "Dein Zuhause, deine Daten: Datenschutz by Default"
 date: 2026-10-05
 time: '10:00'
 language: de
@@ -8,7 +8,7 @@ layout: blog-post.njk
 permalink: /de/insights/datenschutz-by-default/
 permalinkalt: /en/insights/privacy-by-default/
 ogimage: privacy/og.jpg
-excerpt: Wie Konihaus deine Daten lokal hält, sichert und unter deiner Kontrolle behält.
+excerpt:  Wie Konihaus Smart-Home-Daten lokal verarbeitet, die Abhängigkeit von Hersteller-Clouds reduziert und dir die Kontrolle über Fernzugriff und vernetzte Dienste lässt.
 readingtime: 4 Min. Lesezeit
 related: []
 author: Koni

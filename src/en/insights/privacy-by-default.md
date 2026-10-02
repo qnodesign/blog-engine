@@ -1,5 +1,5 @@
 ---
-title: Privacy by Default
+title: "Your Home, Your Data: Privacy by Default"
 date: 2026-10-05
 time: '10:00'
 language: en
@@ -8,7 +8,7 @@ layout: blog-post.njk
 permalink: /en/insights/privacy-by-default/
 permalinkalt: /de/insights/datenschutz-by-default/
 ogimage: privacy/og.jpg
-excerpt: How Konihaus keeps your data local, secure, and under your control.
+excerpt: How Konihaus keeps smart-home data local, limits dependence on vendor clouds, and gives you control over remote access and connected services.
 readingtime: 4 min read
 related: []
 author: Koni

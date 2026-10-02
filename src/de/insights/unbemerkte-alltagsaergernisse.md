@@ -1,6 +1,6 @@
 ---
 layout: blog-post.njk
-title: Die Alltagsärgernisse, die wir nicht mehr bemerken
+title: Was uns nicht mehr auffällt
 date: 2026-10-17
 time: '10:00'
 language: de
