@@ -8,7 +8,7 @@ layout: blog-post.njk
 permalink: /de/insights/schweizer-qualitaet/
 permalinkalt: /en/insights/swiss-quality/
 ogimage: swiss-quality/og.jpg
-excerpt: "In der Schweiz gegründet und vertraut mit Schweizer Wohnstandards, Steckdosen Typ J und kantonalen Vorschriften: Was Schweizer Qualität für Konihaus bedeutet und wie wir sie belegen."
+excerpt: "Vom Sicherungskasten bis zu kantonalen Vorschriften: Wir kennen das Schweizer Wohnen und stehen langfristig dafür ein."
 readingtime: 4 Min. Lesezeit
 related: [datenschutz-by-default, persoenlicher-service, zukunftssicher]
 author: Koni

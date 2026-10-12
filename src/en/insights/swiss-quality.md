@@ -8,7 +8,7 @@ layout: blog-post.njk
 permalink: /en/insights/swiss-quality/
 permalinkalt: /de/insights/schweizer-qualitaet/
 ogimage: swiss-quality/og.jpg
-excerpt: "Founded in Switzerland and familiar with Swiss living standards, Type J outlets, and cantonal regulations: what Swiss quality means for Konihaus, and how we back it up."
+excerpt: "From the fuse box to cantonal regulations: we know Swiss homes and stand behind our work for the long run."
 readingtime: 4 min read
 related: [privacy-by-default, personal-service, future-proof]
 author: Koni
