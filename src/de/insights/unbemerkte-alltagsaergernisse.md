@@ -10,7 +10,7 @@ permalink: /de/insights/unbemerkte-alltagsaergernisse/
 permalinkalt: /en/insights/pain-points-we-stopped-noticing/
 excerpt: Manche Handgriffe sind uns so vertraut, dass wir sie nicht mehr als lästig wahrnehmen. Ein Smart Home beginnt damit, sie wieder zu bemerken.
 readingtime: 3 Min. Lesezeit
-related: [smart-home-wie-fine-dining]
+related: [persoenlicher-service, smart-home-wie-fine-dining]
 author: Koni
 ---
 

@@ -10,7 +10,7 @@ permalinkalt: /de/insights/datenschutz-by-default/
 ogimage: privacy/og.jpg
 excerpt: How Konihaus keeps smart-home data local, limits dependence on vendor clouds, and gives you control over remote access and connected services.
 readingtime: 4 min read
-related: []
+related: [swiss-quality, no-vendor-lock-in]
 author: Koni
 ---
 

@@ -10,7 +10,7 @@ permalinkalt: /en/insights/no-vendor-lock-in/
 ogimage: vendor-lock-in/og.jpg
 excerpt: Verbinde Geräte verschiedener Hersteller, ohne dein gesamtes Smart Home einem einzigen Ökosystem zu überlassen.
 readingtime: 5 Min. Lesezeit
-related: [persoenlicher-service]
+related: [persoenlicher-service, zukunftssicher]
 author: Koni
 ---
 

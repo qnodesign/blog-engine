@@ -10,7 +10,7 @@ permalinkalt: /en/insights/privacy-by-default/
 ogimage: privacy/og.jpg
 excerpt:  Wie Konihaus Smart-Home-Daten lokal verarbeitet, die Abhängigkeit von Hersteller-Clouds reduziert und dir die Kontrolle über Fernzugriff und vernetzte Dienste lässt.
 readingtime: 4 Min. Lesezeit
-related: []
+related: [schweizer-qualitaet, kein-vendor-lock-in]
 author: Koni
 ---
 

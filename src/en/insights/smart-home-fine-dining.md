@@ -10,7 +10,7 @@ permalink: /en/insights/smart-home-fine-dining/
 permalinkalt: /de/insights/smart-home-wie-fine-dining/
 excerpt: Obsession or pointless? With smart homes, the truth is in the middle.
 readingtime: 3 min read
-related: [energy-efficiency]
+related: [energy-efficiency, pain-points-we-stopped-noticing]
 author: Koni
 ---
 

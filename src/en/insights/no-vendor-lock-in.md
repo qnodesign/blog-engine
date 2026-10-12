@@ -10,7 +10,7 @@ permalinkalt: /de/insights/kein-vendor-lock-in/
 ogimage: vendor-lock-in/og.jpg
 excerpt: Combine devices from different manufacturers without handing your entire smart home to a single ecosystem.
 readingtime: 5 min read
-related: [personal-service]
+related: [personal-service, future-proof]
 author: Koni
 ---
 

@@ -10,7 +10,7 @@ permalinkalt: /en/insights/future-proof/
 ogimage: future-proof/og.jpg
 excerpt: Ein Smart Home muss nicht altern wie ein Gadget. Die Plattform wird weiterentwickelt, und Ihr System wächst mit neuen Standards.
 readingtime: 7 Min. Lesezeit
-related: [kein-vendor-lock-in]
+related: [kein-vendor-lock-in, schweizer-qualitaet]
 author: Koni
 ---
 

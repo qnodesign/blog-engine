@@ -10,7 +10,7 @@ permalinkalt: /en/insights/energy-efficiency/
 ogimage: energy-efficiency/og.jpg
 excerpt: Automatische Heizung und Beschattung helfen nur, wenn sie wirklich laufen — ohne dass jemand daran denken muss.
 readingtime: 5 Min. Lesezeit
-related: [smart-home-wie-fine-dining]
+related: [smart-home-wie-fine-dining, fuer-wen-ist-konihaus]
 author: Koni
 ---
 

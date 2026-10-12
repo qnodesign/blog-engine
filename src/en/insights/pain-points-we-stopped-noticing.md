@@ -10,7 +10,7 @@ permalink: /en/insights/pain-points-we-stopped-noticing/
 permalinkalt: /de/insights/unbemerkte-alltagsaergernisse/
 excerpt: Some chores are so familiar that we no longer see them as chores. A smart home starts with noticing them again.
 readingtime: 3 min read
-related: [smart-home-fine-dining]
+related: [personal-service, smart-home-fine-dining]
 author: Koni
 ---
 

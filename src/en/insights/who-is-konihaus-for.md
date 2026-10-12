@@ -10,7 +10,7 @@ permalinkalt: /de/insights/fuer-wen-ist-konihaus/
 ogimage: who-is-konihaus-for/og.jpg
 excerpt: A retiree living alone, a renter who can't drill, a holiday-home owner far away, and an ordinary family home. Four situations, one approach - personal, local, private.
 readingtime: 6 min read
-related: [personal-service]
+related: [personal-service, pain-points-we-stopped-noticing]
 author: Koni
 ---
 

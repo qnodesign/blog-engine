@@ -10,7 +10,7 @@ permalinkalt: /en/insights/smart-home-fine-dining/
 ogimage: fine-dining/og.jpg
 excerpt: Leidenschaft oder unnötig? Beim Smart Home liegt die Wahrheit in der Mitte.
 readingtime: 3 Min. Lesezeit
-related: [energieeffizienz]
+related: [energieeffizienz, unbemerkte-alltagsaergernisse]
 author: Koni
 ---
 

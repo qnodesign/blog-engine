@@ -10,7 +10,7 @@ permalinkalt: /de/insights/energieeffizienz/
 ogimage: energy-efficiency/og.jpg
 excerpt: Automatic heating and shading only help if they actually run — without anyone remembering.
 readingtime: 6 min read
-related: [smart-home-fine-dining]
+related: [smart-home-fine-dining, who-is-konihaus-for]
 author: Koni
 ---
 
