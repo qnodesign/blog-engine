@@ -68,7 +68,7 @@ module.exports = function(eleventyConfig) {
       const key = item.data.translationKey;
       if (key) (groups[key] = groups[key] || []).push(item);
     });
-    const langOf = (item) => item.data.lang || (item.url.match(/^\/(de|en)(\/|$)/) || [])[1];
+    const langOf = (item) => item.data.lang || item.data.language || (item.url.match(/^\/(de|en)(\/|$)/) || [])[1];
 
     return pages
       .map((item) => {
@@ -83,6 +83,13 @@ module.exports = function(eleventyConfig) {
         };
       })
       .sort((x, y) => x.loc.localeCompare(y.loc));
+  });
+
+  // Wrap markdown tables in <div class="table-wrap"> so wide tables scroll
+  // sideways on phones (styled in blog-tables.css).
+  eleventyConfig.amendLibrary("md", (md) => {
+    md.renderer.rules.table_open = () => '<div class="table-wrap"><table>\n';
+    md.renderer.rules.table_close = () => '</table></div>\n';
   });
 
   return {

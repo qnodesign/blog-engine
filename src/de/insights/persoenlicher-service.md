@@ -10,7 +10,7 @@ permalinkalt: /en/insights/personal-service/
 ogimage: personal-service/og.jpg
 excerpt: "Beratung zum Smart Home endet meist an der Kasse. Persönlicher Service heisst: Jemand bleibt an Ihrer Seite."
 readingtime: 5 Min. Lesezeit
-related: [kein-vendor-lock-in, schweizer-qualitaet]
+related: [kein-vendor-lock-in, schweizer-qualitaet, was-kostet-ein-smart-home-schweiz]
 author: Koni
 ---
 

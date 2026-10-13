@@ -4524,3 +4524,99 @@ body.cc-lock .cc-banner {
     width: 32px;
     height: 32px;
 }
+
+/* ── Blog post tables ─────────────────────────────────────────────
+   Calm, readable tables for markdown tables in blog posts.
+   Scope: adjust the selector list if your post body uses another class. */
+
+:where(.blog-post, .blog-post__content, article) .table-wrap {
+  margin: 28px 0 32px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid var(--warm-mid, #d6cfc0);
+  border-radius: 12px;
+  background: var(--parchment, #f7f4ed);
+}
+
+:where(.blog-post, .blog-post__content, article) table {
+  width: 100%;
+  min-width: 640px;                 /* below this the wrapper scrolls sideways */
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  text-align: left;
+  hyphens: none;
+  -webkit-hyphens: none;
+  font-variant-numeric: lining-nums;
+}
+
+/* header */
+:where(.blog-post, .blog-post__content, article) thead th {
+  padding: 12px 16px;
+  background: var(--cream, #ede9df);
+  border-bottom: 1px solid var(--warm-mid, #d6cfc0);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: left;                 /* the browser default centres th */
+  color: var(--ink-3, #6a6860);
+  white-space: nowrap;
+}
+
+/* cells */
+:where(.blog-post, .blog-post__content, article) tbody td {
+  padding: 14px 16px;
+  vertical-align: top;              /* all columns start on the same line */
+  border-bottom: 1px solid var(--rule, rgba(26, 25, 22, 0.10));
+  color: var(--ink-2, #3a3830);
+}
+
+:where(.blog-post, .blog-post__content, article) tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+/* first column = the row's name */
+:where(.blog-post, .blog-post__content, article) tbody td:first-child {
+  font-weight: 500;
+  color: var(--ink, #1a1916);
+  min-width: 150px;
+}
+
+:where(.blog-post, .blog-post__content, article) tbody td:first-child a {
+  text-decoration: underline;
+  text-decoration-color: var(--warm-mid, #d6cfc0);
+  text-underline-offset: 3px;
+}
+
+/* columns with figures or prices: avoid breaking mid-number */
+:where(.blog-post, .blog-post__content, article) tbody td strong {
+  font-weight: 600;
+  color: var(--ink, #1a1916);
+}
+
+:where(.blog-post, .blog-post__content, article) tbody tr:hover td {
+  background: rgba(237, 233, 223, 0.55);
+}
+
+/* links inside cells */
+:where(.blog-post, .blog-post__content, article) table a {
+  color: var(--forest, #2a4a35);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+:where(.blog-post, .blog-post__content, article) table a:hover {
+  color: var(--forest-mid, #3d6b4f);
+}
+
+/* phones: slightly tighter */
+@media (max-width: 700px) {
+  :where(.blog-post, .blog-post__content, article) thead th,
+  :where(.blog-post, .blog-post__content, article) tbody td {
+    padding: 10px 12px;
+  }
+  :where(.blog-post, .blog-post__content, article) table {
+    font-size: 0.8125rem;
+  }
+}

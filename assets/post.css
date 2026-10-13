@@ -355,3 +355,9 @@
     /* darker amber than the brand colour: AA contrast for small text */
     color: #9a5f1c;
 }
+
+.blog-post__content em {
+  font-family: var(--serif, 'Cormorant Garamond', Georgia, serif);
+  font-style: italic;
+  font-size: 1.1em; /* Cormorant runs small next to Outfit */
+}

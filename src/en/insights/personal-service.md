@@ -10,7 +10,7 @@ permalinkalt: /de/insights/persoenlicher-service/
 ogimage: personal-service/og.jpg
 excerpt: Smart home advice usually ends at the checkout. Personal service means one person stays with you afterwards.
 readingtime: 5 min read
-related: [no-vendor-lock-in, swiss-quality]
+related: [no-vendor-lock-in, swiss-quality, smart-home-cost-switzerland]
 author: Koni
 ---
 
