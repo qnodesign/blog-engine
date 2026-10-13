@@ -75,6 +75,11 @@ body {
     line-height: 1.2;
 }
 
+.insights__title em {
+    color: var(--amber);
+    font-weight: 500;
+}
+
 .insights__intro {
     font-size: 1.1rem;
     color: var(--ink-3);
