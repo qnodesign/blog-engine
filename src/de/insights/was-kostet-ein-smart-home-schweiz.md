@@ -90,4 +90,4 @@ Mit den Antworten finden wir gemeinsam einen kleinen, rückbaubaren ersten Schri
 
 **Kostenlose Erstberatung, ohne Verpflichtung:** [konihaus.ch](https://konihaus.ch/#contact) oder per E-Mail an hallo@konihaus.ch. Sie sprechen direkt mit mir, ich antworte innert 24 Stunden.
 
-*Quellen: veröffentlichte Seiten von zehn Schweizer Anbietern und zwei Verbraucherratgebern, abgerufen im Oktober 2026. Preise können sich ändern; alle Angaben ohne Gewähr.*
+*Quellen: veröffentlichte Seiten von zehn Schweizer Anbietern und zwei Verbraucherratgebern, abgerufen im Oktober 2026. Ich betreibe Konihaus selbst und bin damit einer dieser Anbieter. Darum nenne ich die anderen nicht beim Namen: Es geht um einen Überblick über den Markt, nicht um ein Ranking. Preise können sich ändern; alle Angaben ohne Gewähr. Wenn Sie eine Zahl nachprüfen möchten, schreiben Sie mir, ich schicke Ihnen gern die Quelle.*

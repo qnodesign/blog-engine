@@ -90,4 +90,4 @@ With your answers, we find a small, reversible first step together, for example 
 
 **Free first consultation, no obligation:** [konihaus.ch](https://konihaus.ch/#contact) or email hallo@konihaus.ch. You talk to me directly, and I reply within 24 hours.
 
-*Sources: published pages of ten Swiss providers and two consumer guides, retrieved October 2026. Prices may change; no guarantee.*
+*Sources: published pages of ten Swiss providers and two consumer guides, retrieved October 2026. I run Konihaus myself, so I am one of these providers. That is why I don't name the others: this is an overview of the market, not a ranking. Prices may change; no guarantee. If you'd like to check a figure, write to me and I'll gladly send you the source.*
