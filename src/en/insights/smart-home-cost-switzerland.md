@@ -27,22 +27,22 @@ I read the pages of ten Swiss providers (as of October 2026). Only a few publish
 
 | Provider | What | Price | Note |
 |---|---|---|---|
-| [Härz AG](https://smart-home-schweiz.ch/de/faq-und-preise/preise/) | KNX, installed by a licensed electrician | CHF 3,400 to 16,200 one-off (excl. VAT) | depends on the package (4 levels) and home size; add-on modules extra |
-| [ISP Electro Solutions](https://smarthome.ispag.ch/was-kostet-ein-smart-home) | Loxone packages | from CHF 5,500 / 8,500 / 14,500 one-off | for a new-build flat or house, **on top of** the normal electrical installation |
-| [smarli.](https://smarli.ch/smarli-wow) | open system with a local hub, retrofit, also for tenants | CHF 4,000 to 5,000 (3½-room flat), CHF 6,000 to 7,500 (5-room house) one-off | incl. products, installation, configuration; monthly fees not mentioned |
-| [Pavilon Automation](https://pavilon.ch/) | maintenance contract for Loxone systems | CHF 599 / 899 / 1,199 per year | care only, without the system itself |
-| [Securitas Direct](https://www.securitas-direct.ch/) | alarm system with monitoring | "less than CHF 3 per day" | security only, no home automation |
-| [Spline](https://spline.ch/), [ABB](https://new.abb.com/buildings/de-ch/smart-home), [BKW](https://www.bkw.ch/de/gebaeude/automation/smart-home), [Renomation](https://www.renomation.ch/de/smart-home/ihr-mehrwert), [Smart Home Swiss](https://smarthome.ch/) | KNX, free@home and others | no prices published | "request a quote", "find a partner" or "book a consultation" |
+| Provider A | KNX, installed by a licensed electrician | CHF 3,400 to 16,200 one-off (excl. VAT) | depends on the package (4 levels) and home size; add-on modules extra |
+| Provider B | Loxone packages | from CHF 5,500 / 8,500 / 14,500 one-off | for a new-build flat or house, **on top of** the normal electrical installation |
+| Provider C | open system with a local hub, retrofit, also for tenants | CHF 4,000 to 5,000 (3½-room flat), CHF 6,000 to 7,500 (5-room house) one-off | incl. products, installation, configuration; monthly fees not mentioned |
+| Provider D | maintenance contract for Loxone systems | CHF 599 / 899 / 1,199 per year | care only, without the system itself |
+| Provider E | alarm system with monitoring | "less than CHF 3 per day" | security only, no home automation |
+| Providers F to J | KNX and other systems | no prices published | "request a quote", "find a partner" or "book a consultation" |
 
 These are serious solutions. A KNX installation in the wall lasts decades and can be integrated very deeply. If you are building or fully renovating, it is a good route.
 
 ## What stands out
 
-**1. Most need an electrician.** Härz, ISP, Spline, ABB and BKW work with installers or partner firms. ISP itself says its price comes on top of the normal electrical installation. The exception is smarli.: open, local, retrofit, also for tenants. There it starts at around CHF 4,000 one-off.
+**1. Most need an electrician.** Providers A, B, F, G and H work with installers or partner firms. Provider B itself says its price comes on top of the normal electrical installation. The exception is Provider C: open, local, retrofit, also for tenants. There it starts at around CHF 4,000 one-off.
 
 **2. Almost everything starts with a quote.** The pages say "request a quote", "book a consultation" or "find a partner". That works if you already know you want blinds, dimmers and multiroom audio. It doesn't if you only think, "It should be easier than this." The guides from [OBI](https://www.obi.ch/magazin/wohnen/was-bedeutet-smart-home) and [Houzy](https://en.houzy.ch/post/smart-home) (2021) are more honest: start small, with a starter set for a few hundred francs. But then you are your own support, and for blinds or 230-volt switches Houzy recommends an electrician anyway. OBI also notes that tenants need their landlord's permission, and that wired systems can cost up to CHF 50,000 for a whole house.
 
-**3. Ongoing care is rare and sold separately.** Most pages say nothing about it. Where it appears, it is its own product: Pavilon charges CHF 599 to 1,199 a year for a maintenance contract on a Loxone system that is already built. Securitas Direct looks after alarm systems. Smart Home Swiss offers service contracts for housing developments.
+**3. Ongoing care is rare and sold separately.** Most pages say nothing about it. Where it appears, it is its own product: Provider D charges CHF 599 to 1,199 a year for a maintenance contract on a Loxone system that is already built. Provider E looks after alarm systems. Provider J offers service contracts for housing developments.
 
 That is the gap. It doesn't affect a niche group but many people: everyone who rents, everyone with an existing flat or house, and everyone who is simply curious and doesn't want to commit CHF 4,000 to 5,000 or more straight away. And everyone who doesn't want to be their own support desk.
 
@@ -63,13 +63,13 @@ Konihaus is built for exactly these people. I use devices you already own, add p
 
 Installation, setup and remote support are included. If you'd rather not pay for setup up front, a 2-year service agreement replaces the one-off setup investment (roughly CHF 200 to 1,500 depending on the package). There are no hidden costs. All prices are guides; each quote is individual.
 
-Over two years, the Basis package comes to CHF 696, Standard to CHF 1,176 and Advanced to CHF 2,136. For comparison: Pavilon charges CHF 599 to 1,199 a year for care alone on someone else's Loxone system. The Standard package is CHF 588 a year, including the system, remote support and updates. The services aren't identical, but the order of magnitude is.
+Over two years, the Basis package comes to CHF 696, Standard to CHF 1,176 and Advanced to CHF 2,136. For comparison: Provider D charges CHF 599 to 1,199 a year for care alone on someone else's Loxone system. The Standard package is CHF 588 a year, including the system, remote support and updates. The services aren't identical, but the order of magnitude is.
 
 ## Honestly: when are the other routes cheaper?
 
 A monthly plan is no bargain if you calculate over a very long time. Over ten years, Basis comes to about CHF 3,480, Standard to CHF 5,880 and Advanced to CHF 10,680.
 
-- **Versus smarli.:** Their one-off price for a 3½-room flat (CHF 4,000 to 5,000) equals about seven to eight and a half years of the Standard package. If you are sure you'll stay a long time, a one-off price can come out cheaper. On smarli.'s page, though, no ongoing care is described, while it is included with me.
+- **Versus Provider C:** Their one-off price for a 3½-room flat (CHF 4,000 to 5,000) equals about seven to eight and a half years of the Standard package. If you are sure you'll stay a long time, a one-off price can come out cheaper. On Provider C's page, though, no ongoing care is described, while it is included with me.
 - **Versus KNX:** If you build a house, stay at least 15 years and know exactly what you want, a KNX installation can end up cheaper and better.
 
 The comparisons aren't like for like. A wired installation replaces your electrician's work, while a retrofit system builds on what you already have. And the subscription includes what a one-off installation lacks: someone who installs updates, replaces devices and is reachable.
@@ -90,4 +90,4 @@ With your answers, we find a small, reversible first step together, for example 
 
 **Free first consultation, no obligation:** [konihaus.ch](https://konihaus.ch/#contact) or email hallo@konihaus.ch. You talk to me directly, and I reply within 24 hours.
 
-*Sources: published pages of the providers and guides named, retrieved October 2026. Prices may change; no guarantee.*
+*Sources: published pages of ten Swiss providers and two consumer guides, retrieved October 2026. Prices may change; no guarantee.*
