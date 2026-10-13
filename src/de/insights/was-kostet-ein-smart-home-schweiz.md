@@ -1,7 +1,7 @@
 ---
 title: "Was kostet ein Smart Home in der Schweiz? Die ehrliche Antwort"
 date: 2026-10-22
-time: '08:00'
+time: '10:00'
 language: de
 tags: preise, smart-home, schweiz
 layout: blog-post.njk
