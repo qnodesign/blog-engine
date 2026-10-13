@@ -15,11 +15,11 @@
   {{- html | replace(r/<a\s+(?![^>]*\btarget=)(?![^>]*\bhref="(?:#|mailto:|tel:))([^>]*)>/g, '<a target="_blank" rel="noopener noreferrer" $1>') | safe -}}
 {%- endmacro %}
 {% set shareUrl = "https://blog.konihaus.ch" + page.url %}
-{% set altUrl = "https://blog.konihaus.ch" + permalinkalt %}
-{% set ogImage = image or "/images/insights/" + ogimage %}
-{% set pubISO = page.date.toISOString().slice(0, 10) %}
-{% set modISO = (dateModified.toISOString().slice(0, 10) if dateModified.toISOString else dateModified) if dateModified else pubISO %}
-{% set enUrl = altUrl if language === 'de' else shareUrl %}
+{%- set altUrl = "https://blog.konihaus.ch" + permalinkalt %}
+{%- set ogImage = image or "/images/insights/" + ogimage %}
+{%- set pubISO = page.date.toISOString().slice(0, 10) %}
+{%- set modISO = (dateModified.toISOString().slice(0, 10) if dateModified.toISOString else dateModified) if dateModified else pubISO %}
+{%- set enUrl = altUrl if language === 'de' else shareUrl %}
 <!DOCTYPE html>
 <html lang="{{ language }}">
 <head>
@@ -72,13 +72,13 @@
 
   <!-- Canonical + language alternates -->
   <link rel="canonical" href="{{ shareUrl }}">
-  {% if language === 'de' %}
+{%- if language === 'de' %}
   <link rel="alternate" hreflang="de" href="{{ shareUrl }}">
   <link rel="alternate" hreflang="en" href="{{ altUrl }}">
-  {% else %}
+{%- else %}
   <link rel="alternate" hreflang="en" href="{{ shareUrl }}">
   <link rel="alternate" hreflang="de" href="{{ altUrl }}">
-  {% endif %}
+{%- endif %}
   <link rel="alternate" hreflang="x-default" href="{{ enUrl }}">
 
   <!-- Open Graph -->
@@ -242,30 +242,30 @@
   <main class="blog-post__container">
 
     <header class="blog-post__link">
-      {% if language === 'de' %}
+{%- if language === 'de' %}
         <a href="/de/insights/" class="blog-post__back-link">← Zurück zu den Artikeln</a>
-      {% else %}
+{%- else %}
         <a href="/en/insights/" class="blog-post__back-link">← Back to Insights</a>
-      {% endif %}
+{%- endif %}
     </header>
 
     <article>
       <header class="blog-post__header">
-        {% set cat = categoryLabel(category, tags) %}
+{%- set cat = categoryLabel(category, tags) %}
         {% if cat | length %}<p class="blog-post__category">{{ cat }}</p>{% endif %}
         <h1 class="blog-post__title"><span>{{ title }}</span></h1>
         <time class="blog-post__meta" datetime="{{ date }}">
-          {% if language === 'de' %}
+{%- if language === 'de' %}
             {{ date | dateFormatDE }}
-          {% else %}
+{%- else %}
             {{ date | dateFormat }}
-          {% endif %}
+{%- endif %}
         </time><span class="blog-post__meta">&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;{{ readingtime }}</span>
-        {% if language === 'de' %}
+{%- if language === 'de' %}
           &nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;<span class="blog-post__meta">von</span> {{ author }}
-        {% else %}
+{%- else %}
           &nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;<span class="blog-post__meta">by</span> {{ author }}
-        {% endif %}
+{%- endif %}
 
         <div class="blog-post__share">
           <span class="blog-post__share-label">{% if language === 'de' %}Teilen{% else %}Share{% endif %}</span>
@@ -314,43 +314,43 @@
 
       {% include "subscribe-box.njk" %}
 
-      {% if related and related.length %}
-        {% set relatedCollection = collections.insightsDE if language === 'de' else collections.insightsEN %}
-        {% set relatedCount = 0 %}
-        {% for slug in related %}
-          {% for post in relatedCollection %}
-            {% if post.fileSlug === slug %}
-              {% set relatedCount = relatedCount + 1 %}
-            {% endif %}
-          {% endfor %}
-        {% endfor %}
-        {% if relatedCount > 0 %}
+{%- if related and related.length %}
+{%- set relatedCollection = collections.insightsDE if language === 'de' else collections.insightsEN %}
+{%- set relatedCount = 0 %}
+{%- for slug in related %}
+{%- for post in relatedCollection %}
+{%- if post.fileSlug === slug %}
+{%- set relatedCount = relatedCount + 1 %}
+{%- endif %}
+{%- endfor %}
+{%- endfor %}
+{%- if relatedCount > 0 %}
           <section class="blog-post__related" aria-label="{% if language === 'de' %}Weiterlesen{% else %}Related reading{% endif %}">
             <h2 class="blog-post__related-title">{% if language === 'de' %}Weiterlesen{% else %}Related reading{% endif %}</h2>
             <div class="blog-post__related-grid">
-              {% for slug in related %}
-                {% for post in relatedCollection %}
-                  {% if post.fileSlug === slug %}
+{%- for slug in related %}
+{%- for post in relatedCollection %}
+{%- if post.fileSlug === slug %}
                     <a class="blog-post__related-card" href="{{ post.url }}" data-post-date="{{ post.date.toISOString().slice(0, 10) }}"{% if post.data.time %} data-post-time="{{ post.data.time }}"{% endif %}>
                       <span class="blog-post__related-card-title">{{ post.data.title }}</span>
-                      {% if post.data.readingtime %}
+{%- if post.data.readingtime %}
                         <span class="blog-post__related-card-meta">{{ post.data.readingtime }}</span>
-                      {% endif %}
+{%- endif %}
                     </a>
-                  {% endif %}
-                {% endfor %}
-              {% endfor %}
+{%- endif %}
+{%- endfor %}
+{%- endfor %}
             </div>
           </section>
-        {% endif %}
-      {% endif %}
+{%- endif %}
+{%- endif %}
 
       <footer class="blog-post__footer">
-        {% if language === 'de' %}
+{%- if language === 'de' %}
           <a href="/de/insights/" class="blog-post__back-link">← Zurück zu den Artikeln</a>
-        {% else %}
+{%- else %}
           <a href="/en/insights/" class="blog-post__back-link">← Back to Insights</a>
-        {% endif %}
+{%- endif %}
 
         <div class="blog-post__share blog-post__share--footer">
           <a class="share-icon share-icon--x" data-share="x" href="#" target="_blank" rel="noopener noreferrer" aria-label="Share on X" title="Share on X">
