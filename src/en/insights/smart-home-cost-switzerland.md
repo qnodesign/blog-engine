@@ -59,17 +59,17 @@ Konihaus is built for exactly these people. I use devices you already own, add p
 | Basis | 1–2-room flat, about 7 devices | from CHF 39 |
 | Standard | 3-room flat, about 8 devices | from CHF 79 |
 | Advanced | house, about 12-15 devices | from CHF 139 |
-| All-in | large house, 25+ devices | from CHF 249 |
+| All-in | large house, 20+ devices | from CHF 249 |
 
 Installation, setup and remote support are included. If you'd rather not pay for setup up front, a 2-year service agreement replaces the one-off setup investment (roughly CHF 200 to 1,500 depending on the package). There are no hidden costs. All prices are guides; each quote is individual.
 
-Over two years, the Basis package comes to CHF 696, Standard to CHF 1,176 and Advanced to CHF 2,136. For comparison: Provider D charges CHF 599 to 1,199 a year for care alone on someone else's Loxone system. The Standard package is CHF 588 a year, including the system, remote support and updates. The services aren't identical, but the order of magnitude is.
+Over two years, the Basis package comes to CHF 936, Standard to CHF 1,896 and Advanced to CHF 3,336. For comparison: Provider D charges CHF 599 to 1,199 a year for care alone on someone else's Loxone system. The Standard package is CHF 948 a year, including the system, remote support and updates. The services aren't identical, but the order of magnitude is.
 
 ## Honestly: when are the other routes cheaper?
 
-A monthly plan is no bargain if you calculate over a very long time. Over ten years, Basis comes to about CHF 3,480, Standard to CHF 5,880 and Advanced to CHF 10,680.
+A monthly plan is no bargain if you calculate over a very long time. Over ten years, Basis comes to about CHF 4,680, Standard to CHF 9,480 and Advanced to CHF 16,680.
 
-- **Versus Provider C:** Their one-off price for a 3½-room flat (CHF 4,000 to 5,000) equals about seven to eight and a half years of the Standard package. If you are sure you'll stay a long time, a one-off price can come out cheaper. On Provider C's page, though, no ongoing care is described, while it is included with me.
+- **Versus Provider C:** Their one-off price for a 3½-room flat (CHF 4,000 to 5,000) equals about four to five years of the Standard package. If you are sure you'll stay a long time, a one-off price can come out cheaper. On Provider C's page, though, no ongoing care is described, while it is included with me.
 - **Versus KNX:** If you build a house, stay at least 15 years and know exactly what you want, a KNX installation can end up cheaper and better.
 
 The comparisons aren't like for like. A wired installation replaces your electrician's work, while a retrofit system builds on what you already have. And the subscription includes what a one-off installation lacks: someone who installs updates, replaces devices and is reachable.

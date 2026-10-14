@@ -63,13 +63,13 @@ Konihaus ist genau für diese Menschen gedacht. Ich nehme Geräte, die Sie berei
 
 Installation, Einrichtung und Fernbetreuung sind inklusive. Wenn Sie die Einrichtung nicht sofort bezahlen wollen, ersetzt ein 2-Jahres-Servicevertrag die einmalige Einrichtungsinvestition (je nach Paket rund CHF 200 bis 1'500). Es gibt keine versteckten Kosten. Alle Preise sind Richtwerte, die Offerte ist immer individuell.
 
-Über zwei Jahre gerechnet kostet das Basis-Paket 696 Franken, das Standard-Paket 1'176 und das Advanced-Paket 2'136. Zum Vergleich: Allein die Betreuung einer fremden Loxone-Anlage kostet bei Anbieter D CHF 599 bis 1'199 im Jahr. Beim Standard-Paket sind es bei mir 588 Franken im Jahr, mit Anlage, Fernbetreuung und Updates. Die Leistungen sind nicht identisch, aber die Grössenordnung ist es.
+Über zwei Jahre gerechnet kostet das Basis-Paket 936 Franken, das Standard-Paket 1'896 und das Advanced-Paket 3'336. Zum Vergleich: Allein die Betreuung einer fremden Loxone-Anlage kostet bei Anbieter D CHF 599 bis 1'199 im Jahr. Beim Standard-Paket sind es bei mir 948 Franken im Jahr, mit Anlage, Fernbetreuung und Updates. Die Leistungen sind nicht identisch, aber die Grössenordnung ist es.
 
 ## Ehrlich gerechnet: Wann sind die anderen Wege günstiger?
 
-Ein Monatsabo ist kein Schnäppchen, wenn man sehr lange rechnet. Über zehn Jahre sind es beim Basis-Paket rund CHF 3'480, beim Standard-Paket CHF 5'880 und beim Advanced-Paket CHF 10'680.
+Ein Monatsabo ist kein Schnäppchen, wenn man sehr lange rechnet. Über zehn Jahre sind es beim Basis-Paket rund CHF 4'680, beim Standard-Paket CHF 9'480 und beim Advanced-Paket CHF 16'680.
 
-- **Gegenüber Anbieter C:** Deren Einmalpreis für eine 3½-Zimmer-Wohnung (CHF 4'000 bis 5'000) entspricht etwa sieben bis achteinhalb Jahren Standard-Paket. Wer sicher ist, dass er lange bleibt, kann mit einem Einmalpreis günstiger fahren. Auf der Seite von Anbieter C ist allerdings keine laufende Betreuung beschrieben, bei mir ist sie inbegriffen.
+- **Gegenüber Anbieter C:** Deren Einmalpreis für eine 3½-Zimmer-Wohnung (CHF 4'000 bis 5'000) entspricht etwa vier bis fünf Jahren Standard-Paket. Wer sicher ist, dass er lange bleibt, kann mit einem Einmalpreis günstiger fahren. Auf der Seite von Anbieter C ist allerdings keine laufende Betreuung beschrieben, bei mir ist sie inbegriffen.
 - **Gegenüber KNX:** Wenn Sie ein Haus bauen, dort mindestens 15 Jahre bleiben und genau wissen, was Sie wollen, kann eine KNX-Installation unter dem Strich günstiger und besser sein.
 
 Die Vergleiche sind nicht gleichwertig. Eine Wandinstallation ersetzt Ihren Elektroinstallateur, ein nachrüstbares System ergänzt, was Sie schon haben. Und im Abo steckt, was bei der Einmalinstallation fehlt: jemand, der Updates einspielt, Geräte tauscht und erreichbar ist.
