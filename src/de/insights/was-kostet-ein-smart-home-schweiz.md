@@ -15,7 +15,7 @@ related: [persoenlicher-service, fuer-wen-ist-konihaus]
 author: Koni
 ---
 
-**Kurz gesagt:** Ein klassisches Smart Home mit Elektroinstallation kostet in der Schweiz laut veröffentlichten Preisen etwa **CHF 3'400 bis 16'200** einmalig. Ein offenes, nachrüstbares System kostet bei einem Anbieter **CHF 4'000 bis 7'500** einmalig. Und es gibt eine Variante, die **ab CHF 29 im Monat** startet und betreut wird. Welcher Weg passt, hängt weniger vom Budget ab als von einer Frage: Wissen Sie schon, was Sie wollen?
+**Kurz gesagt:** Ein klassisches Smart Home mit Elektroinstallation kostet in der Schweiz laut veröffentlichten Preisen etwa **CHF 3'400 bis 16'200** einmalig. Ein offenes, nachrüstbares System kostet bei einem Anbieter **CHF 4'000 bis 7'500** einmalig. Und es gibt eine Variante, die **ab CHF 39 im Monat** startet und betreut wird. Welcher Weg passt, hängt weniger vom Budget ab als von einer Frage: Wissen Sie schon, was Sie wollen?
 
 <figure class="blog-post__figure">
   <img src="/images/insights/smart-home-cost/smart-home-cost.webp" alt="Planning a smart-home budget with a floor plan and a few simple devices" width="1536" height="1024" loading="lazy" decoding="async">
@@ -56,10 +56,10 @@ Konihaus ist genau für diese Menschen gedacht. Ich nehme Geräte, die Sie berei
 
 | Paket | Typisch für | Pro Monat |
 |---|---|---|
-| Basis | 1–2-Zimmer-Wohnung, ca. 7 Geräte | ab CHF 29 |
-| Standard | 3-Zimmer-Wohnung, ca. 10 Geräte | ab CHF 49 |
-| Advanced | Einfamilienhaus, ca. 15 Geräte | ab CHF 89 |
-| All-in | grosses Haus, 25+ Geräte | ab CHF 149 |
+| Basis | 1–2-Zimmer-Wohnung, ca. 7 Geräte | ab CHF 39 |
+| Standard | 3-Zimmer-Wohnung, ca. 8 Geräte | ab CHF 79 |
+| Advanced | Einfamilienhaus, ca. 12-15 Geräte | ab CHF 139 |
+| All-in | grosses Haus, 20+ Geräte | ab CHF 249 |
 
 Installation, Einrichtung und Fernbetreuung sind inklusive. Wenn Sie die Einrichtung nicht sofort bezahlen wollen, ersetzt ein 2-Jahres-Servicevertrag die einmalige Einrichtungsinvestition (je nach Paket rund CHF 200 bis 1'500). Es gibt keine versteckten Kosten. Alle Preise sind Richtwerte, die Offerte ist immer individuell.
 

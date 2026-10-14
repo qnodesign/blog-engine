@@ -43,10 +43,10 @@ You can find the full process at [konihaus.ch](https://konihaus.ch/#process).
 
 Every package includes installation, setup, and ongoing remote support:
 
-- **Basis**, from CHF 29 per month: a 1 to 2 room apartment, about 7 devices.
-- **Standard**, from CHF 49 per month: a 3-room apartment, about 10 devices.
-- **Advanced**, from CHF 89 per month: a single-family house, about 15 devices.
-- **All-in**, from CHF 149 per month: a large house, 25+ devices with individual automations.
+- **Basis**, from CHF 39 per month: a 1 to 2 room apartment, about 7 devices.
+- **Standard**, from CHF 79 per month: a 3-room apartment, about 8 devices.
+- **Advanced**, from CHF 139 per month: a single-family house, about 12-15 devices.
+- **All-in**, from CHF 249 per month: a large house, 20+ devices with individual automations.
 
 These are guide values including VAT. The hardware is a one-time cost at the first installation, and your final quote depends on your home and the automations you want. All details are on the [packages page](https://konihaus.ch/#packages).
 

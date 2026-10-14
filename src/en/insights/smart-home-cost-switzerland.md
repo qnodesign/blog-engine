@@ -15,7 +15,7 @@ related: [personal-service, who-is-konihaus-for]
 author: Koni
 ---
 
-**In short:** A classic smart home with a wired electrical installation costs roughly **CHF 3,400 to 16,200** as a one-off, according to published prices in Switzerland. One provider of an open retrofit system charges **CHF 4,000 to 7,500** one-off. And there is a variant that starts **from CHF 29 a month** and is looked after for you. Which one fits depends less on budget than on one question: do you already know what you want?
+**In short:** A classic smart home with a wired electrical installation costs roughly **CHF 3,400 to 16,200** as a one-off, according to published prices in Switzerland. One provider of an open retrofit system charges **CHF 4,000 to 7,500** one-off. And there is a variant that starts **from CHF 39 a month** and is looked after for you. Which one fits depends less on budget than on one question: do you already know what you want?
 
 <figure class="blog-post__figure">
   <img src="/images/insights/smart-home-cost/smart-home-cost.webp" alt="Planning a smart-home budget with a floor plan and a few simple devices" width="1536" height="1024" loading="lazy" decoding="async">
@@ -56,10 +56,10 @@ Konihaus is built for exactly these people. I use devices you already own, add p
 
 | Package | Typical for | Per month |
 |---|---|---|
-| Basis | 1–2-room flat, about 7 devices | from CHF 29 |
-| Standard | 3-room flat, about 10 devices | from CHF 49 |
-| Advanced | house, about 15 devices | from CHF 89 |
-| All-in | large house, 25+ devices | from CHF 149 |
+| Basis | 1–2-room flat, about 7 devices | from CHF 39 |
+| Standard | 3-room flat, about 8 devices | from CHF 79 |
+| Advanced | house, about 12-15 devices | from CHF 139 |
+| All-in | large house, 25+ devices | from CHF 249 |
 
 Installation, setup and remote support are included. If you'd rather not pay for setup up front, a 2-year service agreement replaces the one-off setup investment (roughly CHF 200 to 1,500 depending on the package). There are no hidden costs. All prices are guides; each quote is individual.
 
