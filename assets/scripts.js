@@ -235,6 +235,19 @@ function setupMobileMenu() {
     document.body.style.overflow = open ? 'hidden' : '';
   });
 
+  document.querySelectorAll('.drawer-acc').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const open = btn.getAttribute('aria-expanded') !== 'true';
+      document.querySelectorAll('.drawer-acc').forEach(b => {
+        const isThis = b === btn;
+        const on = isThis ? open : false;
+        b.setAttribute('aria-expanded', String(on));
+        const sub = document.getElementById(b.getAttribute('aria-controls'));
+        if (sub) sub.hidden = !on;
+      });
+    });
+  });
+
   document.querySelectorAll('.drawer-link').forEach(link => {
     link.addEventListener('click', () => {
       hamburger.classList.remove('open');

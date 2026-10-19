@@ -1,5 +1,9 @@
 {
   "nav": {
+    "about_us": "About us",
+    "service": "Service",
+    "app": "App",
+    "new": "New",
     "packages": "Packages",
     "intro": "What is Konihaus",
     "blog": "Blog",

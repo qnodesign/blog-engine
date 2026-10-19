@@ -108,12 +108,7 @@ permalink: /en/insights/index.html
           <div class="logo-image"></div>
           <div class="wordmark">konihaus blog</div>
         </a>
-        <ul class="nav__links">
-          <li><a href="https://konihaus.ch/#intro" data-i18n="nav.intro">Was ist Konihaus</a></li>
-          <li><a href="https://konihaus.ch/#packages" data-i18n="nav.packages">Pakete</a></li>
-          <li><a href="https://konihaus.ch/#contact" data-i18n="nav.contact">Kontakt</a></li>
-          <li><a href="https://konihaus.ch/#about" data-i18n="nav.about">Über Koni</a></li>
-        </ul>
+        {% include "site-nav-links.njk" %}
         <div class="language-picker">
           <button
             type="button"
@@ -154,12 +149,7 @@ permalink: /en/insights/index.html
 
   <!-- MOBILE DRAWER -->
   <div class="nav__drawer" id="drawer">
-    <ul>
-      <li><a href="https://konihaus.ch/#intro" class="drawer-link" data-i18n="nav.intro">Was ist Konihaus</a></li>
-      <li><a href="https://konihaus.ch/#packages" class="drawer-link" data-i18n="nav.packages">Pakete</a></li>
-      <li><a href="https://konihaus.ch/#contact" class="drawer-link" data-i18n="nav.contact">Kontakt</a></li>
-      <li><a href="https://konihaus.ch/#about" class="drawer-link active" data-i18n="nav.about">Über Koni</a></li>
-    </ul>
+    {% include "site-drawer-links.njk" %}
     <a href="https://konihaus.ch/#contact" class="drawer-cta drawer-link" data-i18n="nav.cta">Kostenlose Beratung →</a>
   </div>
 
@@ -280,17 +270,18 @@ permalink: /en/insights/index.html
         <div>
           <div class="fcol-title" data-i18n="footer.col1_title">Service</div>
           <ul class="flinks">
-            <li><a href="https://konihaus.ch/#packages" data-i18n="footer.col1_l1">Pakete & Preise</a></li>
-            <li><a href="https://konihaus.ch/#devices" data-i18n="footer.col1_l2">Geräte & Technik</a></li>
+            <li><a href="https://konihaus.ch/#devices" data-i18n="footer.col1_l2">Geräte &amp; Technik</a></li>
+            <li><a href="https://konihaus.ch/#packages" data-i18n="footer.col1_l1">Pakete &amp; Preise</a></li>
             <li><a href="https://konihaus.ch/#faq" data-i18n="footer.col1_l3">Häufige Fragen</a></li>
             <li><a href="https://konihaus.ch/#contact" data-i18n="footer.col1_l4">Kontakt</a></li>
+            <li><a href="https://app.konihaus.ch" target="_blank" rel="noopener"><span data-i18n="nav.app">App</span><span class="nav__badge" data-i18n="nav.new">Neu</span></a></li>
           </ul>
         </div>
         <div>
           <div class="fcol-title" data-i18n="footer.col2_title">Unternehmen</div>
           <ul class="flinks">
             <li><a href="https://konihaus.ch/#intro" data-i18n="footer.col2_l1">Was ist Konihaus</a></li>
-            <li><a href="https://konihaus.ch/#process" data-i18n="footer.col2_l2">So funktioniert's</a></li>
+            <li><a href="https://konihaus.ch/#process" data-i18n="footer.col2_l2">So funktioniert&#x27;s</a></li>
             <li><a href="https://konihaus.ch/#why" data-i18n="footer.col2_l3">Warum Konihaus</a></li>
             <li><a href="https://konihaus.ch/#about" data-i18n="footer.col2_l4">Über Koni</a></li>
           </ul>
