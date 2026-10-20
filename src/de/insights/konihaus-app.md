@@ -111,7 +111,7 @@ Hier stellen Sie die Sprache ein: Deutsch, English, Français oder Italiano. Sie
 
 Jede Installation bekommt ihre eigene Oberfläche. Welche Räume es gibt, wie sie heissen, welche Fenster und Türen zur Sicherheitsübersicht zählen und welche Bereiche überhaupt erscheinen, richte ich für Ihr Zuhause ein. Kacheln für Solar, Batterie, Gas oder Kameras erscheinen nur, wenn es diese Daten bei Ihnen gibt. Name, Logo und Farben lassen sich ebenfalls anpassen.
 
-Die App baut dabei auf Home Assistant auf und liest, was Ihr System ohnehin weiss. Sie müssen nichts doppelt pflegen.
+Die App baut dabei auf [Home Assistant](https://konihaus.ch/home-assistant-schweiz) auf und liest, was Ihr System ohnehin weiss. Sie müssen nichts doppelt pflegen.
 
 ## Lokal, privat, ruhig
 

@@ -111,7 +111,7 @@ Here you set the language: English, Deutsch, Français or Italiano. You see whic
 
 Every installation gets its own interface. Which rooms exist, what they are called, which windows and doors count towards the security overview and which areas appear at all, I set up for your home. Tiles for solar, battery, gas or cameras only appear if that data exists in your home. Name, logo and colours can be adapted too.
 
-The app is built on Home Assistant and reads what your system already knows. You do not have to maintain anything twice.
+The app is built on [Home Assistant](https://konihaus.ch/home-assistant-switzerland) and reads what your system already knows. You do not have to maintain anything twice.
 
 ## Local, Private, Calm
 
