@@ -110,7 +110,7 @@ body {
     display: grid;
     grid-template-columns: 4fr 3fr;
     margin-bottom: 2.5rem;
-    background: var(--forest-tint, #eef2ec);
+    background: var(--forest-light, #eef2ec);
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(26, 25, 22, 0.1);

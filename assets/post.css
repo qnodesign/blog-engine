@@ -32,18 +32,6 @@
 
 .blog-post__title span {
     display: inline-block;
-    background-color: var(--parchment);
-    padding-right: 20px;
-}
-
-.blog-post__title::after {
-    content: '';
-    position: absolute;
-    bottom: 12px;
-    left: 0;
-    right: 0;
-    border-bottom: 2px solid var(--marine-mid);
-    z-index: -2;
 }
 
 .blog-post__meta {
@@ -212,9 +200,6 @@
     .blog-post__title {
         font-size: clamp(2rem, 5vw, 3rem);        
     }
-    .blog-post__title::after {
-        display: none;
-    }
     .blog-post__figure {
         width: min(100%, 820px);
         margin: 1.5rem auto 2rem;
@@ -347,6 +332,8 @@
 }
 /* Category label above the article title (add to post.css) */
 .blog-post__category {
+    position: relative;
+    z-index: 1;
     margin: 0 0 0.75rem;
     font-size: 0.75rem;
     font-weight: 600;
