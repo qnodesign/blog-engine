@@ -65,12 +65,18 @@ Installation, setup and remote support are included. If you'd rather not pay for
 
 Over two years, the Basis package comes to CHF 936, Standard to CHF 1,896 and Advanced to CHF 3,336. For comparison: Provider D charges CHF 599 to 1,199 a year for care alone on someone else's Loxone system. The Standard package is CHF 948 a year, including the system, remote support and updates. The services aren't identical, but the order of magnitude is.
 
-## Honestly: when are the other routes cheaper?
+## Honestly: a one-off price and a monthly fee are hard to compare
 
-A monthly plan is no bargain if you calculate over a very long time. Over ten years, Basis comes to about CHF 4,680, Standard to CHF 9,480 and Advanced to CHF 16,680.
+I could simply add up the years and name a winner, but that would be too simple.
 
-- **Versus Provider C:** Their one-off price for a 3½-room flat (CHF 4,000 to 5,000) equals about four to five years of the Standard package. If you are sure you'll stay a long time, a one-off price can come out cheaper. On Provider C's page, though, no ongoing care is described, while it is included with me.
-- **Versus KNX:** If you build a house, stay at least 15 years and know exactly what you want, a KNX installation can end up cheaper and better.
+- **Money paid at once is not the same as money paid over time.** A one-off price of CHF 3,000 or more ties up capital on day one. With a monthly plan that money stays with you, for a buffer, for the renovation, or for something that works for you elsewhere. Which is better depends on your situation.
+- **A one-off purchase does not last a fixed number of years.** Devices age, standards change, and new things keep coming. If an installation is replaced or extended after six years, the real price per year is higher than "CHF 3,000 divided by ten". Updates, repairs and someone who knows the system also have to be paid for, or done by yourself.
+- **So I won't claim that any route wins after a certain number of years.** Costs depend on how long you actually use the system, how much changes in between and how much help you need.
+
+Two rough anchors, without a verdict:
+
+- **Versus Provider C:** their one-off price for a 3½-room flat (CHF 4,000 to 5,000) equals about four to five years of the Standard package. If you are sure you will keep the system unchanged for a long time, a one-off price can be the better fit. Their page doesn't describe ongoing care, while it is included with me.
+- **Versus KNX:** if you are building a house, plan to stay for a long time and know exactly what you want, a wired installation is a good route. Its cabling lasts for decades, even if the electronics in it will still change.
 
 The comparisons aren't like for like. A wired installation replaces your electrician's work, while a retrofit system builds on what you already have. And the subscription includes what a one-off installation lacks: someone who installs updates, replaces devices and is reachable.
 

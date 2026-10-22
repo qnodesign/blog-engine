@@ -65,12 +65,18 @@ Installation, Einrichtung und Fernbetreuung sind inklusive. Wenn Sie die Einrich
 
 Über zwei Jahre gerechnet kostet das Basis-Paket 936 Franken, das Standard-Paket 1'896 und das Advanced-Paket 3'336. Zum Vergleich: Allein die Betreuung einer fremden Loxone-Anlage kostet bei Anbieter D CHF 599 bis 1'199 im Jahr. Beim Standard-Paket sind es bei mir 948 Franken im Jahr, mit Anlage, Fernbetreuung und Updates. Die Leistungen sind nicht identisch, aber die Grössenordnung ist es.
 
-## Ehrlich gerechnet: Wann sind die anderen Wege günstiger?
+## Ehrlich gerechnet: Einmalpreis und Monatsgebühr lassen sich schwer vergleichen
 
-Ein Monatsabo ist kein Schnäppchen, wenn man sehr lange rechnet. Über zehn Jahre sind es beim Basis-Paket rund CHF 4'680, beim Standard-Paket CHF 9'480 und beim Advanced-Paket CHF 16'680.
+Ich könnte einfach die Jahre zusammenzählen und einen Sieger nennen. Das wäre zu einfach.
 
-- **Gegenüber Anbieter C:** Deren Einmalpreis für eine 3½-Zimmer-Wohnung (CHF 4'000 bis 5'000) entspricht etwa vier bis fünf Jahren Standard-Paket. Wer sicher ist, dass er lange bleibt, kann mit einem Einmalpreis günstiger fahren. Auf der Seite von Anbieter C ist allerdings keine laufende Betreuung beschrieben, bei mir ist sie inbegriffen.
-- **Gegenüber KNX:** Wenn Sie ein Haus bauen, dort mindestens 15 Jahre bleiben und genau wissen, was Sie wollen, kann eine KNX-Installation unter dem Strich günstiger und besser sein.
+- **Geld, das auf einmal fliesst, ist nicht dasselbe wie Geld, das über die Zeit fliesst.** Ein Einmalpreis von CHF 3'000 oder mehr bindet gleich am ersten Tag Kapital. Bei einem Monatsabo bleibt dieses Geld bei Ihnen, als Reserve, für den Umbau oder für etwas, das anderswo für Sie arbeitet. Was besser ist, hängt von Ihrer Situation ab.
+- **Eine Einmalanschaffung hält nicht eine feste Zahl von Jahren.** Geräte altern, Standards ändern sich, und laufend kommen neue Dinge dazu. Wird eine Installation nach sechs Jahren ersetzt oder erweitert, liegt der wahre Preis pro Jahr höher als «CHF 3'000 geteilt durch zehn». Updates, Reparaturen und jemand, der das System kennt, müssen ebenfalls bezahlt oder selbst erledigt werden.
+- **Darum behaupte ich nicht, dass ein Weg nach einer bestimmten Zahl von Jahren gewinnt.** Die Kosten hängen davon ab, wie lange Sie das System wirklich nutzen, wie viel sich dazwischen verändert und wie viel Hilfe Sie brauchen.
+
+Zwei grobe Anhaltspunkte, ohne Urteil:
+
+- **Gegenüber Anbieter C:** Deren Einmalpreis für eine 3½-Zimmer-Wohnung (CHF 4'000 bis 5'000) entspricht etwa vier bis fünf Jahren Standard-Paket. Wenn Sie sicher sind, dass Sie das System lange unverändert nutzen, kann ein Einmalpreis besser passen. Auf der Seite von Anbieter C ist allerdings keine laufende Betreuung beschrieben, bei mir ist sie inbegriffen.
+- **Gegenüber KNX:** Wenn Sie ein Haus bauen, lange dort bleiben und genau wissen, was Sie wollen, ist eine verkabelte Installation ein guter Weg. Die Verkabelung hält Jahrzehnte, auch wenn sich die Elektronik darin weiter verändern wird.
 
 Die Vergleiche sind nicht gleichwertig. Eine Wandinstallation ersetzt Ihren Elektroinstallateur, ein nachrüstbares System ergänzt, was Sie schon haben. Und im Abo steckt, was bei der Einmalinstallation fehlt: jemand, der Updates einspielt, Geräte tauscht und erreichbar ist.
 
