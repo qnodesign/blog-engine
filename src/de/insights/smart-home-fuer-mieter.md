@@ -53,7 +53,7 @@ Was **eingesteckt, in eine Lampe geschraubt, aufs Regal gestellt oder aufgeklebt
 Manches berührt das Gebäude, die gemeinsamen Flächen oder andere Menschen. Fragen Sie dafür vorher schriftlich beim Vermieter oder der Verwaltung nach:
 
 - **Alles, was an 230 Volt angeschlossen wird:** Schalter, Deckenlampen, der Sicherungskasten. Das ist ohnehin Sache des Elektrikers.
-- **Motoren für Storen.** Sie gehören zum Gebäude.
+- **Motoren für Storen.** Sie gehören zum Gebäude. Viele verkabelte Storen und Rollläden lassen sich trotzdem ohne neue Verkabelung smart machen: Hat das Motorkabel einen Steckanschluss, kommt ein Funkempfänger zum Einstecken, zum Beispiel [von Somfy](https://www.somfy.ch/de-ch/produkte/1811685/rs-rollladen-slim-receiver-io-plug) für Rollläden oder Lamellenstoren, zwischen Motor und Stromzufuhr und lässt sich später wieder entfernen. Er hängt aber an der 230-Volt-Installation des Gebäudes. Fragen Sie deshalb vorher und lassen Sie ihn von einer Fachperson einbauen.
 - **Der Zylinder der Wohnungstür oder ein Schloss daran,** vor allem, wenn er Teil einer Schliessanlage ist.
 - **Bohren in Plättli** oder alles an der Fassade oder am Balkongeländer.
 - **Kameras, die gemeinsame Flächen sehen,** wie das Treppenhaus, den Eingang oder die Tür der Nachbarn. Auch Ihre Nachbarn haben ein Recht auf Privatsphäre. Was in Ihren vier Wänden passiert, ist Ihre Sache; das Treppenhaus nicht.

@@ -53,7 +53,7 @@ If it **plugs in, screws into a lamp, sits on a shelf or sticks on, and leaves n
 Some things touch the building, the shared areas or other people. Ask your landlord, or the administration, in writing before you do them:
 
 - **Anything wired into 230 volts:** switches, ceiling lights, the fuse box. That's for an electrician anyway.
-- **Motors for exterior blinds** (Storen). They belong to the building.
+- **Motors for exterior blinds** (Storen). They belong to the building. Many wired blinds can still be made smart without new wiring: if the motor cable has a plug connector, a plug-in radio receiver, for example [from Somfy](https://www.somfy.ch/de-ch/produkte/1811685/rs-rollladen-slim-receiver-io-plug) for roller shutters or exterior venetian blinds, goes between the motor and the power supply and can be removed again later. It still sits on the building's 230-volt installation, so ask first and have it fitted by a specialist.
 - **The front door cylinder or a lock on it,** especially if it's part of a building-wide key system.
 - **Drilling into tiles** or anything on the façade or balcony railing.
 - **Cameras that see shared areas,** like the stairwell, the entrance or the neighbour's door. Your neighbours have a right to privacy too. Inside your own four walls is your business; the stairwell isn't.

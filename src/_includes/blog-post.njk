@@ -26,7 +26,8 @@
 <head>
   <meta charset="UTF-8">
   <!-- Scheduled posts: before their publication date + time (front matter `time: "HH:MM"`,
-       default 07:00, Swiss time) the page behaves like a 404, unless the URL has ?devmode=super.
+       default 07:00, Swiss time) the page behaves like a 404 and is marked noindex, nofollow,
+       unless the URL has ?devmode=super (then it shows, but still noindex, nofollow).
        Runs first so nothing is shown. Same rule as isPostLive() in scripts.js. -->
   <script>
     (function () {
@@ -43,6 +44,15 @@
       var at = (m && +m[1] < 24 && +m[2] < 60) ? (m[1].length < 2 ? '0' : '') + m[1] + ':' + m[2] : '07:00';
       window.__scheduledPost = (published + 'T' + at) > now ? published : null;
       window.__scheduledPostTime = at;
+      // Not released yet (or a dev preview): tell search engines not to index or follow.
+      // The static robots tag below stays "index"; when two robots tags conflict,
+      // search engines apply the stricter one. After release this tag is no longer added.
+      if (window.__scheduledPost || dev) {
+        var robots = document.createElement('meta');
+        robots.name = 'robots';
+        robots.content = 'noindex, nofollow';
+        document.head.appendChild(robots);
+      }
       if (window.__scheduledPost && !dev) {
         document.documentElement.style.display = 'none';
         location.replace('/404.html');
