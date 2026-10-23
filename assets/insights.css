@@ -498,3 +498,34 @@ body {
         transform: none;
     }
 }
+
+/* ------------------------------------------------------------------
+   Narrow tablets / small windows (769px to 920px): stack the featured
+   card instead of squeezing the text column
+------------------------------------------------------------------ */
+@media (min-width: 769px) and (max-width: 920px) {
+    .insights-featured {
+        grid-template-columns: 1fr;
+    }
+
+    .insights-featured__media {
+        min-height: 0;
+        aspect-ratio: 16 / 8;
+    }
+
+    .insights-badge {
+        top: auto;
+        right: auto;
+        bottom: 1rem;
+        left: 1rem;
+        transform: none;
+    }
+
+    .insights-featured__content {
+        padding: 2rem 2rem 2.25rem;
+    }
+
+    .insights-featured__title {
+        font-size: 2.1rem;
+    }
+}

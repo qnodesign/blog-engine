@@ -191,3 +191,13 @@
         transition: none;
     }
 }
+
+
+/* Narrow tablets / small windows: single column so the text is not squeezed */
+@media (min-width: 769px) and (max-width: 920px) {
+    .subscribe--card {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+        padding: 2rem 2rem 2.1rem;
+    }
+}
