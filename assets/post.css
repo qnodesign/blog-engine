@@ -190,7 +190,7 @@
     bottom: 18px;
     width: 72px;
     height: 72px;
-    background: url("../logo.png") center / contain no-repeat;
+    background: url("./logo.png") center / contain no-repeat;
     opacity: 0.12;
     pointer-events: none;
 }

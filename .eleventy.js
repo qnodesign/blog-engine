@@ -2,6 +2,8 @@ module.exports = function(eleventyConfig) {
   require('./newsletter-email.cjs').register(eleventyConfig, __dirname);
   // Copy assets (images, etc.) to output
   eleventyConfig.addPassthroughCopy("assets");
+  // The service worker must live at the site root (scripts.js registers /sw.js) so it can control the whole site.
+  eleventyConfig.addPassthroughCopy({ "assets/sw.js": "sw.js" });
   eleventyConfig.addPassthroughCopy("fonts");
   eleventyConfig.addPassthroughCopy("CNAME");
   eleventyConfig.addPassthroughCopy("images");
