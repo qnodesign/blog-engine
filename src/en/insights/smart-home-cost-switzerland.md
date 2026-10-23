@@ -3,13 +3,17 @@ title: "What does a smart home cost in Switzerland? The honest answer"
 date: 2026-10-22
 time: '10:00'
 language: en
-tags: pricing, smart-home, switzerland
 layout: blog-post.njk
 permalink: /en/insights/smart-home-cost-switzerland/
 permalinkalt: /de/insights/was-kostet-ein-smart-home-schweiz/
 translationKey: smart-home-cost
 ogimage: smart-home-cost/og.jpg
 excerpt: "What does a smart home cost in Switzerland? What providers publish, what is missing, and what it costs if you only know you'd like your home to be easier."
+description: "What does a smart home cost in Switzerland? Published prices from CHF 3,400 to 16,200, retrofit from CHF 4,000, or from CHF 39 a month."
+seoTitle: "Smart Home Cost in Switzerland: Honest Answer"
+keyword: "smart home cost Switzerland"
+category: guide
+tags: [prices, comparison, switzerland]
 readingtime: 6 min read
 related: [personal-service, who-is-konihaus-for]
 author: Koni
@@ -21,7 +25,7 @@ author: Koni
   <img src="/images/insights/smart-home-cost/smart-home-cost.webp" alt="Planning a smart-home budget with a floor plan and a few simple devices" width="1536" height="1024" loading="lazy" decoding="async">
 </figure>
 
-## What providers in Switzerland publish
+## Smart home cost in Switzerland: what providers publish
 
 I read the pages of ten Swiss providers (as of October 2026). Only a few publish prices:
 
@@ -44,11 +48,11 @@ These are serious solutions. A KNX installation in the wall lasts decades and ca
 
 **3. Ongoing care is rare and sold separately.** Most pages say nothing about it. Where it appears, it is its own product: Provider D charges CHF 599 to 1,199 a year for a maintenance contract on a Loxone system that is already built. Provider E looks after alarm systems. Provider J offers service contracts for housing developments.
 
-That is the gap. It doesn't affect a niche group but many people: everyone who rents, everyone with an existing flat or house, and everyone who is simply curious and doesn't want to commit CHF 4,000 to 5,000 or more straight away. And everyone who doesn't want to be their own support desk.
+That is the gap. It doesn't affect a niche group but many people: everyone who rents, everyone with an existing flat or house, and everyone who is simply curious and doesn't want to commit CHF 4,000 to 5,000 or more straight away. And everyone who doesn't want to be [their own support desk](/en/insights/personal-service/).
 
 ## What it can look like instead
 
-Konihaus is built for exactly these people. I use devices you already own, add proven hardware, and everything runs locally through a hub in your home. It needs **no drilling, no electrician and no renovation**. And I stay your point of contact afterwards.
+Konihaus is built for [exactly these people](/en/insights/who-is-konihaus-for/). I use devices you already own, add proven hardware, and everything runs locally through a hub in your home. It needs **no drilling, no electrician and no renovation**. And I stay your point of contact afterwards.
 
 <figure class="blog-post__figure">
   <img src="/images/insights/smart-home-cost/no-renovation-needed.jpg" alt="A wireless window sensor being attached without drilling" width="1536" height="1024" loading="lazy" decoding="async">
@@ -70,7 +74,7 @@ Over two years, the Basis package comes to CHF 936, Standard to CHF 1,896 and Ad
 I could simply add up the years and name a winner, but that would be too simple.
 
 - **Money paid at once is not the same as money paid over time.** A one-off price of CHF 3,000 or more ties up capital on day one. With a monthly plan that money stays with you, for a buffer, for the renovation, or for something that works for you elsewhere. Which is better depends on your situation.
-- **A one-off purchase does not last a fixed number of years.** Devices age, standards change, and new things keep coming. If an installation is replaced or extended after six years, the real price per year is higher than "CHF 3,000 divided by ten". Updates, repairs and someone who knows the system also have to be paid for, or done by yourself.
+- **A one-off purchase does not last a fixed number of years.** Devices age, [standards change](/en/insights/future-proof/), and new things keep coming. If an installation is replaced or extended after six years, the real price per year is higher than "CHF 3,000 divided by ten". Updates, repairs and someone who knows the system also have to be paid for, or done by yourself.
 - **So I won't claim that any route wins after a certain number of years.** Costs depend on how long you actually use the system, how much changes in between and how much help you need.
 
 Two rough anchors, without a verdict:

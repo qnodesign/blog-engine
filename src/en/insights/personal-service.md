@@ -3,12 +3,16 @@ title: Smart Home, Human Support
 date: 2026-10-01
 time: '18:00'
 language: en
-tags: personal-service, support, advice, smart-home
 layout: blog-post.njk
 permalink: /en/insights/personal-service/
 permalinkalt: /de/insights/persoenlicher-service/
 ogimage: personal-service/og.jpg
 excerpt: Smart home advice usually ends at the checkout. Personal service means one person stays with you afterwards.
+description: "Smart home support from one real person: no call centre, no tickets. Why advice usually ends at the checkout, and what Konihaus does instead."
+seoTitle: "Smart Home Support From a Real Person"
+keyword: "smart home support"
+category: konihaus
+tags: [support, advice]
 readingtime: 5 min read
 related: [no-vendor-lock-in, swiss-quality, smart-home-cost-switzerland]
 author: Koni
@@ -57,13 +61,13 @@ Even so, there is real convenience in having someone who guides you, and who is 
   <img src="/images/insights/personal-service/one-person-to-ask.jpg" alt="One person explains a smart home setup at a kitchen table while the homeowner follows along on a tablet" width="1536" height="1024" loading="lazy" decoding="async">
 </figure>
 
-## What Personal Service Means at Konihaus
+## What Personal Smart Home Support Means at Konihaus
 
 > No call centre. No ticket system. When you call or write to Konihaus, you reach me, Koni.
 >
 > I install, set up and look after your smart home personally, from the first consultation to ongoing support. This is how technical support should be.
 
-In practice, that means one person from start to finish. The same person who listens to what you actually want to make easier, chooses the devices with you, sets everything up and stays available afterwards. You never have to explain your home twice.
+In practice, that means one person from start to finish. The same person who listens to [what you actually want to make easier](/en/insights/pain-points-we-stopped-noticing/), chooses the devices with you, sets everything up and stays available afterwards. You never have to explain your home twice.
 
 Personal does not mean an emergency service, and no system can promise that nothing will ever go wrong. But when something does, or when you simply have a question, you know exactly whom to ask.
 
@@ -71,7 +75,7 @@ Personal does not mean an emergency service, and no system can promise that noth
 
 Konihaus did not start as a business plan. It started because people around me needed exactly this kind of help, and they benefited from it.
 
-To keep that help sustainable, and to make it available to anyone who wants it, it needed a proper form. That is what Konihaus is: personal smart home service, built to last.
+To keep that help sustainable, and to make it available to [anyone who wants it](/en/insights/who-is-konihaus-for/), it needed a proper form. That is what Konihaus is: personal smart home service, built to last.
 
 ---
 

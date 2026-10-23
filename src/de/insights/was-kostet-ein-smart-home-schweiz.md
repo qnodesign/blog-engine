@@ -3,13 +3,17 @@ title: "Was kostet ein Smart Home in der Schweiz? Die ehrliche Antwort"
 date: 2026-10-22
 time: '10:00'
 language: de
-tags: preise, smart-home, schweiz
 layout: blog-post.njk
 permalink: /de/insights/was-kostet-ein-smart-home-schweiz/
 permalinkalt: /en/insights/smart-home-cost-switzerland/
 translationKey: smart-home-cost
 ogimage: smart-home-cost/og.jpg
 excerpt: "Was kostet ein Smart Home in der Schweiz? Was Anbieter veröffentlichen, was fehlt, und was es kostet, wenn Sie nur wissen, dass Sie es sich einfacher wünschen."
+description: "Was kostet ein Smart Home in der Schweiz? Veröffentlichte Preise von CHF 3'400 bis 16'200, nachrüstbar ab CHF 4'000 oder ab CHF 39 im Monat."
+seoTitle: "Smart Home Kosten Schweiz: die ehrliche Antwort"
+keyword: "Smart Home Kosten Schweiz"
+category: ratgeber
+tags: [preise, vergleich, schweiz]
 readingtime: 6 Min. Lesezeit
 related: [persoenlicher-service, fuer-wen-ist-konihaus]
 author: Koni
@@ -21,7 +25,7 @@ author: Koni
   <img src="/images/insights/smart-home-cost/smart-home-cost.webp" alt="Planning a smart-home budget with a floor plan and a few simple devices" width="1536" height="1024" loading="lazy" decoding="async">
 </figure>
 
-## Was Anbieter in der Schweiz öffentlich verlangen
+## Smart Home Kosten in der Schweiz: was Anbieter verlangen
 
 Ich habe die Seiten von zehn Schweizer Anbietern gelesen (Stand Oktober 2026). Nur wenige veröffentlichen Preise:
 
@@ -44,11 +48,11 @@ Das sind seriöse Lösungen. Eine KNX-Installation in der Wand hält Jahrzehnte 
 
 **3. Betreuung ist selten und wird separat verkauft.** Auf den meisten Seiten steht dazu nichts. Wo sie vorkommt, ist sie ein eigenes Produkt: Anbieter D verlangt CHF 599 bis 1'199 im Jahr für den Wartungsvertrag einer Loxone-Anlage, die bereits steht. Anbieter E betreut Alarmanlagen. Anbieter J bietet Serviceverträge für Überbauungen an.
 
-Das ist die Lücke. Sie betrifft nicht eine Randgruppe, sondern viele Menschen: alle, die zur Miete wohnen, alle mit einer bestehenden Wohnung oder einem bestehenden Haus, und alle, die einfach neugierig sind und sich nicht gleich für CHF 4'000 bis 5'000 oder mehr festlegen wollen. Und alle, die nicht selbst für den Support zuständig sein möchten.
+Das ist die Lücke. Sie betrifft nicht eine Randgruppe, sondern viele Menschen: alle, die zur Miete wohnen, alle mit einer bestehenden Wohnung oder einem bestehenden Haus, und alle, die einfach neugierig sind und sich nicht gleich für CHF 4'000 bis 5'000 oder mehr festlegen wollen. Und alle, die nicht [selbst für den Support zuständig](/de/insights/persoenlicher-service/) sein möchten.
 
 ## Wie es für Sie anders aussehen kann
 
-Konihaus ist genau für diese Menschen gedacht. Ich nehme Geräte, die Sie bereits besitzen, ergänze sie mit bewährter Hardware, und alles läuft lokal über eine Zentrale in Ihrem Zuhause. Es braucht **keine Bohrungen, keinen Elektriker und keinen Umbau**. Und ich bleibe danach Ihr Ansprechpartner.
+Konihaus ist [genau für diese Menschen](/de/insights/fuer-wen-ist-konihaus/) gedacht. Ich nehme Geräte, die Sie bereits besitzen, ergänze sie mit bewährter Hardware, und alles läuft lokal über eine Zentrale in Ihrem Zuhause. Es braucht **keine Bohrungen, keinen Elektriker und keinen Umbau**. Und ich bleibe danach Ihr Ansprechpartner.
 
 <figure class="blog-post__figure">
   <img src="/images/insights/smart-home-cost/no-renovation-needed.jpg" alt="A wireless window sensor being attached without drilling" width="1536" height="1024" loading="lazy" decoding="async">
@@ -70,7 +74,7 @@ Installation, Einrichtung und Fernbetreuung sind inklusive. Wenn Sie die Einrich
 Ich könnte einfach die Jahre zusammenzählen und einen Sieger nennen. Das wäre zu einfach.
 
 - **Geld, das auf einmal fliesst, ist nicht dasselbe wie Geld, das über die Zeit fliesst.** Ein Einmalpreis von CHF 3'000 oder mehr bindet gleich am ersten Tag Kapital. Bei einem Monatsabo bleibt dieses Geld bei Ihnen, als Reserve, für den Umbau oder für etwas, das anderswo für Sie arbeitet. Was besser ist, hängt von Ihrer Situation ab.
-- **Eine Einmalanschaffung hält nicht eine feste Zahl von Jahren.** Geräte altern, Standards ändern sich, und laufend kommen neue Dinge dazu. Wird eine Installation nach sechs Jahren ersetzt oder erweitert, liegt der wahre Preis pro Jahr höher als «CHF 3'000 geteilt durch zehn». Updates, Reparaturen und jemand, der das System kennt, müssen ebenfalls bezahlt oder selbst erledigt werden.
+- **Eine Einmalanschaffung hält nicht eine feste Zahl von Jahren.** Geräte altern, [Standards ändern sich](/de/insights/zukunftssicher/), und laufend kommen neue Dinge dazu. Wird eine Installation nach sechs Jahren ersetzt oder erweitert, liegt der wahre Preis pro Jahr höher als «CHF 3'000 geteilt durch zehn». Updates, Reparaturen und jemand, der das System kennt, müssen ebenfalls bezahlt oder selbst erledigt werden.
 - **Darum behaupte ich nicht, dass ein Weg nach einer bestimmten Zahl von Jahren gewinnt.** Die Kosten hängen davon ab, wie lange Sie das System wirklich nutzen, wie viel sich dazwischen verändert und wie viel Hilfe Sie brauchen.
 
 Zwei grobe Anhaltspunkte, ohne Urteil:

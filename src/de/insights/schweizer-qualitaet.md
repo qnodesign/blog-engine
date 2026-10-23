@@ -3,12 +3,16 @@ title: "Schweizer Qualität: In der Schweiz gegründet, für die Langlebigkeit g
 date: 2026-10-13
 time: '10:00'
 language: de
-tags: quality, switzerland, regulations
 layout: blog-post.njk
 permalink: /de/insights/schweizer-qualitaet/
 permalinkalt: /en/insights/swiss-quality/
 ogimage: swiss-quality/og.jpg
 excerpt: "Vom Sicherungskasten bis zu kantonalen Vorschriften: Wir kennen das Schweizer Wohnen und stehen langfristig dafür ein."
+description: "Smart Home für die Schweiz: Steckdose Typ J, Schweizer Verdrahtung, kantonale Vorschriften und persönlicher Service. Was Schweizer Qualität heisst."
+seoTitle: "Smart Home Schweiz: Schweizer Qualität, langlebig"
+keyword: "Smart Home Schweiz"
+category: konihaus
+tags: [schweiz, qualitaet, vorschriften]
 readingtime: 4 Min. Lesezeit
 related: [datenschutz-by-default, persoenlicher-service, zukunftssicher]
 author: Koni
@@ -48,7 +52,7 @@ So denken wir über ein Smart Home:
 
 In der Schweiz geht es bei Qualität nicht nur darum, wie etwas am Tag der Lieferung aussieht. Es geht darum, danach Verantwortung zu übernehmen.
 
-Ein Smart Home soll viele Jahre funktionieren. Das bedeutet sorgfältige Geräteauswahl, saubere Konfiguration, regelmässige Wartung und einen Service, der da ist, wenn etwas Aufmerksamkeit braucht. Es bedeutet auch Nachhaltigkeit: Ein System, das wachsen und repariert werden kann, hält länger als eines, das ersetzt werden muss.
+Ein Smart Home soll viele Jahre funktionieren. Das bedeutet sorgfältige Geräteauswahl, saubere Konfiguration, regelmässige Wartung und [einen Service, der da ist](/de/insights/persoenlicher-service/), wenn etwas Aufmerksamkeit braucht. Es bedeutet auch Nachhaltigkeit: Ein System, das wachsen und repariert werden kann, [hält länger als eines, das ersetzt werden muss](/de/insights/zukunftssicher/).
 
 <figure class="blog-post__figure">
   <img src="/images/insights/swiss-quality/built-to-last.webp" alt="Eine gut gewartete Hausinstallation, ausgelegt auf viele Jahre" width="1536" height="1024" loading="lazy" decoding="async">
@@ -60,7 +64,7 @@ Die Flagge in unserem Logo steht für eine Verpflichtung: Konihaus ist in der Sc
 
 Das gilt auch für Ihre Daten. Unser Local-First-Ansatz hält die Informationen Ihres Zuhauses auf Hardware in Ihrem Zuhause, und wir verlagern sie nicht dauerhaft ins Ausland. (Mehr dazu lesen Sie in unserem Beitrag zu [Datenschutz by Default](/de/insights/datenschutz-by-default/).)
 
-## Vertraut mit dem Schweizer Wohnen
+## Smart Home in der Schweiz: vertraut mit dem Schweizer Wohnen
 
 Die Schweiz macht vieles anders als ihre Nachbarn, und die Unterschiede gehen weit über die Steckdose hinaus. Der Steckdosentyp J fällt jedem auf. Hinter der Wand steckt aber mehr: wie Schalter verdrahtet sind, welche Elektrokabel verwendet werden, wie der Sicherungskasten aufgebaut ist. Selbst bei den Möbeln gelten eigene Masse: Ein Küchengerät ist hier typischerweise 55 cm breit, nicht 60 cm wie anderswo üblich.
 

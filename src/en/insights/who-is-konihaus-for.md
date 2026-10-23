@@ -3,12 +3,16 @@ title: "Who Is Konihaus For? Four Homes, One Principle"
 date: 2026-10-08
 time: '18:00'
 language: en
-tags: use-cases, seniors, renters, holiday-home, zurich
 layout: blog-post.njk
 permalink: /en/insights/who-is-konihaus-for/
 permalinkalt: /de/insights/fuer-wen-ist-konihaus/
 ogimage: who-is-konihaus-for/og.jpg
 excerpt: A retiree living alone, a renter who can't drill, a holiday-home owner far away, and an ordinary family home. Four situations, one approach - personal, local, private.
+description: "Smart home in Zurich for seniors, renters, holiday-home owners and families: four homes, one principle. Personal, local and private."
+seoTitle: "Smart Home in Zurich: Who Is Konihaus For?"
+keyword: "smart home Zurich"
+category: guide
+tags: [seniors, renters, holiday-home, zurich]
 readingtime: 6 min read
 related: [personal-service, pain-points-we-stopped-noticing, smart-home-cost-switzerland]
 author: Koni
@@ -87,7 +91,7 @@ The people below are illustrative examples, not real customers. They are composi
 
 Not every home has a dramatic story. Many are simply houses and flats where a few small things would make everyday life easier: heating that follows your routine, a light that comes on when you come home with full hands, a notice when a window was left open.
 
-For these homes the question is not "what is the maximum?" but "what would you notice in daily life?" Often the answer is small and inexpensive.
+For these homes the question is not "what is the maximum?" but "what would you notice in daily life?" Often the answer is small and [inexpensive](/en/insights/smart-home-cost-switzerland/).
 
 ### When the Home Is Alone for a While: Peter and Helene
 
@@ -110,7 +114,7 @@ For these homes the question is not "what is the maximum?" but "what would you n
 The four homes look different, but they share the same technical basis.
 
 - **Local.** The system runs on a small box in your home, on the [Konihaus Greenhub](https://konihaus.ch/#devices). Your home keeps working without a permanent internet connection.
-- **Private.** Your data stays in your home. No cloud account is required for it to function.
+- **Private.** [Your data stays in your home](/en/insights/privacy-by-default/). No cloud account is required for it to function.
 - **Open.** Devices from different brands work together, so you are not tied to one manufacturer.
 - **Personal.** You deal with one person, who knows your home and is reachable after installation as well.
 

@@ -3,12 +3,16 @@ title: Läuft das auch in zehn Jahren noch?
 date: 2026-09-10
 time: '10:00'
 language: de
-tags: zukunftssicher, offene-standards, home-assistant, planung
 layout: blog-post.njk
 permalink: /de/insights/zukunftssicher/
 permalinkalt: /en/insights/future-proof/
 ogimage: future-proof/og.jpg
 excerpt: Ein Smart Home muss nicht altern wie ein Gadget. Die Plattform wird weiterentwickelt, und Ihr System wächst mit neuen Standards.
+description: "Läuft ein Smart Home auch in zehn Jahren noch? Wie offene Standards, lokale Steuerung und Home Assistant ein Smart Home zukunftssicher machen."
+seoTitle: "Zukunftssicheres Smart Home: Hält es 10 Jahre?"
+keyword: "Smart Home zukunftssicher"
+category: technik
+tags: [offene-standards, home-assistant, matter]
 readingtime: 7 Min. Lesezeit
 related: [kein-vendor-lock-in, schweizer-qualitaet]
 author: Koni
@@ -34,7 +38,7 @@ Eine gute Küche wird nicht ersetzt, wenn der Backofen kaputtgeht. Man tauscht d
 
 Ein Smart Home kann genauso funktionieren. Es besteht aus drei Schichten:
 
-- **Standards** sind die Steckdosen. Offene Standards wie Zigbee, Z-Wave und Matter sorgen dafür, dass Geräte vieler Hersteller dieselbe Sprache sprechen, und sie überleben einzelne Marken.
+- **Standards** sind die Steckdosen. Offene Standards wie Zigbee, Z-Wave und Matter sorgen dafür, dass Geräte vieler Hersteller dieselbe Sprache sprechen, und sie [überleben einzelne Marken](/de/insights/kein-vendor-lock-in/).
 - **Geräte** sind die Haushaltsgeräte. Ein Sensor, eine Lampe oder ein Thermostat lässt sich einzeln ersetzen, wenn er kaputtgeht oder etwas Besseres auf den Markt kommt.
 - **Das Gehirn** ist die Software, die alles verbindet und entscheidet, was passiert. Es läuft bei Ihnen zuhause und wird laufend aktualisiert.
 
@@ -62,7 +66,7 @@ Wenn Ihnen das genügt, können Sie hier aufhören. Der Rest dieses Artikels ist
 
 ## Für Neugierige: Das Gehirn bleibt zuhause
 
-Die Grundlage ist ein lokaler Hub, entweder ein kleines Spezialgerät wie [Konihaus Greenhub](https://konihaus.ch/#devices) oder ein Mini-PC. Ihre Daten bleiben bei Ihnen, und Sie können Ihr Smart Home auch bei ausgefallenem Internet steuern. Für den Grundbetrieb ist kein Abo nötig. Das heisst auch: keine monatliche Gebühr und kein Dienst, der abgeschaltet werden kann.
+Die Grundlage ist ein lokaler Hub, entweder ein kleines Spezialgerät wie [Konihaus Greenhub](https://konihaus.ch/#devices) oder ein Mini-PC. [Ihre Daten bleiben bei Ihnen](/de/insights/datenschutz-by-default/), und Sie können Ihr Smart Home auch bei ausgefallenem Internet steuern. Für den Grundbetrieb ist kein Abo nötig. Das heisst auch: keine monatliche Gebühr und kein Dienst, der abgeschaltet werden kann.
 
 Cloud-Dienste sind dann eine Option und keine Grundlage. Wenn Sie zum Beispiel einen Sprachassistenten von Google oder Amazon anbinden möchten, ist das eine bewusste Entscheidung, und das Kernsystem hängt nicht davon ab.
 
@@ -112,7 +116,7 @@ Wir sehen lokale Sprachsteuerung und lokale Sprachmodelle als vielversprechend, 
 - **Einzelne Schwachstellen.** Das ganze Zuhause darf nicht ausfallen, weil eine Komponente ausfällt. Planen Sie für den Tag, an dem etwas kaputtgeht.
 - **Ein reines Cloud-Rückgrat.** Cloud-Funktionen sind als Zusatz in Ordnung. Cloud-only-Geräte im Zentrum des Systems holen genau das Risiko zurück, mit dem dieser Artikel begonnen hat.
 
-## Warum das wichtig ist
+## Was ein Smart Home zukunftssicher macht
 
 Ein Smart Home verdient Ihr Vertrauen, wenn es auch lange nach der Begeisterung der ersten Woche ruhig und berechenbar funktioniert. Das kommt von ein paar unspektakulären Entscheidungen: das Gehirn lokal halten, offene Standards nutzen, für Ausfälle planen und die richtigen Leerrohre verlegen.
 

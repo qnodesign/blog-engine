@@ -3,18 +3,22 @@ title: "Your Home, Your Data: Privacy by Default"
 date: 2026-10-05
 time: '10:00'
 language: en
-tags: privacy, architecture, security
 layout: blog-post.njk
 permalink: /en/insights/privacy-by-default/
 permalinkalt: /de/insights/datenschutz-by-default/
 ogimage: privacy/og.jpg
 excerpt: How Konihaus keeps smart-home data local, limits dependence on vendor clouds, and gives you control over remote access and connected services.
+description: "Smart home privacy: how Konihaus processes data locally, reduces dependence on vendor clouds and keeps remote access in your control."
+seoTitle: "Smart Home Privacy: Your Data Stays Home"
+keyword: "smart home privacy"
+category: privacy
+tags: [privacy, local-first, voice-control]
 readingtime: 4 min read
 related: [swiss-quality, no-vendor-lock-in]
 author: Koni
 ---
 
-## Your Data Stays at Home
+## Smart Home Privacy: Your Data Stays at Home
 
 Google Home and Amazon Alexa are only the most obvious examples. A typical smart home may also include Philips Hue or IKEA lights, tado° thermostats, Somfy shades, Tuya devices, and products from several other manufacturers. Each ecosystem comes with its own app and account. Some apps are simple; others offer polished dashboards, themes, routines, and a long list of functions.
 
@@ -52,7 +56,7 @@ If you choose a device or service that requires its manufacturer’s cloud, that
   <img src="/images/insights/privacy/local-resilience.webp" alt="Lights, shades, and heating continue working through local automation" width="1536" height="1024" loading="lazy" decoding="async">
 </figure>
 
-**Less lock-in.** You can access your own data directly. Konihaus brings devices from established standards and ecosystems—such as Zigbee, Z-Wave, Matter, and WiFi—into one system, subject to each device's actual capabilities.
+**Less [lock-in](/en/insights/no-vendor-lock-in/).** You can access your own data directly. Konihaus brings devices from established standards and ecosystems—such as Zigbee, Z-Wave, Matter, and WiFi—into one system, subject to each device's actual capabilities.
 
 **Faster response times.** Local processing avoids a trip to a distant server when you turn on a light or adjust the thermostat.
 
@@ -88,7 +92,7 @@ Privacy isn't a feature we added. It's the foundation. A truly personal smart ho
   <img src="/images/insights/privacy/privacy-foundation.webp" alt="A private, locally controlled home at dusk in the Swiss landscape" width="1536" height="1024" loading="lazy" decoding="async">
 </figure>
 
-Local-first architecture reduces that exposure by design. You can still choose connected services when they provide real value, but the basic operation of your home remains in your hands.
+Local-first architecture reduces that exposure by design, and it [keeps the system running for years](/en/insights/future-proof/). You can still choose connected services when they provide real value, but the basic operation of your home remains in your hands.
 
 ---
  

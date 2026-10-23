@@ -3,13 +3,17 @@ title: "The Clocks Go Back Tonight. Your Home Won't Notice."
 date: 2026-10-24
 time: '10:00'
 language: en
-tags: seasons, automation, lighting, smart-home
 layout: blog-post.njk
 permalink: /en/insights/clocks-go-back/
 permalinkalt: /de/insights/zeitumstellung/
 translationKey: clocks-go-back
 ogimage: clocks-go-back/og.jpg
 excerpt: "On Sunday the clocks go back an hour. Timers fall behind, but a home that follows the sun just carries on."
+description: "When the clocks go back, timers fall behind. A smart home that follows sunset switches lights and blinds at the right time, all year."
+seoTitle: "Clock Change? A Smart Home Follows the Sun"
+keyword: "clock change smart home"
+category: energy
+tags: [lighting, automation, seasons]
 readingtime: 3 min read
 related: [energy-efficiency, pain-points-we-stopped-noticing]
 author: Koni
@@ -33,13 +37,13 @@ In June, those two answers are hours apart. By December, the sun sets in Zurich 
   <img src="/images/insights/clocks-go-back/timer-vs-sunset.webp" alt="Left: a lamp on a mechanical timer stays dark while the sun sets. Right: a lamp linked to sunset is already on" width="1536" height="1024" loading="lazy" decoding="async">
 </figure>
 
-## A home that follows the sun
+## A smart home that follows the sun
 
 A smart home can ask the better question. Home Assistant knows where your home is and calculates sunrise and sunset for every day of the year. So instead of "lamp on at 18:00", the rule becomes "lamp on half an hour before sunset". On Saturday that's around ten to six. On Sunday it's around a quarter to five. Nobody has to touch anything.
 
 The same idea works for:
 
-- **Blinds** that close at dusk, so the warmth stays inside and nobody can look into a lit living room.
+- **Blinds** that close at dusk, so [the warmth stays inside](/en/insights/energy-efficiency/) and nobody can look into a lit living room.
 - **The entrance light** that comes on when it's dark *and* someone arrives, not at a fixed hour.
 - **The night light in the hallway** that only lights up at night, softly, on the way to the bathroom.
 - **Grey November afternoons.** With a small brightness sensor, the light comes on when the room is actually dim, even at three o'clock.
@@ -62,7 +66,7 @@ A gadget does exactly what you told it once. A system takes the situation into a
 
 ## A small first step
 
-You don't need a whole system for this. One smart plug for the living-room lamp and one rule that follows the sunset is often the first thing people notice, and keep.
+You don't need a whole system for this, and it [doesn't have to cost much](/en/insights/smart-home-cost-switzerland/). One smart plug for the living-room lamp and one rule that follows the sunset is often the first thing people notice, and keep.
 
 Enjoy the extra hour of sleep.
 

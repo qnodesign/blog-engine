@@ -3,18 +3,22 @@ title: "Ihr Zuhause, Ihre Daten: Datenschutz by Default"
 date: 2026-10-05
 time: '10:00'
 language: de
-tags: datenschutz, architektur, sicherheit
 layout: blog-post.njk
 permalink: /de/insights/datenschutz-by-default/
 permalinkalt: /en/insights/privacy-by-default/
 ogimage: privacy/og.jpg
 excerpt:  Wie Konihaus Smart-Home-Daten lokal verarbeitet, die Abhängigkeit von Hersteller-Clouds reduziert und Ihnen die Kontrolle über Fernzugriff und vernetzte Dienste lässt.
+description: "Smart Home und Datenschutz: wie Konihaus Daten lokal verarbeitet, weniger von Hersteller-Clouds abhängt und Ihnen den Fernzugriff überlässt."
+seoTitle: "Smart Home Datenschutz: Daten bleiben zu Hause"
+keyword: "Smart Home Datenschutz"
+category: datenschutz
+tags: [datenschutz, local-first, sprachsteuerung]
 readingtime: 4 Min. Lesezeit
 related: [schweizer-qualitaet, kein-vendor-lock-in]
 author: Koni
 ---
 
-## Ihre Daten bleiben zu Hause
+## Smart Home und Datenschutz: Ihre Daten bleiben zu Hause
 
 Google Home und Amazon Alexa sind nur die offensichtlichsten Beispiele. In einem typischen Smart Home kommen oft noch Leuchten von Philips Hue oder IKEA, Thermostate von tado°, Beschattungen von Somfy, Tuya-Geräte und Produkte weiterer Hersteller hinzu. Jedes System bringt eine eigene App und ein eigenes Konto mit. Manche Apps sind schlicht, andere bieten aufwendige Oberflächen, Designs, Routinen und unzählige Funktionen.
 
@@ -40,7 +44,7 @@ Ihr Konihaus-System läuft auf einer **Home-Assistant-Instanz** – einem kleine
 - WiFi-Geräte kommunizieren lokal, sofern sie dies unterstützen
 - Konihaus sammelt keine Daten über Ihr Verhalten
 
-Wenn Sie sich für ein Gerät oder einen Dienst entscheidest, der die Hersteller-Cloud benötigt, behandeln wir diese Verbindung als klar ausgewiesene Ausnahme und nicht als Grundlage des Systems.
+Wenn Sie sich für ein Gerät oder einen Dienst entscheiden, der die Hersteller-Cloud benötigt, behandeln wir diese Verbindung als klar ausgewiesene Ausnahme und nicht als Grundlage des Systems.
 
 ## Was das praktisch bedeutet
 
@@ -52,7 +56,7 @@ Wenn Sie sich für ein Gerät oder einen Dienst entscheidest, der die Hersteller
   <img src="/images/insights/privacy/local-resilience.webp" alt="Licht, Beschattung und Heizung funktionieren dank lokaler Automation weiterhin" width="1536" height="1024" loading="lazy" decoding="async">
 </figure>
 
-**Weniger Herstellerbindung.** Sie können direkt auf Ihre eigenen Daten zugreifen. Konihaus führt Geräte aus etablierten Standards und Ökosystemen – etwa Zigbee, Z-Wave, Matter und WiFi – in einem System zusammen, soweit die jeweiligen Geräte dies unterstützen.
+**Weniger [Herstellerbindung](/de/insights/kein-vendor-lock-in/).** Sie können direkt auf Ihre eigenen Daten zugreifen. Konihaus führt Geräte aus etablierten Standards und Ökosystemen – etwa Zigbee, Z-Wave, Matter und WiFi – in einem System zusammen, soweit die jeweiligen Geräte dies unterstützen.
 
 **Schnellere Reaktionen.** Bei lokaler Verarbeitung muss ein Befehl keinen Umweg über einen entfernten Server nehmen, wenn Sie ein Licht einschalten oder die Temperatur ändern.
 
@@ -88,7 +92,7 @@ Datenschutz ist keine nachträglich ergänzte Funktion. Er ist das Fundament. Ei
   <img src="/images/insights/privacy/privacy-foundation.webp" alt="Ein geschütztes, lokal gesteuertes Zuhause in der Schweizer Landschaft bei Dämmerung" width="1536" height="1024" loading="lazy" decoding="async">
 </figure>
 
-Eine Local-First-Architektur reduziert diese Preisgabe von Anfang an. Sie können sich weiterhin bewusst für vernetzte Dienste entscheiden, wenn sie einen echten Mehrwert bieten. Der grundlegende Betrieb Ihres Zuhauses bleibt jedoch in Ihren Händen.
+Eine Local-First-Architektur reduziert diese Preisgabe von Anfang an und [hält das System über Jahre lauffähig](/de/insights/zukunftssicher/). Sie können sich weiterhin bewusst für vernetzte Dienste entscheiden, wenn sie einen echten Mehrwert bieten. Der grundlegende Betrieb Ihres Zuhauses bleibt jedoch in Ihren Händen.
 
 ---
  

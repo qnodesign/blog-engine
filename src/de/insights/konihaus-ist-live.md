@@ -3,12 +3,16 @@ title: "Konihaus ist live"
 date: 2026-10-15
 time: '09:00'
 language: de
-tags: launch, persönlicher-service, schweiz
 layout: blog-post.njk
 permalink: /de/insights/konihaus-ist-live/
 permalinkalt: /en/insights/konihaus-is-live/
 ogimage: launch/og.jpg
 excerpt: "Ein persönlich betreutes Smart Home für die Schweiz, ab heute: was Konihaus ist, für wen es gedacht ist, wie es abläuft und was die Pakete kosten."
+description: "Konihaus ist live: persönlicher Smart-Home-Service in der Schweiz. Was es ist, für wen, wie es abläuft und was es kostet."
+seoTitle: "Konihaus ist live: Smart Home mit Betreuung"
+keyword: "Smart Home Service Schweiz"
+category: konihaus
+tags: [launch, service, preise]
 readingtime: 4 Min. Lesezeit
 related: [persoenlicher-service, fuer-wen-ist-konihaus]
 author: Koni
@@ -22,7 +26,7 @@ In den letzten Wochen haben wir geschrieben, warum ein Smart Home persönlich, p
   <img src="/images/insights/launch/konihaus-is-live.webp" alt="Ein warmes, ruhiges Zuhause mit einer Haustür, die sich zum Abend hin öffnet" width="1536" height="1024" loading="lazy" decoding="async">
 </figure>
 
-## Was Konihaus ist
+## Was Konihaus ist: Smart-Home-Service in der Schweiz
 
 Konihaus ist ein Smart Home mit einem echten Menschen dahinter. Ich plane, richte ein und betreue Ihr System, und ich bleibe auch danach für Sie da. Alles läuft lokal auf einem Hub bei Ihnen zu Hause, basierend auf dem Open-Source-System Home Assistant. Geräte mit Zigbee, Matter und Thread von verschiedenen Herstellern arbeiten zusammen. Es gibt keine Cloud-Pflicht und keine einzelne Plattform, an die Sie gebunden sind. Wenn Sie Fernzugriff möchten, läuft er über ein verschlüsseltes privates VPN.
 
@@ -48,7 +52,7 @@ Jedes Paket enthält Installation, Einrichtung und laufenden Support aus der Fer
 - **Advanced**, ab CHF 139 pro Monat: ein Einfamilienhaus, ca. 12-15 Geräte.
 - **All-in**, ab CHF 249 pro Monat: ein grosses Haus, 20+ Geräte mit individuellen Automationen.
 
-Das sind Richtwerte inklusive MwSt. Die Hardware ist eine einmalige Anschaffung bei der ersten Installation, und Ihr endgültiges Angebot hängt von Ihrem Zuhause und den gewünschten Automationen ab. Alle Details finden Sie bei den [Paketen](https://konihaus.ch/#packages).
+Das sind Richtwerte inklusive MwSt. Zur Einordnung: [Was kostet ein Smart Home in der Schweiz?](/de/insights/was-kostet-ein-smart-home-schweiz/) Die Hardware ist eine einmalige Anschaffung bei der ersten Installation, und Ihr endgültiges Angebot hängt von Ihrem Zuhause und den gewünschten Automationen ab. Alle Details finden Sie bei den [Paketen](https://konihaus.ch/#packages).
 
 ## Vier Dinge, für die wir stehen
 

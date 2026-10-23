@@ -3,12 +3,16 @@ title: "The Konihaus App: Your Home at a Glance"
 date: 2026-10-20
 time: '10:00'
 language: en
-tags: app, controls, security, energy
 layout: blog-post.njk
 permalink: /en/insights/konihaus-app/
 permalinkalt: /de/insights/konihaus-app/
 ogimage: app/og.jpg
 excerpt: "A calm app for smartphone, tablet and computer: lights, blinds, heating, security and energy, local in your own system. What it does, and what it deliberately does not."
+description: "The Konihaus app: lights, blinds, heating, security and energy at a glance. A smart home app built on Home Assistant, running locally."
+seoTitle: "Konihaus App: Smart Home App on Home Assistant"
+keyword: "smart home app"
+category: technology
+tags: [app, dashboard, home-assistant]
 readingtime: 6 min read
 related: [personal-service, privacy-by-default, energy-efficiency]
 author: Koni
@@ -24,7 +28,7 @@ From today you can get a first look at [app.konihaus.ch](https://app.konihaus.ch
   <img style="border-radius:0;box-shadow:none;background:none" src="/images/insights/app/devices.webp" alt="The Konihaus app on a tablet, laptop and smartphone" width="1600" height="805" loading="lazy" decoding="async">
 </figure>
 
-## One App, Every Device
+## One Smart Home App, Every Device
 
 The interface adapts automatically: on a smartphone it is a calm, single-column view. On a tablet or a computer it arranges itself in several columns, so you see more at once. As a wall panel in the kitchen it works just as well as at a desk.
 

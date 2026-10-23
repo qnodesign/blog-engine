@@ -3,12 +3,16 @@ title: Warm bei Ankunft, sparsam bei Abwesenheit
 date: 2026-09-02
 time: '10:00'
 language: de
-tags: energieeffizienz, heizung, automation, ferienhaus
 layout: blog-post.njk
 permalink: /de/insights/energieeffizienz/
 permalinkalt: /en/insights/energy-efficiency/
 ogimage: energy-efficiency/og.jpg
 excerpt: Automatische Heizung und Beschattung helfen nur, wenn sie wirklich laufen — ohne dass jemand daran denken muss.
+description: "Energie sparen mit Smart Home: Heizung, Beschattung und Standby laufen automatisch, zu Hause und im Ferienhaus, ohne täglichen Aufwand."
+seoTitle: "Energie sparen mit Smart Home, automatisch"
+keyword: "Energie sparen mit Smart Home"
+category: energie
+tags: [energie-sparen, heizung, ferienhaus]
 readingtime: 5 Min. Lesezeit
 related: [smart-home-wie-fine-dining, fuer-wen-ist-konihaus]
 author: Koni
@@ -71,15 +75,15 @@ Beleuchtung ist einzeln betrachtet eine kleine Last, summiert sich aber über ei
 - **Eigenverbrauch von Solarstrom.** In einem Haus mit Photovoltaikanlage senkt es den Netzbezug, wenn flexible Verbraucher (Warmwasser, E-Auto-Ladung, Wäsche) in die Stunden verschoben werden, in denen die Anlage Überschuss produziert.
 - **Verbrauchsberichte.** Eine monatliche Übersicht, die zeigt, wohin die Energie tatsächlich geflossen ist, macht es möglich, ein defektes Gerät oder eine vergessene Heizung in einem leeren Raum zu erkennen, lange bevor es als böse Überraschung auf der Rechnung auftaucht.
 
-## Warum das wichtig ist
+## Warum Energie sparen mit Smart Home funktioniert
 
-Keine dieser Massnahmen ist exotisch. Die meisten davon weiss man bereits, dass man sie tun sollte. Was sich mit Automation ändert, ist nicht die Idee dahinter, sondern ob sie tatsächlich passiert – an dem einen Abend, an dem man es vergisst, in der einen Woche, in der man verreist ist, oder bei dem einen Gerät, das niemand kontrolliert.
+Keine dieser Massnahmen ist exotisch. Die meisten davon weiss man bereits, dass man sie tun sollte, wie die [kleinen Routinen, die uns nicht mehr auffallen](/de/insights/unbemerkte-alltagsaergernisse/). Was sich mit Automation ändert, ist nicht die Idee dahinter, sondern ob sie tatsächlich passiert – an dem einen Abend, an dem man es vergisst, in der einen Woche, in der man verreist ist, oder bei dem einen Gerät, das niemand kontrolliert.
 
 Das ist das eigentliche Argument für Energieeffizienz im Smart Home: keine neue Einsparung, von der noch niemand wusste, sondern die alten, naheliegenden – endlich von selbst laufend.
 
 ## Wie sich das in der Praxis zeigt
 
-Das muss nicht abstrakt bleiben. Das eingebaute Energie-Dashboard von Home Assistant macht aus dem tatsächlichen Verbrauch des Haushalts eine Ansicht wie diese: der Verlauf über den Tag, wie viel davon aus emissionsarmen Quellen stammt und was aus dem Netz bezogen oder wieder eingespeist wurde.
+Das muss nicht abstrakt bleiben. Das eingebaute Energie-Dashboard von Home Assistant, auch Teil der [Konihaus-App](/de/insights/konihaus-app/), macht aus dem tatsächlichen Verbrauch des Haushalts eine Ansicht wie diese: der Verlauf über den Tag, wie viel davon aus emissionsarmen Quellen stammt und was aus dem Netz bezogen oder wieder eingespeist wurde.
 
 <figure class="blog-post__figure">
   <img src="/images/insights/energy-efficiency/home-assistant-energy-dashboard.png" alt="Ein Home-Assistant-Energie-Dashboard mit stündlichem Stromverbrauch, der Energieverteilung zwischen Netz und Zuhause sowie dem Anteil emissionsarm bezogenen Stroms" width="1643" height="831" loading="lazy" decoding="async">
@@ -89,7 +93,7 @@ Eine Ebene tiefer zeigen dieselben Daten, welche einzelnen Geräte tatsächlich 
 
 Genau das macht den Unterschied zwischen einer Monatsrechnung und einer echten Erklärung: Eine Rechnung zeigt, was man ausgegeben hat – das hier zeigt, warum.
 
-<a href="(https://www.home-assistant.io/integrations/energy/" target="_blank">So funktioniert Energieüberwachung und -management mit Home Assistant</a>.
+<a href="https://www.home-assistant.io/integrations/energy/" target="_blank">So funktioniert Energieüberwachung und -management mit Home Assistant</a>.
 
 ---
 

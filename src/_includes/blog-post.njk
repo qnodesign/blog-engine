@@ -15,13 +15,14 @@
   {{- html | replace(r/<a\s+(?![^>]*\btarget=)(?![^>]*\bhref="(?:#|mailto:|tel:))([^>]*)>/g, '<a target="_blank" rel="noopener noreferrer" $1>') | safe -}}
 {%- endmacro %}
 {% set shareUrl = "https://blog.konihaus.ch" + page.url %}
+{%- set tagList = [] if (not tags or tags is string) else tags %}
 {%- set altUrl = "https://blog.konihaus.ch" + permalinkalt %}
 {%- set ogImage = image or "/images/insights/" + ogimage %}
 {%- set pubISO = page.date.toISOString().slice(0, 10) %}
 {%- set modISO = (dateModified.toISOString().slice(0, 10) if dateModified.toISOString else dateModified) if dateModified else pubISO %}
 {%- set enUrl = altUrl if language === 'de' else shareUrl %}
 <!DOCTYPE html>
-<html lang="{{ language }}">
+<html lang="{{ 'de-CH' if language === 'de' else 'en' }}">
 <head>
   <meta charset="UTF-8">
   <!-- Scheduled posts: before their publication date + time (front matter `time: "HH:MM"`,
@@ -65,8 +66,8 @@
   <meta name="theme-color" content="#2a4a35">
   <link rel="icon" type="image/svg+xml" href="/assets/favicon_sm.svg">
   <link rel="apple-touch-icon" href="/assets/favicon.svg">
-  <title>{{ title }} - Konihaus</title>
-  <meta name="description" content="{{ excerpt or title }}">
+  <title>{{ seoTitle or title }} - Konihaus</title>
+  <meta name="description" content="{{ description or excerpt or title }}">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="author" content="Konrad Hefelle">
 
@@ -84,21 +85,30 @@
   <!-- Open Graph -->
   <meta property="og:site_name" content="Konihaus">
   <meta property="og:title" content="{{ title }}">
-  <meta property="og:description" content="{{ excerpt or title }}">
+  <meta property="og:description" content="{{ description or excerpt or title }}">
   <meta property="og:url" content="{{ shareUrl }}">
   <meta property="fb:app_id" content="2188289105366537" />
   <meta property="og:type" content="article">
   <meta property="og:image" content="https://blog.konihaus.ch{{ ogImage }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{{ ogimagealt or title }}">
   <meta property="og:locale" content="{% if language === 'de' %}de_CH{% else %}en_US{% endif %}">
   <meta property="og:locale:alternate" content="{% if language === 'de' %}en_US{% else %}de_CH{% endif %}">
   <meta property="article:published_time" content="{{ pubISO }}">
   {% if dateModified %}<meta property="article:modified_time" content="{{ modISO }}">{% endif %}
   <meta property="article:author" content="Konrad Hefelle">
+{%- if category %}
+  <meta property="article:section" content="{{ category }}">
+{%- endif %}
+{%- for t in tagList %}
+  <meta property="article:tag" content="{{ t }}">
+{%- endfor %}
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ title }}">
-  <meta name="twitter:description" content="{{ excerpt or title }}">
+  <meta name="twitter:description" content="{{ description or excerpt or title }}">
   <meta name="twitter:image" content="https://blog.konihaus.ch{{ ogImage }}">
 
   <!-- Structured data -->
@@ -107,15 +117,27 @@
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "headline": {{ title | dump | safe }},
-    "description": {{ (excerpt or title) | dump | safe }},
-    "image": {{ ("https://blog.konihaus.ch" + ogImage) | dump | safe }},
+    "description": {{ (description or excerpt or title) | dump | safe }},
+    "image": {
+      "@type": "ImageObject",
+      "url": {{ ("https://blog.konihaus.ch" + ogImage) | dump | safe }},
+      "width": 1200,
+      "height": 630
+    },
+{%- if category %}
+    "articleSection": {{ category | dump | safe }},
+{%- endif %}
+{%- if keyword or tagList.length %}
+    "keywords": {{ ([keyword] if keyword else []).concat(tagList) | join(", ") | dump | safe }},
+{%- endif %}
     "datePublished": {{ pubISO | dump | safe }},
     "dateModified": {{ modISO | dump | safe }},
     "inLanguage": {{ language | dump | safe }},
     "mainEntityOfPage": {{ shareUrl | dump | safe }},
     "author": {
       "@type": "Person",
-      "name": "Konrad Hefelle"
+      "name": "Konrad Hefelle",
+      "url": "https://konihaus.ch"
     },
     "publisher": {
       "@type": "Organization",

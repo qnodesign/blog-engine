@@ -3,12 +3,16 @@ title: "Konihaus Is Live"
 date: 2026-10-15
 time: '09:00'
 language: en
-tags: launch, personal-service, switzerland
 layout: blog-post.njk
 permalink: /en/insights/konihaus-is-live/
 permalinkalt: /de/insights/konihaus-ist-live/
 ogimage: launch/og.jpg
 excerpt: "A personally supported smart home for Switzerland, starting today: what Konihaus is, who it is for, how it works, and what the packages cost."
+description: "Konihaus is live: a personal smart home service in Switzerland. What it is, who it's for, how it works and what it costs."
+seoTitle: "Konihaus Is Live: Personal Smart Home Service"
+keyword: "smart home service Switzerland"
+category: konihaus
+tags: [launch, service, prices]
 readingtime: 4 min read
 related: [personal-service, who-is-konihaus-for]
 author: Koni
@@ -22,7 +26,7 @@ In recent weeks we have written about why a smart home should be personal, priva
   <img src="/images/insights/launch/konihaus-is-live.webp" alt="A warm, calm home with a front door opening to the evening" width="1536" height="1024" loading="lazy" decoding="async">
 </figure>
 
-## What Konihaus Is
+## What Konihaus Is: Smart Home Service in Switzerland
 
 Konihaus is a smart home with a real person behind it. I plan, set up, and look after your system, and I stay with you afterwards. Everything runs locally on a hub in your home, built on open-source Home Assistant, with Zigbee, Matter, and Thread devices from different manufacturers working together. There is no mandatory cloud and no single platform you are tied to. Remote access, if you want it, goes through an encrypted private VPN.
 
@@ -48,7 +52,7 @@ Every package includes installation, setup, and ongoing remote support:
 - **Advanced**, from CHF 139 per month: a single-family house, about 12-15 devices.
 - **All-in**, from CHF 249 per month: a large house, 20+ devices with individual automations.
 
-These are guide values including VAT. The hardware is a one-time cost at the first installation, and your final quote depends on your home and the automations you want. All details are on the [packages page](https://konihaus.ch/#packages).
+These are guide values including VAT. For context, see [what a smart home costs in Switzerland](/en/insights/smart-home-cost-switzerland/). The hardware is a one-time cost at the first installation, and your final quote depends on your home and the automations you want. All details are on the [packages page](https://konihaus.ch/#packages).
 
 ## Four Things We Stand For
 

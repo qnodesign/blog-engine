@@ -4,11 +4,15 @@ title: Was uns nicht mehr auffällt
 date: 2026-10-17
 time: '10:00'
 language: de
-tags: insights,smart-home,home-automation,personal-service,philosophy
 ogimage: pain-points/og.jpg
 permalink: /de/insights/unbemerkte-alltagsaergernisse/
 permalinkalt: /en/insights/pain-points-we-stopped-noticing/
 excerpt: Manche Handgriffe sind uns so vertraut, dass wir sie nicht mehr als lästig wahrnehmen. Ein Smart Home beginnt damit, sie wieder zu bemerken.
+description: "Smart-Home-Ideen beginnen bei Alltagsärgernissen, die uns nicht mehr auffallen: Herd, Tür, brennendes Licht. So finden Sie Ihre."
+seoTitle: "Smart-Home-Ideen: Alltagsärgernisse entdecken"
+keyword: "Smart Home Ideen"
+category: ratgeber
+tags: [alltag, automation-ideen]
 readingtime: 3 Min. Lesezeit
 related: [persoenlicher-service, smart-home-wie-fine-dining]
 author: Koni
@@ -64,9 +68,9 @@ Eine berechtigte Frage: Wenn Maschinen alles übernehmen, was tue ich dann? Nich
   <img src="/images/insights/pain-points/you-draw-the-line.jpg" alt="Eine Person spaltet von Hand Holz, neben einem ruhigen, unauffälligen Smart Home, das den Rest übernimmt" width="1536" height="1024" loading="lazy" decoding="async">
 </figure>
 
-## Jede Liste sieht anders aus
+## Smart-Home-Ideen: Jede Liste sieht anders aus
 
-Ein Barbier denkt an den Handtuchwärmer. Junge Eltern denken an die Temperatur im Kinderzimmer. Wer für sechs Monate verreist, denkt an Wasser. Pain Points sind von Mensch zu Mensch verschieden, darum löst kein einzelnes Gerät und kein Standard-Set sie alle. Deshalb sehen die Beispiele auf unserer Website so unterschiedlich aus.
+Ein Barbier denkt an den Handtuchwärmer. Junge Eltern denken an die Temperatur im Kinderzimmer. Wer für sechs Monate verreist, denkt an Wasser. Pain Points sind von Mensch zu Mensch verschieden, darum löst kein einzelnes Gerät und kein Standard-Set sie alle. Deshalb sehen die [Beispiele](/de/insights/fuer-wen-ist-konihaus/) auf unserer Website so unterschiedlich aus.
 
 <figure class="blog-post__figure">
   <img src="/images/insights/pain-points/every-home-different.jpg" alt="Vier verschiedene Orte, ein Barbershop, ein Kinderzimmer, ein Bauernhaus und ein Ferienhaus, jeweils mit einem eigenen kleinen Set unauffälliger Sensoren" width="1536" height="1024" loading="lazy" decoding="async">
@@ -74,7 +78,7 @@ Ein Barbier denkt an den Handtuchwärmer. Junge Eltern denken an die Temperatur 
 
 ## Warum es einen Menschen braucht
 
-Pain Points zu finden ist ein Gespräch, kein Produkt. Es braucht jemanden, der fragt, zuhört und bemerkt, was Sie selbst nicht mehr sehen.
+Pain Points zu finden ist ein Gespräch, kein Produkt. Es braucht [jemanden, der fragt, zuhört](/de/insights/persoenlicher-service/) und bemerkt, was Sie selbst nicht mehr sehen.
 
 Und es endet nicht mit der Einrichtung. Die Welt dreht sich weiter: neue Geräte, neue Standards, bessere Wege für dieselbe Aufgabe. Ich verfolge, was neu ist, und passe laufend an, damit Ihr Zuhause mit der Welt mitgeht und Sie nicht hinterherrennen müssen. Stellen Sie es sich vor wie ein Begleiten an der Hand: zuerst beim Entdecken, was Sie stört, und dann, wenn sich Dinge verändern.
 

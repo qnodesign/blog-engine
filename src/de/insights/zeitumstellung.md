@@ -3,13 +3,17 @@ title: "Heute Nacht wird die Uhr zurückgestellt. Ihr Zuhause merkt es nicht."
 date: 2026-10-24
 time: '10:00'
 language: de
-tags: jahreszeiten, automation, licht, smart-home
 layout: blog-post.njk
 permalink: /de/insights/zeitumstellung/
 permalinkalt: /en/insights/clocks-go-back/
 translationKey: clocks-go-back
 ogimage: clocks-go-back/og.jpg
 excerpt: "Am Sonntag geht die Uhr eine Stunde zurück. Zeitschaltuhren hinken hinterher, ein Zuhause, das sich nach der Sonne richtet, macht einfach weiter."
+description: "Bei der Zeitumstellung hinken Zeitschaltuhren hinterher. Ein Smart Home, das sich nach dem Sonnenuntergang richtet, schaltet Licht und Storen richtig."
+seoTitle: "Zeitumstellung? Ihr Smart Home folgt der Sonne"
+keyword: "Zeitumstellung Smart Home"
+category: energie
+tags: [licht, automation, jahreszeiten]
 readingtime: 3 Min. Lesezeit
 related: [energieeffizienz, unbemerkte-alltagsaergernisse]
 author: Koni
@@ -33,13 +37,13 @@ Im Juni liegen zwischen diesen beiden Antworten Stunden. Im Dezember geht die So
   <img src="/images/insights/clocks-go-back/timer-vs-sunset.webp" alt="Links bleibt eine Lampe an der Zeitschaltuhr dunkel, während die Sonne untergeht. Rechts ist eine Lampe, die sich nach dem Sonnenuntergang richtet, bereits an" width="1536" height="1024" loading="lazy" decoding="async">
 </figure>
 
-## Ein Zuhause, das sich nach der Sonne richtet
+## Ein Smart Home, das sich nach der Sonne richtet
 
 Ein Smart Home kann die bessere Frage stellen. Home Assistant weiss, wo Ihr Zuhause steht, und berechnet Sonnenauf- und -untergang für jeden Tag des Jahres. Statt «Lampe an um 18:00» heisst die Regel dann «Lampe an eine halbe Stunde vor Sonnenuntergang». Am Samstag ist das etwa zehn vor sechs. Am Sonntag etwa Viertel vor fünf. Niemand muss etwas anfassen.
 
 Dasselbe funktioniert für:
 
-- **Storen**, die in der Dämmerung schliessen, damit die Wärme drinnen bleibt und niemand ins beleuchtete Wohnzimmer schauen kann.
+- **Storen**, die in der Dämmerung schliessen, damit [die Wärme drinnen bleibt](/de/insights/energieeffizienz/) und niemand ins beleuchtete Wohnzimmer schauen kann.
 - **Das Licht beim Eingang**, das angeht, wenn es dunkel ist *und* jemand nach Hause kommt, nicht zu einer fixen Uhrzeit.
 - **Das Nachtlicht im Gang**, das nur nachts leuchtet, gedämpft, auf dem Weg ins Bad.
 - **Graue Novembernachmittage.** Mit einem kleinen Helligkeitssensor geht das Licht an, wenn es im Raum wirklich dämmrig ist, auch um drei Uhr nachmittags.
@@ -62,7 +66,7 @@ Ein Gadget macht genau das, was Sie ihm einmal gesagt haben. Ein System berücks
 
 ## Ein kleiner erster Schritt
 
-Dafür brauchen Sie kein ganzes System. Eine smarte Steckdose für die Stehlampe und eine Regel, die sich nach dem Sonnenuntergang richtet, sind oft das Erste, was Leuten auffällt, und was sie behalten.
+Dafür brauchen Sie kein ganzes System, und es muss [nicht viel kosten](/de/insights/was-kostet-ein-smart-home-schweiz/). Eine smarte Steckdose für die Stehlampe und eine Regel, die sich nach dem Sonnenuntergang richtet, sind oft das Erste, was Leuten auffällt, und was sie behalten.
 
 Geniessen Sie die zusätzliche Stunde Schlaf.
 

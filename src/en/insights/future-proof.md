@@ -3,12 +3,16 @@ title: Will It Still Work in Ten Years?
 date: 2026-09-10
 time: '10:00'
 language: en
-tags: future-proof, open-standards, home-assistant, planning
 layout: blog-post.njk
 permalink: /en/insights/future-proof/
 permalinkalt: /de/insights/zukunftssicher/
 ogimage: future-proof/og.jpg
 excerpt: A smart home does not have to age like a gadget. The platform keeps developing, and your system grows with new standards.
+description: "Will a smart home still work in ten years? How open standards, local control and Home Assistant keep a smart home future-proof."
+seoTitle: "Future-Proof Smart Home: Will It Last 10 Years?"
+keyword: "future-proof smart home"
+category: technology
+tags: [open-standards, home-assistant, matter]
 readingtime: 7 min read
 related: [no-vendor-lock-in, swiss-quality]
 author: Koni
@@ -34,7 +38,7 @@ A good kitchen is not replaced when the oven breaks. You replace the oven. The s
 
 A smart home can work the same way. It has three layers:
 
-- **Standards** are the sockets. Open standards such as Zigbee, Z-Wave and Matter mean that devices from many makers speak the same language, and they outlive individual brands.
+- **Standards** are the sockets. Open standards such as Zigbee, Z-Wave and Matter mean that devices from many makers speak the same language, and they [outlive individual brands](/en/insights/no-vendor-lock-in/).
 - **Devices** are the appliances. A sensor, a lamp or a thermostat can be replaced one at a time, when it breaks or when something better comes along.
 - **The brain** is the software that connects everything and decides what happens. It runs in your home and is updated over time.
 
@@ -62,7 +66,7 @@ If that is all you wanted to know, you can stop reading here. The rest of this a
 
 ## For the Curious: Keep the Brain at Home
 
-The foundation is a local hub, either a small dedicated device such as [Konihaus Greenhub](https://konihaus.ch/#devices) or a mini-PC. Your data stays in your home, and you can control your smart home even when the internet is down. Basic operation needs no subscription, which also means no monthly fee and no service that can be switched off.
+The foundation is a local hub, either a small dedicated device such as [Konihaus Greenhub](https://konihaus.ch/#devices) or a mini-PC. [Your data stays in your home](/en/insights/privacy-by-default/), and you can control your smart home even when the internet is down. Basic operation needs no subscription, which also means no monthly fee and no service that can be switched off.
 
 Cloud services are then an option, not a foundation. If you choose to connect a voice assistant from Google or Amazon, for example, that is a deliberate decision, and the core system does not depend on it.
 
@@ -112,7 +116,7 @@ We treat local voice and local language models as promising and still maturing. 
 - **Single points of failure.** The whole home should not go down because one component fails. Plan for the day something breaks.
 - **A cloud-only backbone.** Cloud features are fine as extras. Cloud-only devices at the centre of the system bring back the exact risk this article started with.
 
-## Why This Matters
+## What Makes a Smart Home Future-Proof
 
 A smart home earns your trust by still working, calmly and predictably, long after the excitement of the first week. That comes from a few unglamorous decisions: keep the brain local, use open standards, plan for failure, and lay the right conduits.
 

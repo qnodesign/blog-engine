@@ -3,12 +3,16 @@ title: "Für wen ist Konihaus? Vier Zuhause, ein Prinzip"
 date: 2026-10-08
 time: '18:00'
 language: de
-tags: anwendungsfaelle, senioren, mieter, ferienhaus, zuerich
 layout: blog-post.njk
 permalink: /de/insights/fuer-wen-ist-konihaus/
 permalinkalt: /en/insights/who-is-konihaus-for/
 ogimage: who-is-konihaus-for/og.jpg
 excerpt: "Ein alleinlebender Senior, eine Mieterin mit Bohrverbot, ein Ferienhausbesitzer in der Ferne und ein normales Zuhause. Vier Situationen, ein Prinzip: persönlich, lokal, privat."
+description: "Smart Home in Zürich für Senioren, Mieter, Ferienhausbesitzer und Familien: vier Zuhause, ein Prinzip. Persönlich, lokal und privat."
+seoTitle: "Smart Home Zürich: Für wen ist Konihaus?"
+keyword: "Smart Home Zürich"
+category: ratgeber
+tags: [senioren, mieter, ferienhaus, zuerich]
 readingtime: 6 Min. Lesezeit
 related: [persoenlicher-service, unbemerkte-alltagsaergernisse, was-kostet-ein-smart-home-schweiz]
 author: Koni
@@ -87,7 +91,7 @@ Die Menschen unten sind Beispiele, keine echten Kundinnen und Kunden. Es sind zu
 
 Nicht jedes Zuhause hat eine dramatische Geschichte. Viele sind einfach Häuser und Wohnungen, in denen ein paar kleine Dinge den Alltag leichter machen: eine Heizung, die Ihrem Rhythmus folgt, ein Licht, das angeht, wenn Sie mit vollen Händen heimkommen, ein Hinweis, wenn ein Fenster offen geblieben ist.
 
-Hier lautet die Frage nicht «Was ist das Maximum?», sondern «Was würden Sie im Alltag spüren?». Oft ist die Antwort klein und günstig.
+Hier lautet die Frage nicht «Was ist das Maximum?», sondern «Was würden Sie im Alltag spüren?». Oft ist die Antwort klein und [günstig](/de/insights/was-kostet-ein-smart-home-schweiz/).
 
 ### Wenn das Haus länger allein ist: Peter und Helene
 
@@ -110,7 +114,7 @@ Hier lautet die Frage nicht «Was ist das Maximum?», sondern «Was würden Sie 
 Die vier Zuhause sehen verschieden aus, technisch ruhen sie auf derselben Basis.
 
 - **Lokal.** Das System läuft auf einer kleinen Box, dem [Konihaus Greenhub](https://konihaus.ch/#devices) bei Ihnen zu Hause. Ihr Zuhause funktioniert auch ohne ständige Internetverbindung.
-- **Privat.** Ihre Daten bleiben bei Ihnen. Ein Cloud-Konto ist für den Betrieb nicht nötig.
+- **Privat.** [Ihre Daten bleiben bei Ihnen](/de/insights/datenschutz-by-default/). Ein Cloud-Konto ist für den Betrieb nicht nötig.
 - **Offen.** Geräte verschiedener Marken arbeiten zusammen, Sie sind nicht an einen Hersteller gebunden.
 - **Persönlich.** Sie haben eine Ansprechperson, die Ihr Zuhause kennt und auch nach der Installation erreichbar ist.
 

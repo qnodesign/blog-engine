@@ -3,12 +3,16 @@ title: Smart Home mit einem Menschen dahinter
 date: 2026-10-01
 time: '18:00'
 language: de
-tags: persönlicher-service, support, beratung, smart-home
 layout: blog-post.njk
 permalink: /de/insights/persoenlicher-service/
 permalinkalt: /en/insights/personal-service/
 ogimage: personal-service/og.jpg
 excerpt: "Beratung zum Smart Home endet meist an der Kasse. Persönlicher Service heisst: Jemand bleibt an Ihrer Seite."
+description: "Smart-Home-Beratung von einem echten Menschen: kein Callcenter, keine Tickets. Warum Beratung meist an der Kasse endet und was Konihaus anders macht."
+seoTitle: "Smart-Home-Beratung von einem echten Menschen"
+keyword: "Smart Home Beratung"
+category: konihaus
+tags: [support, beratung]
 readingtime: 5 Min. Lesezeit
 related: [kein-vendor-lock-in, schweizer-qualitaet, was-kostet-ein-smart-home-schweiz]
 author: Koni
@@ -57,13 +61,13 @@ Trotzdem ist es eine grosse Erleichterung, wenn jemand Sie begleitet und da ist,
   <img src="/images/insights/personal-service/one-person-to-ask.jpg" alt="Eine Person erklärt am Küchentisch die Smart-Home-Einrichtung, während die Bewohnerin auf dem Tablet mitverfolgt" width="1536" height="1024" loading="lazy" decoding="async">
 </figure>
 
-## Was persönlicher Service bei Konihaus bedeutet
+## Was persönliche Smart-Home-Beratung bei Konihaus bedeutet
 
 > Kein Callcenter. Kein Ticket-System. Wenn Sie bei Konihaus anrufen oder schreiben, landen Sie bei mir — Koni.
 >
 > Ich installiere, richte ein und betreue Ihr Smart Home persönlich, von der ersten Beratung bis zum laufenden Support. So soll Technik-Support sein.
 
-In der Praxis heisst das: eine Person von Anfang bis Ende. Dieselbe Person hört zu, was Ihnen im Alltag wirklich helfen soll, wählt mit Ihnen die Geräte aus, richtet alles ein und bleibt danach erreichbar. Sie müssen Ihr Zuhause nie zweimal erklären.
+In der Praxis heisst das: eine Person von Anfang bis Ende. Dieselbe Person hört zu, [was Ihnen im Alltag wirklich helfen soll](/de/insights/unbemerkte-alltagsaergernisse/), wählt mit Ihnen die Geräte aus, richtet alles ein und bleibt danach erreichbar. Sie müssen Ihr Zuhause nie zweimal erklären.
 
 Persönlich heisst nicht Notfalldienst, und kein System kann versprechen, dass nie etwas schiefgeht. Aber wenn doch etwas passiert oder Sie einfach eine Frage haben, wissen Sie genau, wen Sie fragen können.
 
@@ -71,7 +75,7 @@ Persönlich heisst nicht Notfalldienst, und kein System kann versprechen, dass n
 
 Konihaus ist nicht aus einem Businessplan entstanden. Es ist entstanden, weil Menschen in meinem Umfeld genau diese Art von Hilfe brauchten und davon profitiert haben.
 
-Damit diese Hilfe auf Dauer möglich bleibt und für alle zugänglich wird, brauchte sie eine feste Form. Das ist Konihaus: persönlicher Smart-Home-Service, gebaut für die Dauer.
+Damit diese Hilfe auf Dauer möglich bleibt und [für alle zugänglich](/de/insights/fuer-wen-ist-konihaus/) wird, brauchte sie eine feste Form. Das ist Konihaus: persönlicher Smart-Home-Service, gebaut für die Dauer.
 
 ---
 

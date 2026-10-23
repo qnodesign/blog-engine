@@ -3,12 +3,16 @@ title: No Vendor Lock-In
 date: 2026-09-29
 time: '10:00'
 language: en
-tags: interoperability, devices, standards
 layout: blog-post.njk
 permalink: /en/insights/no-vendor-lock-in/
 permalinkalt: /de/insights/kein-vendor-lock-in/
 ogimage: vendor-lock-in/og.jpg
 excerpt: Combine devices from different manufacturers without handing your entire smart home to a single ecosystem.
+description: "Combine Philips Hue, Shelly, tado° and more without vendor lock-in. How Home Assistant brings different smart home brands into one system."
+seoTitle: "No Vendor Lock-In: Mix Smart Home Brands"
+keyword: "smart home without vendor lock-in"
+category: technology
+tags: [interoperability, zigbee, matter]
 readingtime: 5 min read
 related: [personal-service, future-proof]
 author: Koni
@@ -38,7 +42,7 @@ Konihaus uses Home Assistant as a common automation layer. It can bring together
   <img src="/images/insights/vendor-lock-in/connected-systems.webp" alt="A central local hub connects lighting, heating, sensors, audio, weather, and garden devices" width="1536" height="1024" loading="lazy" decoding="async">
 </figure>
 
-This does not mean that every smart device is automatically compatible or fully local. Some products expose only part of their functionality. Others still require a manufacturer account or cloud connection. Compatibility can also change between product generations; tado° and tado° X, for example, do not use exactly the same integration path.
+This does not mean that every smart device is automatically compatible or fully local. Some products expose only part of their functionality. Others still require a manufacturer account or [cloud connection](/en/insights/privacy-by-default/). Compatibility can also change between product generations; tado° and tado° X, for example, do not use exactly the same integration path.
 
 Konihaus therefore checks the exact model, protocol, available integration, and required external services before recommending or installing a device. The goal is not a vague promise that everything works with everything. It is a documented system in which the important functions work together and any remaining dependency is visible from the start.
 
@@ -66,7 +70,7 @@ This is practical interoperability. It preserves the structure of the home even 
 
 ## Your System Remains Yours
 
-The central configuration, dashboards, schedules, and automations are stored on the local Home Assistant system and can be backed up. If a manufacturer changes its subscription, discontinues a service, or leaves the market, only the dependent integration is directly affected. Locally connected devices and unrelated automations can continue operating.
+The central configuration, dashboards, schedules, and automations are stored on the local Home Assistant system and can be backed up. If a manufacturer changes its subscription, [discontinues a service, or leaves the market](/en/insights/future-proof/), only the dependent integration is directly affected. Locally connected devices and unrelated automations can continue operating.
 
 <figure class="blog-post__figure">
   <img src="/images/insights/vendor-lock-in/system-remains-yours.webp" alt="An organized local smart-home computer and backup remain inside the home" width="1536" height="1024" loading="lazy" decoding="async">
@@ -74,7 +78,7 @@ The central configuration, dashboards, schedules, and automations are stored on 
 
 If you later choose another service provider, the hardware does not belong to Konihaus. Your installation can be documented, handed over, maintained independently, or migrated where the target platform supports the devices and data involved. No migration between complex systems is entirely automatic, but an open, documented setup gives you a realistic path forward.
 
-## Why This Matters
+## Why a Brand-Independent Smart Home Matters
 
 A smart home develops over many years. Lights are replaced, heating systems change, new standards appear, and manufacturers alter products or commercial terms. A system designed around a single brand makes every later decision depend on that brand's catalogue and priorities.
 

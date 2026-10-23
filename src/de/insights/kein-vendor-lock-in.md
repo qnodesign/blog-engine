@@ -3,12 +3,16 @@ title: Kein Vendor Lock-In
 date: 2026-09-29
 time: '10:00'
 language: de
-tags: Interoperabilität, Geräte, Standards
 layout: blog-post.njk
 permalink: /de/insights/kein-vendor-lock-in/
 permalinkalt: /en/insights/no-vendor-lock-in/
 ogimage: vendor-lock-in/og.jpg
 excerpt: Verbinden Sie Geräte verschiedener Hersteller, ohne Ihr gesamtes Smart Home einem einzigen Ökosystem zu überlassen.
+description: "Philips Hue, Shelly, tado° und mehr kombinieren, ohne Vendor Lock-In. Wie Home Assistant Smart-Home-Marken herstellerunabhängig verbindet."
+seoTitle: "Smart Home herstellerunabhängig: Kein Lock-In"
+keyword: "Smart Home herstellerunabhängig"
+category: technik
+tags: [interoperabilitaet, zigbee, matter]
 readingtime: 5 Min. Lesezeit
 related: [persoenlicher-service, zukunftssicher]
 author: Koni
@@ -38,7 +42,7 @@ Konihaus nutzt Home Assistant als gemeinsame Automationsebene. Darin lassen sich
   <img src="/images/insights/vendor-lock-in/connected-systems.webp" alt="Ein zentraler lokaler Hub verbindet Licht, Heizung, Sensoren, Audio, Wetter und Gartengeräte" width="1536" height="1024" loading="lazy" decoding="async">
 </figure>
 
-Das bedeutet nicht, dass jedes smarte Gerät automatisch kompatibel ist oder vollständig lokal arbeitet. Manche Produkte stellen nur einen Teil ihrer Funktionen bereit. Andere benötigen weiterhin ein Herstellerkonto oder eine Cloudverbindung. Auch zwischen Gerätegenerationen kann sich die Anbindung unterscheiden. tado° und tado° X nutzen beispielsweise nicht exakt denselben Integrationsweg.
+Das bedeutet nicht, dass jedes smarte Gerät automatisch kompatibel ist oder vollständig lokal arbeitet. Manche Produkte stellen nur einen Teil ihrer Funktionen bereit. Andere benötigen weiterhin ein Herstellerkonto oder eine [Cloudverbindung](/de/insights/datenschutz-by-default/). Auch zwischen Gerätegenerationen kann sich die Anbindung unterscheiden. tado° und tado° X nutzen beispielsweise nicht exakt denselben Integrationsweg.
 
 Konihaus prüft deshalb vor einer Empfehlung oder Installation das genaue Modell, das verwendete Protokoll, die verfügbare Integration und alle benötigten externen Dienste. Das Ziel ist kein vages Versprechen, dass alles mit allem funktioniert. Das Ziel ist ein dokumentiertes System, in dem die wichtigen Funktionen zusammenspielen und verbleibende Abhängigkeiten von Anfang an sichtbar sind.
 
@@ -66,7 +70,7 @@ Das ist praktische Interoperabilität. Sie erhält die Struktur des Smart Homes,
 
 ## Ihr System bleibt Ihres
 
-Die zentrale Konfiguration, Dashboards, Zeitpläne und Automationen liegen auf dem lokalen Home-Assistant-System und können gesichert werden. Ändert ein Hersteller sein Abonnement, stellt einen Dienst ein oder verschwindet vom Markt, ist zunächst nur die davon abhängige Integration betroffen. Lokal verbundene Geräte und unabhängige Automationen können weiterarbeiten.
+Die zentrale Konfiguration, Dashboards, Zeitpläne und Automationen liegen auf dem lokalen Home-Assistant-System und können gesichert werden. Ändert ein Hersteller sein Abonnement, [stellt einen Dienst ein oder verschwindet vom Markt](/de/insights/zukunftssicher/), ist zunächst nur die davon abhängige Integration betroffen. Lokal verbundene Geräte und unabhängige Automationen können weiterarbeiten.
 
 <figure class="blog-post__figure">
   <img src="/images/insights/vendor-lock-in/system-remains-yours.webp" alt="Ein geordneter lokaler Smart-Home-Computer mit Sicherung bleibt im eigenen Zuhause" width="1536" height="1024" loading="lazy" decoding="async">
@@ -74,7 +78,7 @@ Die zentrale Konfiguration, Dashboards, Zeitpläne und Automationen liegen auf d
 
 Wenn Sie später einen anderen Dienstleister wählen, gehört die Hardware nicht Konihaus. Ihre Installation kann dokumentiert, übergeben, unabhängig weitergeführt oder migriert werden, soweit die Zielplattform die betreffenden Geräte und Daten unterstützt. Der Wechsel zwischen komplexen Systemen geschieht nie vollständig automatisch. Eine offene und dokumentierte Installation bietet dafür jedoch einen realistischen Weg.
 
-## Warum das wichtig ist
+## Warum ein herstellerunabhängiges Smart Home zählt
 
 Ein Smart Home entwickelt sich über viele Jahre. Leuchten werden ersetzt, Heizsysteme ändern sich, neue Standards entstehen und Hersteller passen ihre Produkte oder Geschäftsbedingungen an. Bei einem System rund um eine einzige Marke hängt jede spätere Entscheidung vom Sortiment und den Prioritäten dieses Herstellers ab.
 

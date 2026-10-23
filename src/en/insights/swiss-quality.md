@@ -3,12 +3,16 @@ title: "Swiss Quality: Built in Switzerland, Made to Last"
 date: 2026-10-13
 time: '10:00'
 language: en
-tags: quality, switzerland, regulations
 layout: blog-post.njk
 permalink: /en/insights/swiss-quality/
 permalinkalt: /de/insights/schweizer-qualitaet/
 ogimage: swiss-quality/og.jpg
 excerpt: "From the fuse box to cantonal regulations: we know Swiss homes and stand behind our work for the long run."
+description: "A smart home built for Switzerland: Type J sockets, Swiss wiring, cantonal rules and personal service. What Swiss quality means at Konihaus."
+seoTitle: "Smart Home in Switzerland, Built to Last"
+keyword: "smart home Switzerland"
+category: konihaus
+tags: [switzerland, quality, regulations]
 readingtime: 4 min read
 related: [privacy-by-default, personal-service, future-proof]
 author: Koni
@@ -48,7 +52,7 @@ That is how we think about a smart home:
 
 In Switzerland, quality is not only about how something looks on the day it is delivered. It is about taking responsibility for it afterwards.
 
-A smart home should work for many years. That means careful selection of devices, clean configuration, regular maintenance, and a service that is still there when something needs attention. It also means thinking about sustainability: a system that can grow and be repaired lasts longer than one that has to be replaced.
+A smart home should work for many years. That means careful selection of devices, clean configuration, regular maintenance, and [a service that is still there](/en/insights/personal-service/) when something needs attention. It also means thinking about sustainability: a system that can grow and be repaired [lasts longer than one that has to be replaced](/en/insights/future-proof/).
 
 <figure class="blog-post__figure">
   <img src="/images/insights/swiss-quality/built-to-last.webp" alt="A well-maintained home installation designed to last for years" width="1536" height="1024" loading="lazy" decoding="async">
@@ -60,7 +64,7 @@ The flag in our logo stands for a commitment: Konihaus is established in Switzer
 
 This also applies to your data. Our local-first approach keeps your home's information on hardware in your home, and we do not move it permanently out of the country. (You can read more about this in our post on [privacy by default](/en/insights/privacy-by-default/).)
 
-## Familiar With Swiss Living
+## Smart Home in Switzerland: Familiar With Swiss Living
 
 Switzerland does many things differently from its neighbours, and the differences go well beyond the outlet. The Type J socket is the one everybody notices. Behind the wall there is more: how switches are wired, which electrical cables are used, how the fuse box is organised. Even furniture follows its own measures: a kitchen appliance is typically 55 cm wide here, not the 60 cm common elsewhere.
 

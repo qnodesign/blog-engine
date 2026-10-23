@@ -3,12 +3,16 @@ title: "Die Konihaus-App: Ihr Zuhause auf einen Blick"
 date: 2026-10-20
 time: '10:00'
 language: de
-tags: app, bedienung, sicherheit, energie
 layout: blog-post.njk
 permalink: /de/insights/konihaus-app/
 permalinkalt: /en/insights/konihaus-app/
 ogimage: app/og.jpg
 excerpt: "Eine ruhige App für Smartphone, Tablet und Computer: Licht, Storen, Heizung, Sicherheit und Energie, lokal in Ihrem System. Was sie kann und was sie bewusst nicht tut."
+description: "Die Konihaus-App: Licht, Storen, Heizung, Sicherheit und Energie auf einen Blick. Eine Smart-Home-App auf Home Assistant, lokal betrieben."
+seoTitle: "Konihaus-App: Smart-Home-App auf Home Assistant"
+keyword: "Smart Home App"
+category: technik
+tags: [app, dashboard, home-assistant]
 readingtime: 6 Min. Lesezeit
 related: [persoenlicher-service, datenschutz-by-default, energieeffizienz]
 author: Koni
@@ -24,7 +28,7 @@ Ab heute gibt es auf [app.konihaus.ch](https://app.konihaus.ch) einen ersten Üb
   <img style="border-radius:0;box-shadow:none;background:none" src="/images/insights/app/devices.webp" alt="Die Konihaus-App auf Tablet, Laptop und Smartphone" width="1600" height="805" loading="lazy" decoding="async">
 </figure>
 
-## Eine App, jedes Gerät
+## Eine Smart-Home-App für jedes Gerät
 
 Die Oberfläche passt sich automatisch an: Auf dem Smartphone ist sie eine ruhige, einspaltige Ansicht. Auf dem Tablet oder am Computer ordnet sie sich in mehreren Spalten an, sodass Sie mehr auf einmal sehen. Als Wandpanel in der Küche funktioniert sie genauso wie am Schreibtisch.
 

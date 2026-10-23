@@ -4,11 +4,15 @@ title: Smart Home Is Today's Fine Dining
 date: 2026-09-15
 time: '10:00'
 language: en
-tags: insights,smart-home,home-automation,philosophy,energy-efficiency
 ogimage: fine-dining/og.jpg
 permalink: /en/insights/smart-home-fine-dining/
 permalinkalt: /de/insights/smart-home-wie-fine-dining/
 excerpt: Obsession or pointless? With smart homes, the truth is in the middle.
+description: "Is a smart home worth it, or an indulgence like fine dining? Why the truth lies in the middle, and what a smart home is really about."
+seoTitle: "Is a Smart Home Worth It? Today's Fine Dining"
+keyword: "is a smart home worth it"
+category: guide
+tags: [smart-home-benefits, everyday-life]
 readingtime: 3 min read
 related: [energy-efficiency, pain-points-we-stopped-noticing]
 author: Koni
@@ -64,17 +68,17 @@ Don't get me wrong: the coffee won't brew itself. (Well, sometimes it might. :))
 
 The goal is to make things better:
 
-- **Remove small, recurring annoyances**, like the light left on, the door you're not sure you locked, the window open in winter.
-- **Stop overspending** on heating, standby power and things we would never choose to pay for if we saw them.
+- **Remove [small, recurring annoyances](/en/insights/pain-points-we-stopped-noticing/)**, like the light left on, the door you're not sure you locked, the window open in winter.
+- **Stop overspending** on [heating, standby power](/en/insights/energy-efficiency/) and things we would never choose to pay for if we saw them.
 - **Get time back**, so we can spend it on what we actually enjoy.
 
 <figure class="blog-post__figure">
   <img src="/images/insights/fine-dining/everyday-benefits.jpg" alt="Local automation coordinates the door, window, heating, and lighting in a warm winter home" width="1536" height="1024" loading="lazy" decoding="async">
 </figure>
 
-## The truth is in the middle
+## Is a smart home worth it? The truth is in the middle
 
-You don't need to be obsessed with your home, and you don't need to fear it. Like a good restaurant, the best version is one where someone else has done the hard work, and you simply notice that things are better.
+You don't need to be obsessed with your home, and you don't need to fear it. Like a good restaurant, the best version is one where [someone else has done the hard work](/en/insights/personal-service/), and you simply notice that things are better.
 
 That's the idea behind Konihaus: the expertise on our side, the benefits on yours.
 

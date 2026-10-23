@@ -4,11 +4,15 @@ title: The Pain Points We Stopped Noticing
 date: 2026-10-17
 time: '10:00'
 language: en
-tags: insights,smart-home,home-automation,personal-service,philosophy
 ogimage: pain-points/og.jpg
 permalink: /en/insights/pain-points-we-stopped-noticing/
 permalinkalt: /de/insights/unbemerkte-alltagsaergernisse/
 excerpt: Some chores are so familiar that we no longer see them as chores. A smart home starts with noticing them again.
+description: "Smart home ideas start with everyday annoyances we stopped noticing: the stove, the door, the light left on. How to find yours."
+seoTitle: "Smart Home Ideas: Everyday Pain Points"
+keyword: "smart home ideas"
+category: guide
+tags: [everyday-life, automation-ideas]
 readingtime: 3 min read
 related: [personal-service, smart-home-fine-dining]
 author: Koni
@@ -64,9 +68,9 @@ A fair question: if machines take over everything, what do I do? Nothing says th
   <img src="/images/insights/pain-points/you-draw-the-line.jpg" alt="A person chopping wood by hand beside a quiet, discreet smart home that handles the rest" width="1536" height="1024" loading="lazy" decoding="async">
 </figure>
 
-## Everybody's list is different
+## Smart home ideas: everybody's list is different
 
-A barber worries about the towel warmer. New parents worry about the temperature in the nursery. Someone leaving on a six-month trip worries about water. Pain points differ from person to person, so no single device and no standard set will solve them all. That is why the examples on our site look so different from each other.
+A barber worries about the towel warmer. New parents worry about the temperature in the nursery. Someone leaving on a six-month trip worries about water. Pain points differ from person to person, so no single device and no standard set will solve them all. That is why the [examples](/en/insights/who-is-konihaus-for/) on our site look so different from each other.
 
 <figure class="blog-post__figure">
   <img src="/images/insights/pain-points/every-home-different.jpg" alt="Four different homes, a barbershop, a nursery, a farmhouse and a holiday house, each with its own small set of discreet sensors" width="1536" height="1024" loading="lazy" decoding="async">
@@ -74,7 +78,7 @@ A barber worries about the towel warmer. New parents worry about the temperature
 
 ## Why it takes a person
 
-Finding pain points is a conversation, not a product. It takes someone who asks, listens and notices what you no longer see.
+Finding pain points is a conversation, not a product. It takes [someone who asks, listens](/en/insights/personal-service/) and notices what you no longer see.
 
 And it doesn't end after setup. The world keeps moving: new devices, new standards, better ways to do the same thing. I follow what's new and keep adjusting, so your home moves with the world and you don't have to keep up with it. Think of it as holding hands along the way: first to discover what bothers you, then as things change.
 

@@ -3,12 +3,16 @@ title: Warm When You Arrive, Quiet When You Leave
 date: 2026-09-02
 time: '10:00'
 language: en
-tags: energy-efficiency, heating, automation, holiday-home
 layout: blog-post.njk
 permalink: /en/insights/energy-efficiency/
 permalinkalt: /de/insights/energieeffizienz/
 ogimage: energy-efficiency/og.jpg
 excerpt: Automatic heating and shading only help if they actually run — without anyone remembering.
+description: "Save energy with a smart home: heating, shading and standby handled automatically, at home and in the holiday house, without daily effort."
+seoTitle: "Save Energy With a Smart Home, Automatically"
+keyword: "save energy with a smart home"
+category: energy
+tags: [energy-saving, heating, holiday-home]
 readingtime: 6 min read
 related: [smart-home-fine-dining, who-is-konihaus-for]
 author: Koni
@@ -71,15 +75,15 @@ Beyond the obvious categories, a handful of smaller automations tend to make a n
 - **Solar self-consumption.** In a home with photovoltaic panels, shifting flexible loads (water heating, EV charging, laundry) to the hours when the panels are producing surplus power reduces what has to be drawn from or sold back to the grid.
 - **Consumption reports.** A monthly summary that shows where energy actually went makes it possible to catch a failing appliance or a forgotten heater running in an empty room, long before it shows up as a surprise on the bill.
 
-## Why This Matters
+## Why Saving Energy With a Smart Home Works
 
-None of these measures are exotic. Most of them are things people already know they should do. What changes with automation isn't the idea, it's whether it actually happens on the one evening you forget, the one week you're away, or the one appliance nobody thinks to check.
+None of these measures are exotic. Most of them are things people already know they should do, like the [small routines we stopped noticing](/en/insights/pain-points-we-stopped-noticing/). What changes with automation isn't the idea, it's whether it actually happens on the one evening you forget, the one week you're away, or the one appliance nobody thinks to check.
 
 That's the case for energy efficiency in a smart home: not a new set of savings nobody knew about, but the old, obvious ones, finally running by themselves.
 
 ## What This Looks Like in Practice
 
-None of this needs to stay abstract. Home Assistant's built-in energy dashboard turns the household's actual consumption into a view like this: overall usage over the day, how much of it came from low-carbon sources, and what was drawn from or fed back into the grid.
+None of this needs to stay abstract. Home Assistant's built-in energy dashboard, also part of the [Konihaus app](/en/insights/konihaus-app/), turns the household's actual consumption into a view like this: overall usage over the day, how much of it came from low-carbon sources, and what was drawn from or fed back into the grid.
 
 <figure class="blog-post__figure">
   <img src="/images/insights/energy-efficiency/home-assistant-energy-dashboard.png" alt="A Home Assistant energy dashboard showing hourly electricity use, energy distribution between grid and home, and the share of low-carbon electricity consumed" width="1643" height="831" loading="lazy" decoding="async">
@@ -89,7 +93,7 @@ Break it down further and the same data shows which individual devices are actua
 
 This is what makes the difference between a monthly bill and an actual explanation: a bill tells you what you spent, this tells you why.
 
-<a href="(https://www.home-assistant.io/integrations/energy/" target="_blank">Read how Home Assistant handles energy monitoring and management</a>.
+<a href="https://www.home-assistant.io/integrations/energy/" target="_blank">Read how Home Assistant handles energy monitoring and management</a>.
 
 ---
 
