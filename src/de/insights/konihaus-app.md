@@ -115,7 +115,7 @@ Die App baut dabei auf [Home Assistant](https://konihaus.ch/home-assistant-schwe
 
 ## Lokal, privat, ruhig
 
-Die App spricht direkt mit dem Home Assistant bei Ihnen zu Hause. Die Anmeldung läuft über dessen eigenes Login, und es gibt keine Konihaus-Cloud, über die Ihre Daten laufen. Von unterwegs erreichen Sie sie über den verschlüsselten privaten Zugang, den wir für Sie einrichten. Mehr zu diesem Prinzip lesen Sie in [Dein Zuhause, deine Daten: Datenschutz by Default](/de/insights/datenschutz-by-default/).
+Die App spricht direkt mit dem Home Assistant bei Ihnen zu Hause. Die Anmeldung läuft über dessen eigenes Login, und es gibt keine Konihaus-Cloud, über die Ihre Daten laufen. Von unterwegs erreichen Sie sie über den verschlüsselten privaten Zugang, den wir für Sie einrichten. Mehr zu diesem Prinzip lesen Sie in [Ihr Zuhause, Ihre Daten: Datenschutz by Default](/de/insights/datenschutz-by-default/).
 
 Und sie ist ruhig: keine Werbung, keine Benachrichtigungsflut, keine Pflicht, sie zu öffnen. Die Automatisierungen laufen auch dann, wenn Sie die App wochenlang nicht ansehen.
 
