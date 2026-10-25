@@ -15,7 +15,7 @@ keyword: "Apple HomeView Switzerland"
 category: news
 tags: [apple, smart-display, privacy]
 readingtime: 5 min read
-related: [privacy-by-default, no-vendor-lock-in]
+related: [privacy-by-default, no-vendor-lock-in, future-proof]
 author: Koni
 ---
 

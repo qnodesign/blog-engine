@@ -15,7 +15,7 @@ keyword: "Apple HomeView Schweiz"
 category: news
 tags: [apple, smart-display, datenschutz]
 readingtime: 5 Min. Lesezeit
-related: [datenschutz-by-default, kein-vendor-lock-in]
+related: [datenschutz-by-default, kein-vendor-lock-in, zukunftssicher]
 author: Koni
 ---
 

@@ -14,7 +14,7 @@ keyword: "Smart Home Datenschutz"
 category: datenschutz
 tags: [datenschutz, local-first, sprachsteuerung]
 readingtime: 4 Min. Lesezeit
-related: [schweizer-qualitaet, kein-vendor-lock-in]
+related: [kein-vendor-lock-in, zukunftssicher, schweizer-qualitaet]
 author: Koni
 ---
 

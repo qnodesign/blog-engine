@@ -14,7 +14,7 @@ keyword: "Smart Home Beratung"
 category: konihaus
 tags: [support, beratung]
 readingtime: 5 Min. Lesezeit
-related: [kein-vendor-lock-in, schweizer-qualitaet, was-kostet-ein-smart-home-schweiz]
+related: [unbemerkte-alltagsaergernisse, fuer-wen-ist-konihaus, kein-vendor-lock-in]
 author: Koni
 ---
 

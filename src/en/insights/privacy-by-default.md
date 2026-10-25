@@ -14,7 +14,7 @@ keyword: "smart home privacy"
 category: privacy
 tags: [privacy, local-first, voice-control]
 readingtime: 4 min read
-related: [swiss-quality, no-vendor-lock-in]
+related: [no-vendor-lock-in, future-proof, swiss-quality]
 author: Koni
 ---
 

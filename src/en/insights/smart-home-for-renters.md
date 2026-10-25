@@ -15,7 +15,7 @@ keyword: "smart home for renters"
 category: guide
 tags: [renters, tenancy-law, retrofit]
 readingtime: 5 min read
-related: [no-vendor-lock-in, smart-home-cost-switzerland]
+related: [no-vendor-lock-in, safer-hallways-at-night, energy-efficiency]
 author: Koni
 ---
 

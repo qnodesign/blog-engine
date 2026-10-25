@@ -15,7 +15,7 @@ keyword: "holiday home frost protection"
 category: safety
 tags: [holiday-home, frost-protection, water-damage]
 readingtime: 4 min read
-related: [energy-efficiency, who-is-konihaus-for]
+related: [energy-efficiency, smart-home-cost-switzerland, who-is-konihaus-for]
 author: Koni
 ---
 

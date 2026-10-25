@@ -14,7 +14,7 @@ keyword: "future-proof smart home"
 category: technology
 tags: [open-standards, home-assistant, matter]
 readingtime: 7 min read
-related: [no-vendor-lock-in, swiss-quality]
+related: [no-vendor-lock-in, privacy-by-default, swiss-quality]
 author: Koni
 ---
 

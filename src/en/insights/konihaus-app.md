@@ -14,7 +14,7 @@ keyword: "smart home app"
 category: technology
 tags: [app, dashboard, home-assistant]
 readingtime: 6 min read
-related: [personal-service, privacy-by-default, energy-efficiency]
+related: [privacy-by-default, energy-efficiency, personal-service]
 author: Koni
 ---
 

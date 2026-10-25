@@ -15,7 +15,7 @@ keyword: "Smart Home Mietwohnung"
 category: ratgeber
 tags: [mieter, mietrecht, nachruesten]
 readingtime: 5 Min. Lesezeit
-related: [kein-vendor-lock-in, was-kostet-ein-smart-home-schweiz]
+related: [kein-vendor-lock-in, sicher-durch-die-nacht, energieeffizienz]
 author: Koni
 ---
 

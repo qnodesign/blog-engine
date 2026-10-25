@@ -15,7 +15,7 @@ keyword: "Ferienwohnung Frostschutz"
 category: sicherheit
 tags: [ferienwohnung, frostschutz, wasserschaden]
 readingtime: 4 Min. Lesezeit
-related: [energieeffizienz, fuer-wen-ist-konihaus]
+related: [energieeffizienz, was-kostet-ein-smart-home-schweiz, fuer-wen-ist-konihaus]
 author: Koni
 ---
 

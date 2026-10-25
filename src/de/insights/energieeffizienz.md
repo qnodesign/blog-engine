@@ -14,7 +14,7 @@ keyword: "Energie sparen mit Smart Home"
 category: energie
 tags: [energie-sparen, heizung, ferienhaus]
 readingtime: 5 Min. Lesezeit
-related: [smart-home-wie-fine-dining, fuer-wen-ist-konihaus]
+related: [unbemerkte-alltagsaergernisse, konihaus-app, smart-home-wie-fine-dining]
 author: Koni
 ---
 

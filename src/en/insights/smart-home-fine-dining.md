@@ -14,7 +14,7 @@ keyword: "is a smart home worth it"
 category: guide
 tags: [smart-home-benefits, everyday-life]
 readingtime: 3 min read
-related: [energy-efficiency, pain-points-we-stopped-noticing]
+related: [energy-efficiency, pain-points-we-stopped-noticing, personal-service]
 author: Koni
 ---
 

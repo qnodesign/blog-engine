@@ -14,7 +14,7 @@ keyword: "Smart Home Service Schweiz"
 category: konihaus
 tags: [launch, service, preise]
 readingtime: 4 Min. Lesezeit
-related: [persoenlicher-service, fuer-wen-ist-konihaus]
+related: [persoenlicher-service, fuer-wen-ist-konihaus, was-kostet-ein-smart-home-schweiz]
 author: Koni
 ---
 

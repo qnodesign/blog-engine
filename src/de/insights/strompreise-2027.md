@@ -15,7 +15,7 @@ keyword: "Strompreise 2027 Schweiz"
 category: energie
 tags: [strompreise, standby, energie-sparen]
 readingtime: 4 Min. Lesezeit
-related: [energieeffizienz, was-kostet-ein-smart-home-schweiz]
+related: [energieeffizienz, was-kostet-ein-smart-home-schweiz, konihaus-app]
 author: Koni
 ---
 

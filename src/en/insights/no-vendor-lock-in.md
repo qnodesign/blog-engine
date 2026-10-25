@@ -14,7 +14,7 @@ keyword: "smart home without vendor lock-in"
 category: technology
 tags: [interoperability, zigbee, matter]
 readingtime: 5 min read
-related: [personal-service, future-proof]
+related: [future-proof, privacy-by-default, personal-service]
 author: Koni
 ---
 

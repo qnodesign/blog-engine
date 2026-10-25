@@ -15,7 +15,7 @@ keyword: "electricity prices 2027 Switzerland"
 category: energy
 tags: [electricity-prices, standby, energy-saving]
 readingtime: 4 min read
-related: [energy-efficiency, smart-home-cost-switzerland]
+related: [energy-efficiency, smart-home-cost-switzerland, konihaus-app]
 author: Koni
 ---
 

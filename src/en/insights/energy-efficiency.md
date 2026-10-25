@@ -14,7 +14,7 @@ keyword: "save energy with a smart home"
 category: energy
 tags: [energy-saving, heating, holiday-home]
 readingtime: 6 min read
-related: [smart-home-fine-dining, who-is-konihaus-for]
+related: [pain-points-we-stopped-noticing, konihaus-app, smart-home-fine-dining]
 author: Koni
 ---
 

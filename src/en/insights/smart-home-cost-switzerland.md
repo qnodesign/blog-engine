@@ -15,7 +15,7 @@ keyword: "smart home cost Switzerland"
 category: guide
 tags: [prices, comparison, switzerland]
 readingtime: 6 min read
-related: [personal-service, who-is-konihaus-for]
+related: [personal-service, who-is-konihaus-for, future-proof]
 author: Koni
 ---
 

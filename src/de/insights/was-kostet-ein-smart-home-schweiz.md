@@ -15,7 +15,7 @@ keyword: "Smart Home Kosten Schweiz"
 category: ratgeber
 tags: [preise, vergleich, schweiz]
 readingtime: 6 Min. Lesezeit
-related: [persoenlicher-service, fuer-wen-ist-konihaus]
+related: [persoenlicher-service, fuer-wen-ist-konihaus, zukunftssicher]
 author: Koni
 ---
 

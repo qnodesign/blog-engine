@@ -348,3 +348,21 @@
   font-style: italic;
   font-size: 1.1em; /* Cormorant runs small next to Outfit */
 }
+/* Short notice at the start of a post (e.g. "I'm not a doctor"):
+   same body font, upright, calm warm panel, easier to read than italic serif */
+.blog-post__content p.blog-post__note {
+    font-family: inherit;
+    font-style: normal;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--ink);
+    background: rgba(196, 124, 43, 0.08);
+    border-left: 3px solid rgba(196, 124, 43, 0.55);
+    border-radius: 0 12px 12px 0;
+    padding: 0.9rem 1.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.75rem;
+}
+.blog-post__content p.blog-post__note strong {
+    font-weight: 600;
+}

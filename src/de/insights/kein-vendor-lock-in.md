@@ -14,7 +14,7 @@ keyword: "Smart Home herstellerunabhängig"
 category: technik
 tags: [interoperabilitaet, zigbee, matter]
 readingtime: 5 Min. Lesezeit
-related: [persoenlicher-service, zukunftssicher]
+related: [zukunftssicher, datenschutz-by-default, persoenlicher-service]
 author: Koni
 ---
 

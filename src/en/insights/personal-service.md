@@ -14,7 +14,7 @@ keyword: "smart home support"
 category: konihaus
 tags: [support, advice]
 readingtime: 5 min read
-related: [no-vendor-lock-in, swiss-quality, smart-home-cost-switzerland]
+related: [pain-points-we-stopped-noticing, who-is-konihaus-for, no-vendor-lock-in]
 author: Koni
 ---
 

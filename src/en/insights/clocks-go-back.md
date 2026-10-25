@@ -15,7 +15,7 @@ keyword: "clock change smart home"
 category: energy
 tags: [lighting, automation, seasons]
 readingtime: 3 min read
-related: [energy-efficiency, pain-points-we-stopped-noticing]
+related: [energy-efficiency, smart-home-cost-switzerland, pain-points-we-stopped-noticing]
 author: Koni
 ---
 

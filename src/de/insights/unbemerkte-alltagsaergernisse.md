@@ -14,7 +14,7 @@ keyword: "Smart Home Ideen"
 category: ratgeber
 tags: [alltag, automation-ideen]
 readingtime: 3 Min. Lesezeit
-related: [persoenlicher-service, smart-home-wie-fine-dining]
+related: [persoenlicher-service, fuer-wen-ist-konihaus, smart-home-wie-fine-dining]
 author: Koni
 ---
 

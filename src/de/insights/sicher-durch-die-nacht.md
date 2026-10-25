@@ -15,7 +15,7 @@ keyword: "Sturzprävention zu Hause"
 category: sicherheit
 tags: [senioren, sturzpraevention, licht]
 readingtime: 4 Min. Lesezeit
-related: [fuer-wen-ist-konihaus, persoenlicher-service]
+related: [datenschutz-by-default, zeitumstellung, fuer-wen-ist-konihaus]
 author: Koni
 ---
 

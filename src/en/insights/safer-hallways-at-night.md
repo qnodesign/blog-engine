@@ -15,7 +15,7 @@ keyword: "night light for seniors"
 category: safety
 tags: [seniors, fall-prevention, lighting]
 readingtime: 4 min read
-related: [who-is-konihaus-for, personal-service]
+related: [privacy-by-default, clocks-go-back, who-is-konihaus-for]
 author: Koni
 ---
 

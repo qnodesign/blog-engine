@@ -14,7 +14,7 @@ keyword: "smart home Zurich"
 category: guide
 tags: [seniors, renters, holiday-home, zurich]
 readingtime: 6 min read
-related: [personal-service, pain-points-we-stopped-noticing, smart-home-cost-switzerland]
+related: [personal-service, smart-home-cost-switzerland, privacy-by-default]
 author: Koni
 ---
 

@@ -15,7 +15,7 @@ keyword: "Zeitumstellung Smart Home"
 category: energie
 tags: [licht, automation, jahreszeiten]
 readingtime: 3 Min. Lesezeit
-related: [energieeffizienz, unbemerkte-alltagsaergernisse]
+related: [energieeffizienz, was-kostet-ein-smart-home-schweiz, unbemerkte-alltagsaergernisse]
 author: Koni
 ---
 

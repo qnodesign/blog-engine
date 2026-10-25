@@ -14,7 +14,7 @@ keyword: "Lohnt sich ein Smart Home"
 category: ratgeber
 tags: [nutzen, alltag]
 readingtime: 3 Min. Lesezeit
-related: [energieeffizienz, unbemerkte-alltagsaergernisse]
+related: [energieeffizienz, unbemerkte-alltagsaergernisse, persoenlicher-service]
 author: Koni
 ---
 

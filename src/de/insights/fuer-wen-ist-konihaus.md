@@ -14,7 +14,7 @@ keyword: "Smart Home Zürich"
 category: ratgeber
 tags: [senioren, mieter, ferienhaus, zuerich]
 readingtime: 6 Min. Lesezeit
-related: [persoenlicher-service, unbemerkte-alltagsaergernisse, was-kostet-ein-smart-home-schweiz]
+related: [persoenlicher-service, was-kostet-ein-smart-home-schweiz, datenschutz-by-default]
 author: Koni
 ---
 

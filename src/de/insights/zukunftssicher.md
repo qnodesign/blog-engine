@@ -14,7 +14,7 @@ keyword: "Smart Home zukunftssicher"
 category: technik
 tags: [offene-standards, home-assistant, matter]
 readingtime: 7 Min. Lesezeit
-related: [kein-vendor-lock-in, schweizer-qualitaet]
+related: [kein-vendor-lock-in, datenschutz-by-default, schweizer-qualitaet]
 author: Koni
 ---
 
