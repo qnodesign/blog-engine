@@ -154,80 +154,7 @@ permalink: /en/insights/index.html
     <a href="https://konihaus.ch/#contact" class="drawer-cta drawer-link" data-i18n="nav.cta">Kostenlose Beratung →</a>
   </div>
 
-{% macro category(post) -%}
-  {%- set c = post.data.category -%}
-  {%- if not c and post.data.tags -%}
-    {%- set t = post.data.tags -%}
-    {%- if t is string -%}{%- set c = (t.split(',')[0]) | trim -%}{%- else -%}{%- set c = t[0] -%}{%- endif -%}
-  {%- endif -%}
-  {%- if c %}{{ c | replace("-", " ") }}{% endif -%}
-{%- endmacro %}
-
-  <main class="insights-container">
-    <header class="insights__header">
-      <p class="insights__eyebrow">Konihaus Journal</p>
-      <h1 class="insights__title">Smart home <em>made personal</em>.</h1>
-      <p class="insights__intro">Notes on privacy, quality and everyday life with a smart home that stays personal, private and open.</p>
-    </header>
-
-    {% set posts = collections.insightsEN | sort(true, false, 'data.date') %}
-    {# Scheduling: every post is rendered; scripts.js (setupInsightsSchedule) removes posts whose date + optional
-       front matter `time: "HH:MM"` (default 07:00, Swiss time) is still in the future unless the URL has ?devmode=super. Featured markup lives in <template> so
-       its image is only loaded for the one post that is actually shown. #}
-
-    {% if posts.length %}
-    <div class="insights-featured-slot" data-scheduled-label="Scheduled">
-      {% for post in posts %}
-      <template data-post-url="{{ post.url }}">
-        <article class="insights-featured">
-          <div class="insights-featured__media">
-            <div class="insights-featured__clip">
-                <img src="{{ "/images/insights/" + post.data.ogimage }}" alt="" width="1200" height="800" fetchpriority="high" />
-            </div>
-            <span class="insights-badge">New on the blog</span>
-          </div>
-          <div class="insights-featured__content">
-            <h2 class="insights-featured__title">
-              <a href="{{ post.url }}">{{ post.data.title }}</a>
-            </h2>
-            <p class="insights-featured__meta">
-              <time datetime="{{ post.date.toISOString().slice(0, 10) }}">{{ post.data.date | dateFormat }}</time>&nbsp;·&nbsp;{{ post.data.readingtime }}&nbsp;·&nbsp;By Koni
-            </p>
-            <p class="insights-featured__excerpt">{{ post.data.excerpt }}</p>
-            <a href="{{ post.url }}" class="insights-featured__link" aria-hidden="true" tabindex="-1">Read article <span>→</span></a>
-          </div>
-        </article>
-      </template>
-      {% endfor %}
-    </div>
-
-    {% include "subscribe-box.njk" %}
-
-    <div class="insights__grid">
-      {% for post in posts %}
-        <article class="insights-card" data-post-url="{{ post.url }}" data-post-date="{{ post.date.toISOString().slice(0, 10) }}"{% if post.data.time %} data-post-time="{{ post.data.time }}"{% endif %}>
-          <div class="insights-card__media">
-            <img src="{{ "/images/insights/" + post.data.ogimage }}" alt="" width="1200" height="675" loading="lazy" decoding="async" />
-          </div>
-          <div class="insights-card__body">
-            {% set cat = category(post) %}
-            {% if cat | length %}<p class="insights-card__category">{{ cat }}</p>{% endif %}
-            <h3 class="insights-card__title">
-              <a href="{{ post.url }}">{{ post.data.title }}</a>
-            </h3>
-            <p class="insights-card__meta">
-              <time datetime="{{ post.date.toISOString().slice(0, 10) }}">{{ post.data.date | dateFormat }}</time>&nbsp;·&nbsp;{{ post.data.readingtime }}<span class="insights-card__author">&nbsp;·&nbsp;By Koni</span>
-            </p>
-            <div class="insights-card__excerpt-container">
-              <p class="insights-card__excerpt">{{ post.data.excerpt }}</p>
-            </div>
-            <a href="{{ post.url }}" class="insights-card__link" aria-hidden="true" tabindex="-1">Read article <span>→</span></a>
-          </div>
-        </article>
-      {% endfor %}
-    </div>
-    {% endif %}
-  </main>
+{% include "insights-browser.njk" %}
 
     <footer class="footer">
     <div class="container">
@@ -304,6 +231,7 @@ permalink: /en/insights/index.html
   </footer>
 
   <script src="/assets/scripts.js"></script>
+  <script src="/assets/insights-browse.js"></script>
   <script src="/assets/cookie-consent.js"></script>
 </body>
 </html>

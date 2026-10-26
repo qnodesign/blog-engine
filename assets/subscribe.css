@@ -201,3 +201,19 @@
         padding: 2rem 2rem 2.1rem;
     }
 }
+
+/* Narrow screens: the grid track and the email input must be allowed to shrink to the card */
+.subscribe--card { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); }
+@media (max-width: 920px) { .subscribe--card { grid-template-columns: minmax(0, 1fr); } }
+.subscribe__intro, .subscribe__form, .subscribe__row { min-width: 0; }
+.subscribe__input { min-width: 0; max-width: 100%; box-sizing: border-box; }
+
+/* "Get in touch" button shown in the newsletter box when a filter has no results */
+.subscribe__contact {
+  display: inline-flex; align-items: center; justify-content: center; margin-top: 14px; height: 44px; padding: 0 22px;
+  font: inherit; font-weight: 600; font-size: .95rem; text-decoration: none; cursor: pointer;
+  color: inherit; background: transparent; border: 1.5px solid currentColor; border-radius: 8px;
+  transition: background .2s, color .2s;
+}
+.subscribe__contact[hidden] { display: none; }
+.subscribe__contact:hover, .subscribe__contact:focus-visible { background: rgba(26, 25, 22, .08); }

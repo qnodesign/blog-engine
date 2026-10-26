@@ -1,0 +1,116 @@
+{%- set L = language or 'en' -%}
+{%- set U = blogui[L] -%}
+{%- set posts = (collections.insightsDE if L == 'de' else collections.insightsEN) | sort(true, false, 'data.date') -%}
+  <main class="insights-container insights-container--browse" data-lang="{{ L }}" data-insights-browser data-base="/{{ L }}/insights/">
+    <header class="insights__header">
+      <p class="insights__eyebrow">{{ U.eyebrow }}</p>
+      <h1 class="insights__title">{{ U.titleHtml | safe }}</h1>
+      <p class="insights__intro">{{ U.intro }}</p>
+    </header>
+    <script type="application/json" id="insights-ui">{{ U.ui | dump | safe }}</script>
+    {# Scheduling: every post is rendered; scripts.js (setupInsightsSchedule) removes posts whose date + optional
+       front matter `time: "HH:MM"` (default 07:00, Swiss time) is still in the future unless the URL has ?devmode=super.
+       assets/insights-browse.js then handles topics, search, filters, sorting and infinite scroll on what is left. #}
+    {% if posts.length %}
+    <div class="insights-topics" role="group" aria-label="{{ U.ui.topic }}">
+      <button type="button" class="insights-chip is-on" data-topic="" aria-pressed="true">{{ U.all }} <b data-count></b></button>
+      {%- for slug in (posts | topicStarts) | topicSlugs(U.topicOrder) %}
+      <button type="button" class="insights-chip" data-topic="{{ slug }}" aria-pressed="false">{{ slug | topicLabel(U.topics) }} <b data-count></b></button>
+      {%- endfor %}
+    </div>
+
+    <div class="insights-layout">
+      <section class="insights-main" aria-label="{{ U.eyebrow }}">
+        <div class="insights-status">
+          <p class="insights-count" aria-live="polite"></p>
+          <button type="button" class="insights-filter-btn" aria-controls="insights-aside" aria-expanded="false">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg>{{ U.ui.filterSort }}<b class="insights-filter-n" hidden></b>
+          </button>
+        </div>
+        <div class="insights-active" aria-label="{{ U.ui.filteredBy }}"></div>
+
+        <div class="insights__grid" id="insights-grid">
+        {%- for post in posts %}
+          {%- set topic = post.data.category or '' %}
+          <article class="insights-card" data-post-url="{{ post.url }}" data-post-date="{{ post.date.toISOString().slice(0, 10) }}"{% if post.data.time %} data-post-time="{{ post.data.time }}"{% endif %} data-topic="{{ topic }}" data-tags="{% if post.data.tags %}{{ post.data.tags | join(',') | lower }}{% endif %}" data-reading="{{ post.data.readingtime }}"{% if post.data.series %} data-series="{{ post.data.series }}"{% endif %} data-search="{{ (post.data.title + ' ' + post.data.excerpt + ' ' + (post.data.tags | join(' ')) + ' ' + (post.data.keyword or '')) | lower }}">
+            <div class="insights-card__media">
+              <img src="{{ "/images/insights/" + post.data.ogimage }}" alt="" width="1200" height="675" loading="lazy" decoding="async" />
+              <span class="insights-badge">{{ U.newBadge }}</span>
+            </div>
+            <div class="insights-card__body">
+              {% if topic %}<p class="insights-card__category">{{ topic | topicLabel(U.topics) }}</p>{% endif %}
+              <h3 class="insights-card__title">
+                <a href="{{ post.url }}">{{ post.data.title }}</a>
+              </h3>
+              <p class="insights-card__meta">
+                <time datetime="{{ post.date.toISOString().slice(0, 10) }}">{% if L == 'de' %}{{ post.data.date | dateFormatDE }}{% else %}{{ post.data.date | dateFormat }}{% endif %}</time>&nbsp;·&nbsp;{{ post.data.readingtime }}<span class="insights-card__author">&nbsp;·&nbsp;{{ U.byline }}</span>
+              </p>
+              <div class="insights-card__excerpt-container">
+                <p class="insights-card__excerpt">{{ post.data.excerpt }}</p>
+              </div>
+              <a href="{{ post.url }}" class="insights-card__link" aria-hidden="true" tabindex="-1">{{ U.readMore }} <span>→</span></a>
+            </div>
+          </article>
+        {%- endfor %}
+        </div>
+
+        <p class="insights-empty" hidden>{{ U.ui.empty }} <button type="button" class="insights-linkbtn" data-clear>{{ U.ui.clear }}</button></p>
+        <div class="insights-sentinel" aria-live="polite" hidden>
+          <span class="insights-sentinel__spin" aria-hidden="true"></span>
+          <span class="insights-sentinel__text"></span>
+        </div>
+      </section>
+
+      <aside class="insights-aside" id="insights-aside" aria-label="{{ U.ui.filterSort }}">
+        <div class="insights-sheet-head">
+          <b>{{ U.ui.filterSort }}</b>
+          <button type="button" class="insights-linkbtn" data-clear>{{ U.ui.clearAll }}</button>
+          <button type="button" class="insights-sheet-close" aria-label="{{ U.ui.close }}">×</button>
+        </div>
+        <div class="insights-aside__body">
+          <div class="insights-facet">
+            <h4>{{ U.ui.sort }}</h4>
+            <select class="insights-select" data-f="sort" aria-label="{{ U.ui.sort }}">
+              <option value="new">{{ U.ui.newest }}</option>
+              <option value="old">{{ U.ui.oldest }}</option>
+              <option value="short">{{ U.ui.shortest }}</option>
+            </select>
+          </div>
+          <div class="insights-facet">
+            <h4>{{ U.ui.dateRange }}</h4>
+            <div class="insights-dates">
+              <label class="insights-date"><small>{{ U.ui.from }}</small><input type="date" data-f="from"></label>
+              <label class="insights-date"><small>{{ U.ui.to }}</small><input type="date" data-f="to"></label>
+            </div>
+            <div class="insights-presets">
+              <button type="button" class="insights-chip insights-chip--sm" data-preset="7">{{ U.ui.last7 }}</button>
+              <button type="button" class="insights-chip insights-chip--sm" data-preset="30">{{ U.ui.last30 }}</button>
+              <button type="button" class="insights-chip insights-chip--sm" data-preset="year">{{ U.ui.thisYear }}</button>
+            </div>
+          </div>
+          <div class="insights-facet" data-facet="series" hidden>
+            <h4>{{ U.ui.series }}</h4>
+            <div class="insights-checks"></div>
+          </div>
+          <div class="insights-facet">
+            <h4>{{ U.ui.readingTime }}</h4>
+            <div class="insights-checks" data-facet="reading">
+              <label class="insights-check"><input type="checkbox" data-rt="u5"><i></i>{{ U.ui.under5 }}<span data-rtcount="u5"></span></label>
+              <label class="insights-check"><input type="checkbox" data-rt="mid"><i></i>{{ U.ui.mid }}<span data-rtcount="mid"></span></label>
+              <label class="insights-check"><input type="checkbox" data-rt="o8"><i></i>{{ U.ui.over8 }}<span data-rtcount="o8"></span></label>
+            </div>
+          </div>
+          <div class="insights-facet" data-facet="tags" hidden>
+            <h4>{{ U.ui.tags }}</h4>
+            <div class="insights-tags"></div>
+          </div>
+        </div>
+        <div class="insights-sheet-foot">
+          <button type="button" class="insights-showbtn" data-sheet-apply></button>
+        </div>
+      </aside>
+    </div>
+    <div class="insights-subscribe-slot">{% include "subscribe-box.njk" %}</div>
+    <div class="insights-sheet-backdrop" hidden></div>
+    {% endif %}
+  </main>

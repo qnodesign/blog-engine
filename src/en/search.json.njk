@@ -1,0 +1,24 @@
+---
+permalink: /en/search.json
+eleventyExcludeFromCollections: true
+---
+{%- set U = blogui['en'] -%}
+[
+{%- for post in collections.insightsEN %}
+{{ '' if loop.first else ',' }}{{ {
+  "t": post.data.title,
+  "u": post.url,
+  "d": post.date.toISOString().slice(0, 10),
+  "tm": post.data.time or '',
+  "c": post.data.category or '',
+  "cl": (post.data.category | topicLabel(U.topics)) if post.data.category else '',
+  "e": post.data.excerpt or '',
+  "g": post.data.tags or [],
+  "k": post.data.keyword or '',
+  "r": post.data.readingtime or '',
+  "df": post.data.date | dateFormat,
+  "i": ("/images/insights/" + post.data.ogimage) if post.data.ogimage else '',
+  "b": (post.templateContent | striptags(true) | truncate(2500, true, ''))
+} | dump | safe }}
+{%- endfor %}
+]

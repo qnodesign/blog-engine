@@ -28,6 +28,36 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  // Topic menu: earliest release (Swiss time, "YYYY-MM-DDTHH:MM") of a post per category, so the header only
+  // lists topics that have a published post. assets/scripts.js (setupTopicNav) drops entries not yet due.
+  eleventyConfig.addFilter("topicStarts", (posts) => {
+    const out = {};
+    (posts || []).forEach((p) => {
+      const c = p.data.category;
+      if (!c) return;
+      const day = new Date(p.date).toISOString().slice(0, 10);
+      const m = /^(\d{1,2}):(\d{2})/.exec(String(p.data.time || ""));
+      const at = m && +m[1] < 24 && +m[2] < 60 ? `${m[1].padStart(2, "0")}:${m[2]}` : "07:00";
+      const key = `${day}T${at}`;
+      if (!out[c] || key < out[c]) out[c] = key;
+    });
+    return out;
+  });
+
+  // Topics are derived from the posts' front matter `category`, so a new category appears everywhere automatically:
+  // known ones (blogui.topicOrder) first in that order, new ones after them alphabetically.
+  eleventyConfig.addFilter("topicSlugs", (starts, order) => {
+    const have = Object.keys(starts || {});
+    const known = (order || []).filter((s) => have.includes(s));
+    return known.concat(have.filter((s) => !known.includes(s)).sort());
+  });
+  // Label for a category: translated name from blogui.topics, else the slug prettified ("smart-lights" -> "Smart lights").
+  eleventyConfig.addFilter("topicLabel", (slug, topics) => {
+    if (topics && topics[slug]) return topics[slug];
+    const t = String(slug || "").replace(/[-_]+/g, " ").trim();
+    return t.charAt(0).toUpperCase() + t.slice(1);
+  });
+
   // Collection: all EN insights sorted by date (newest first)
   eleventyConfig.addCollection("insightsEN", (collection) => {
     return collection

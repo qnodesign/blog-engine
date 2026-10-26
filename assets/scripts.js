@@ -1026,47 +1026,202 @@ function setupInsightsSchedule() {
   const devMode = new URLSearchParams(window.location.search).get('devmode') === 'super';
   const isLive = (card) => isPostLive(card.dataset.postDate, card.dataset.postTime);
   const stampOf = (card) => `${card.dataset.postDate} ${normalizePostTime(card.dataset.postTime)}`;
+  const label = main.dataset.scheduledLabel || document.documentElement.dataset.scheduledLabel
+    || (document.documentElement.lang === 'de' ? 'Geplant' : 'Scheduled');
 
-  const slot = main.querySelector('.insights-featured-slot');
-  const grid = main.querySelector('.insights__grid');
-  const label = (slot && slot.dataset.scheduledLabel) || 'Scheduled';
-
-  function markScheduled(el, date) {
-    el.classList.add('is-scheduled');
+  // Cards not yet due are removed (devmode keeps them, marked as scheduled).
+  main.querySelectorAll('.insights-card[data-post-date]').forEach((card) => {
+    if (isLive(card)) return;
+    if (!devMode) { card.remove(); return; }
+    card.classList.add('is-scheduled');
     const tag = document.createElement('span');
     tag.className = 'insights-scheduled';
-    tag.textContent = `${label} · ${date}`;
-    el.prepend(tag);
+    tag.textContent = `${label} · ${stampOf(card)}`;
+    card.prepend(tag);
+  });
+}
+
+
+// Header + drawer topic lists: only topics with at least one published post (entries carry data-live-from).
+function setupTopicNav() {
+  if (DEVMODE) return;
+  const now = nowStamp();
+  document.querySelectorAll('[data-live-from]').forEach((li) => {
+    if (li.dataset.liveFrom > now) li.remove();
+  });
+}
+
+// ---------------------------------------------------------------------------
+// Blog search overlay. Triggers: any [data-blog-search-open] (header + drawer), "/" or Ctrl/Cmd+K.
+// Index: /{lang}/search.json (src/{lang}/search.json.njk). Posts not yet due are skipped
+// (same rule as the index page). "See all results" opens /{lang}/insights/?q=...
+// ---------------------------------------------------------------------------
+const BLOG_SEARCH_TEXT = {
+  en: { placeholder: 'Search articles', aria: 'Search articles', close: 'Close', none: 'No results for "{q}".', all: 'See all results for "{q}"',
+        hint: '↑ ↓ to move · Enter to open · Esc to close', empty: 'Type to search all articles.', min: 'min read', err: 'Search is not available right now.', latest: 'Latest articles' },
+  de: { placeholder: 'Beiträge durchsuchen', aria: 'Beiträge durchsuchen', close: 'Schliessen', none: 'Keine Ergebnisse für «{q}».', all: 'Alle Ergebnisse für «{q}»',
+        hint: '↑ ↓ zum Wählen · Enter zum Öffnen · Esc zum Schliessen', empty: 'Tippen Sie, um alle Beiträge zu durchsuchen.', min: 'Min. Lesezeit', err: 'Die Suche ist gerade nicht verfügbar.', latest: 'Neueste Beiträge' }
+};
+
+function setupBlogSearch() {
+  const triggers = document.querySelectorAll('[data-blog-search-open]');
+  const lang = (document.documentElement.lang || 'de').slice(0, 2) === 'en' ? 'en' : 'de';
+  const T = BLOG_SEARCH_TEXT[lang];
+  let root = null, input, list, foot, seeAll, hint, items = null, loading = null, active = -1, current = [], lastFocus = null;
+
+  const esc = (str) => String(str == null ? '' : str).replace(/[&<>"']/g, (ch) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
+  const fold = (str) => String(str || '').toLowerCase();
+
+  function highlight(text, tokens) {
+    let out = esc(text);
+    tokens.forEach((tok) => {
+      if (!tok) return;
+      const re = new RegExp('(' + tok.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'ig');
+      out = out.replace(re, '<mark>$1</mark>');
+    });
+    return out;
   }
 
-  // Cards are rendered newest first, so the first visible one is the featured post.
-  const cards = [...main.querySelectorAll('.insights-card[data-post-date]')];
-  const visible = cards.filter((card) => devMode || isLive(card));
-  const featuredCard = visible[0];
+  function load() {
+    if (items) return Promise.resolve(items);
+    if (!loading) {
+      loading = fetch(`/${lang}/search.json`, { credentials: 'same-origin' })
+        .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then((data) => { items = data.filter((p) => DEVMODE || isPostLive(p.d, p.tm)); return items; })
+        .catch(() => { loading = null; return null; });
+    }
+    return loading;
+  }
 
-  cards.forEach((card) => {
-    if (!visible.includes(card) || card === featuredCard) {
-      card.remove();
-    } else if (!isLive(card)) {
-      markScheduled(card, stampOf(card));
+  function runQuery(q) {
+    const tokens = fold(q).split(/\s+/).filter(Boolean);
+    if (!tokens.length) return { tokens, hits: items.slice(0, 5).map((p) => ({ p, score: 0, snip: '' })) };
+    const hits = [];
+    items.forEach((p) => {
+      const title = fold(p.t), tags = fold((p.g || []).join(' ') + ' ' + (p.k || '')), cat = fold(p.cl), ex = fold(p.e), body = fold(p.b);
+      let score = 0;
+      for (const tok of tokens) {
+        let s = 0;
+        if (title.includes(tok)) s += 6;
+        if (tags.includes(tok) || cat.includes(tok)) s += 3;
+        if (ex.includes(tok)) s += 2;
+        if (body.includes(tok)) s += 1;
+        if (!s) { score = 0; break; }
+        score += s;
+      }
+      if (!score) return;
+      if (title.includes(fold(q).trim())) score += 4;
+      let snip = '';
+      if (!title.includes(tokens[0])) {
+        const src = ex.includes(tokens[0]) ? p.e : p.b;
+        const idx = fold(src).indexOf(tokens[0]);
+        if (idx >= 0) {
+          const from = Math.max(0, idx - 50);
+          snip = (from > 0 ? '… ' : '') + src.slice(from, idx + 90).trim() + ' …';
+        }
+      }
+      hits.push({ p, score, snip });
+    });
+    hits.sort((a, b) => b.score - a.score || (a.p.d < b.p.d ? 1 : -1));
+    return { tokens, hits };
+  }
+
+  function render() {
+    const q = input.value.trim();
+    if (!items) { list.innerHTML = `<p class="bsearch__msg">${esc(T.err)}</p>`; foot.hidden = true; return; }
+    const { tokens, hits } = runQuery(q);
+    current = hits.slice(0, 7);
+    active = current.length && q ? 0 : -1;
+    if (!current.length) {
+      list.innerHTML = `<p class="bsearch__msg">${esc(T.none.replace('{q}', q))}</p>`;
+    } else {
+      const head = q ? '' : `<p class="bsearch__label">${esc(T.latest)}</p>`;
+      list.innerHTML = head + current.map((h, i) => {
+        const p = h.p;
+        return `<a class="bsearch__item${i === active ? ' is-active' : ''}" role="option" id="bs-${i}" href="${esc(p.u)}" data-i="${i}">` +
+          `<span class="bsearch__thumb">${p.i ? `<img src="${esc(p.i)}" alt="" width="56" height="56" loading="lazy">` : ''}</span>` +
+          `<span class="bsearch__txt"><b>${highlight(p.t, tokens)}</b>` +
+          `<small>${esc(p.cl)} · ${esc(p.df)} · ${esc(p.r)}</small>` +
+          (h.snip ? `<em>${highlight(h.snip, tokens)}</em>` : '') + `</span></a>`;
+      }).join('');
+    }
+    foot.hidden = !q;
+    if (q) {
+      seeAll.textContent = T.all.replace('{q}', q) + ' →';
+      seeAll.href = `/${lang}/insights/?q=${encodeURIComponent(q)}`;
+    }
+  }
+
+  function setActive(n) {
+    if (!current.length) return;
+    active = (n + current.length) % current.length;
+    list.querySelectorAll('.bsearch__item').forEach((el, i) => {
+      el.classList.toggle('is-active', i === active);
+      if (i === active) el.scrollIntoView({ block: 'nearest' });
+    });
+  }
+
+  function build() {
+    root = document.createElement('div');
+    root.className = 'bsearch';
+    root.hidden = true;
+    root.innerHTML =
+      '<div class="bsearch__backdrop" data-close></div>' +
+      '<div class="bsearch__panel" role="dialog" aria-modal="true" aria-label="' + esc(T.aria) + '">' +
+      '<div class="bsearch__bar"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>' +
+      '<input type="search" class="bsearch__input" placeholder="' + esc(T.placeholder) + '" aria-label="' + esc(T.aria) + '" autocomplete="off" enterkeyhint="search">' +
+      '<button type="button" class="bsearch__esc" data-close aria-label="' + esc(T.close) + '">Esc</button></div>' +
+      '<div class="bsearch__list" role="listbox"></div>' +
+      '<div class="bsearch__foot" hidden><span class="bsearch__hint">' + esc(T.hint) + '</span><a class="bsearch__all" href="#"></a></div>' +
+      '</div>';
+    document.body.appendChild(root);
+    input = root.querySelector('.bsearch__input');
+    list = root.querySelector('.bsearch__list');
+    foot = root.querySelector('.bsearch__foot');
+    seeAll = root.querySelector('.bsearch__all');
+    root.addEventListener('click', (e) => { if (e.target.closest('[data-close]')) close(); });
+    input.addEventListener('input', () => load().then(render));
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowDown') { e.preventDefault(); setActive(active + 1); }
+      else if (e.key === 'ArrowUp') { e.preventDefault(); setActive(active - 1); }
+      else if (e.key === 'Enter') {
+        e.preventDefault();
+        const q = input.value.trim();
+        if (active >= 0 && current[active]) location.href = current[active].p.u;
+        else if (q) location.href = `/${lang}/insights/?q=${encodeURIComponent(q)}`;
+      }
+    });
+  }
+
+  function open() {
+    if (!root) build();
+    lastFocus = document.activeElement;
+    root.hidden = false;
+    document.body.classList.add('bsearch-open');
+    input.value = '';
+    list.innerHTML = `<p class="bsearch__msg">${esc(T.empty)}</p>`;
+    foot.hidden = true;
+    input.focus();
+    load().then(() => { if (!input.value) render(); });
+  }
+
+  function close() {
+    if (!root || root.hidden) return;
+    root.hidden = true;
+    document.body.classList.remove('bsearch-open');
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+
+  triggers.forEach((btn) => btn.addEventListener('click', (e) => { e.preventDefault(); open(); }));
+  document.addEventListener('keydown', (e) => {
+    const tag = (e.target && e.target.tagName) || '';
+    const typing = /INPUT|TEXTAREA|SELECT/.test(tag) || (e.target && e.target.isContentEditable);
+    if (e.key === 'Escape') close();
+    else if ((e.key === '/' && !typing && !e.ctrlKey && !e.metaKey) || ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k')) {
+      e.preventDefault();
+      open();
     }
   });
-
-  if (slot) {
-    const templates = [...slot.querySelectorAll('template[data-post-url]')];
-    if (featuredCard) {
-      const tpl = templates.find((t) => t.dataset.postUrl === featuredCard.dataset.postUrl);
-      if (tpl) {
-        const node = tpl.content.firstElementChild.cloneNode(true);
-        if (!isLive(featuredCard)) markScheduled(node, stampOf(featuredCard));
-        slot.replaceChildren(node);
-      }
-    } else {
-      slot.remove();
-    }
-  }
-
-  if (grid && !grid.children.length) grid.remove();
 }
 
 // ---------------------------------------------------------------------------
@@ -1155,6 +1310,8 @@ document.addEventListener('DOMContentLoaded', () => {
   setupScheduledPost();
   applyDevmodeLinks();
   setupBlogSubscribe(); // independent of translations, works even if they fail to load
+  setupTopicNav();
+  setupBlogSearch();
   i18n.init().then(() => {
     if (typeof cookieConsent !== 'undefined') cookieConsent.init();
 

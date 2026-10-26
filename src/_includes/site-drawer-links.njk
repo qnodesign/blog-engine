@@ -1,16 +1,26 @@
+{%- set L = language or 'de' -%}
+{%- set U = blogui[L] -%}
+{%- set home = '/' + L + '/insights/' -%}
+{%- set starts = (collections.insightsDE if L == 'de' else collections.insightsEN) | topicStarts -%}
 <ul>
+      <li><a href="{{ home }}" class="drawer-link{% if page.url == home %} active{% endif %}"{% if page.url == home %} aria-current="page"{% endif %}>{{ U.nav.latest }}</a></li>
       <li class="drawer-group">
-        <button type="button" class="drawer-acc" aria-expanded="false" aria-controls="dg-about"><span data-i18n="nav.about_us">Über uns</span><svg class="chev" width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></button>
-        <ul class="drawer-sub" id="dg-about" hidden>
-          <li><a href="https://konihaus.ch/#intro" class="drawer-link" data-i18n="footer.col2_l1">Was ist Konihaus</a></li>
-          <li><a href="https://konihaus.ch/#process" class="drawer-link" data-i18n="footer.col2_l2">So funktioniert&#x27;s</a></li>
-          <li><a href="https://konihaus.ch/#why" class="drawer-link" data-i18n="footer.col2_l3">Warum Konihaus</a></li>
-          <li><a href="https://konihaus.ch/#about" class="drawer-link" data-i18n="footer.col2_l4">Über Koni</a></li>
+        <button type="button" class="drawer-acc" aria-expanded="false" aria-controls="dg-topics"><span>{{ U.nav.topics }}</span><svg class="chev" width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></button>
+        <ul class="drawer-sub" id="dg-topics" hidden>
+          {%- for slug in starts | topicSlugs(U.topicOrder) %}
+          <li data-live-from="{{ starts[slug] }}"><a href="{{ home }}?topic={{ slug }}" class="drawer-link">{{ slug | topicLabel(U.topics) }}</a></li>
+          {%- endfor %}
+          <li><a href="{{ home }}" class="drawer-link">{{ U.nav.allArticles }}</a></li>
         </ul>
       </li>
+      <li><button type="button" class="drawer-link drawer-search" data-blog-search-open>{{ U.nav.search }}</button></li>
       <li class="drawer-group">
-        <button type="button" class="drawer-acc" aria-expanded="false" aria-controls="dg-service"><span data-i18n="nav.service">Service</span><svg class="chev" width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></button>
-        <ul class="drawer-sub" id="dg-service" hidden>
+        <button type="button" class="drawer-acc" aria-expanded="false" aria-controls="dg-konihaus"><span>{{ U.nav.konihaus }}</span><svg class="chev" width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></button>
+        <ul class="drawer-sub" id="dg-konihaus" hidden>
+          <li><a href="https://konihaus.ch/" class="drawer-link" data-i18n="nav.website">Website</a></li>
+          <li><a href="https://app.konihaus.ch" class="drawer-link" target="_blank" rel="noopener"><span data-i18n="nav.app">App</span><span class="nav__badge" data-i18n="nav.new">Neu</span></a></li>
+          <li><a href="https://konihaus.ch/#intro" class="drawer-link" data-i18n="footer.col2_l1">Was ist Konihaus</a></li>
+          <li><a href="https://konihaus.ch/#about" class="drawer-link" data-i18n="footer.col2_l4">Über Koni</a></li>
           <li><a href="https://konihaus.ch/#devices" class="drawer-link" data-i18n="footer.col1_l2">Geräte &amp; Technik</a></li>
           <li><a href="https://konihaus.ch/home-assistant-schweiz" data-ha-link class="drawer-link" data-i18n="footer.col1_l5">Home Assistant Schweiz</a></li>
           <li><a href="https://konihaus.ch/#packages" class="drawer-link" data-i18n="footer.col1_l1">Pakete &amp; Preise</a></li>
@@ -18,6 +28,4 @@
           <li><a href="https://konihaus.ch/#contact" class="drawer-link" data-i18n="footer.col1_l4">Kontakt</a></li>
         </ul>
       </li>
-      <li><a href="https://app.konihaus.ch" class="drawer-link" target="_blank" rel="noopener"><span data-i18n="nav.app">App</span><span class="nav__badge" data-i18n="nav.new">Neu</span></a></li>
-      <li><a href="https://blog.konihaus.ch/" class="drawer-link active" aria-current="page" data-i18n="nav.blog">Blog</a></li>
     </ul>
