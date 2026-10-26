@@ -1,4 +1,4 @@
-const CACHE_NAME = 'konihaus-blog-v2';
+const CACHE_NAME = 'konihaus-blog-v3';
 const ASSETS_TO_CACHE = [
   '/assets/styles.css',
   '/assets/scripts.js',
@@ -36,6 +36,11 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   // Skip non-GET requests
   if (event.request.method !== 'GET') {
+    return;
+  }
+
+  // Let the browser handle video/audio and range requests itself (partial responses must not go through respondWith)
+  if (event.request.destination === 'video' || event.request.destination === 'audio' || event.request.headers.has('range')) {
     return;
   }
 

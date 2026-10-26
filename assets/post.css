@@ -366,3 +366,11 @@
 .blog-post__content p.blog-post__note strong {
     font-weight: 600;
 }
+
+/* Video figure (e.g. Hue Sync demo): same frame as images, no logo watermark over the controls */
+.blog-post__figure--video::after { display: none; }
+.blog-post__figure video {
+    display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: #14261b;
+    border-radius: 18px; box-shadow: 0 18px 45px rgba(30, 54, 40, 0.10);
+}
+.blog-post__figure figcaption { margin-top: .75rem; font-size: .9rem; opacity: .75; text-align: center; }
