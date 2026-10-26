@@ -1,0 +1,33 @@
+---
+permalink: /latest.json
+eleventyExcludeFromCollections: true
+---
+{#- Feed for the links page (hefelle.me). All posts per language, newest first, incl. scheduled ones:
+    the reader filters by date + time (Swiss time), same rule as the blog. -#}
+{%- set base = "https://blog.konihaus.ch" -%}
+{%- macro item(post, U) -%}
+{{ {
+  "t": post.data.title,
+  "u": base + post.url,
+  "d": post.date.toISOString().slice(0, 10),
+  "tm": post.data.time or '',
+  "cl": (post.data.category | topicLabel(U.topics)) if post.data.category else '',
+  "r": post.data.readingtime or '',
+  "i": (base + "/images/insights/" + post.data.ogimage) if post.data.ogimage else '',
+  "s": post.data.series or ''
+} | dump | safe }}
+{%- endmacro -%}
+{
+"en": [
+{%- set U = blogui['en'] -%}
+{%- for post in collections.insightsEN -%}{%- if true %}
+{{ '' if loop.first else ',' }}{{ item(post, U) }}
+{%- endif -%}{%- endfor %}
+],
+"de": [
+{%- set U = blogui['de'] -%}
+{%- for post in collections.insightsDE -%}{%- if true %}
+{{ '' if loop.first else ',' }}{{ item(post, U) }}
+{%- endif -%}{%- endfor %}
+]
+}
