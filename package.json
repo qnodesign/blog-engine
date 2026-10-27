@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "eleventy",
-    "serve": "eleventy --serve"
+    "serve": "eleventy --serve",
+    "newsletter": "node brevo-campaigns.cjs",
+    "newsletter:dry": "node brevo-campaigns.cjs --dry-run"
   },
   "keywords": [],
   "author": "",

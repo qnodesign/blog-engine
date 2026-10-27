@@ -4,7 +4,7 @@ const ORIGIN = 'https://blog.konihaus.ch';
 const escape = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const words = {
   en: { label: 'A NEW NOTE FROM KONI', intro: 'I’ve published a new article that I’d like to share with you.', cta: 'Read my article', outro: 'I hope you find it useful. If it sparks a question, just reply to this email — I’d love to hear from you.', sign: 'Warm regards,', footer: 'You’re receiving this email because you subscribed to Konihaus blog updates.', unsubscribe: 'Unsubscribe', all: 'More from the blog', subject: 'New on the blog: ' },
-  de: { label: 'NEUES VON KONI', intro: 'Ich habe einen neuen Beitrag veröffentlicht, den ich gerne mit dir teilen möchte.', cta: 'Meinen Beitrag lesen', outro: 'Ich hoffe, der Beitrag ist hilfreich für dich. Wenn du eine Frage dazu hast, antworte einfach auf diese E-Mail — ich freue mich, von dir zu hören.', sign: 'Liebe Grüsse', footer: 'Du erhältst diese E-Mail, weil du die Blog-Neuigkeiten von Konihaus abonniert hast.', unsubscribe: 'Abmelden', all: 'Mehr aus dem Blog', subject: 'Neu im Blog: ' }
+  de: { label: 'NEUES VON KONI', intro: 'Ich habe einen neuen Beitrag veröffentlicht, den ich gerne mit Ihnen teilen möchte.', cta: 'Meinen Beitrag lesen', outro: 'Ich hoffe, der Beitrag ist hilfreich für Sie. Wenn Sie eine Frage dazu haben, antworten Sie einfach auf diese E-Mail — ich freue mich, von Ihnen zu hören.', sign: 'Freundliche Grüsse', footer: 'Sie erhalten diese E-Mail, weil Sie die Blog-Neuigkeiten von Konihaus abonniert haben.', unsubscribe: 'Abmelden', all: 'Mehr aus dem Blog', subject: 'Neu im Blog: ' }
 };
 function absolute(value, base = ORIGIN) {
   const url = new URL(value, base);
@@ -93,9 +93,18 @@ function register(eleventyConfig, projectDir) {
     posts = collection.getAll().filter(p => /(?:^|\/)src\/(en|de)\/insights\/[^/]+\.md$/.test(p.inputPath.replace(/\\/g,'/')));
     return posts;
   });
-  eleventyConfig.on('eleventy.after', async () => {
+  eleventyConfig.on('eleventy.after', async ({runMode} = {}) => {
     const outputDir = process.env.KONIHAUS_NEWSLETTER_OUTPUT ? path.resolve(process.env.KONIHAUS_NEWSLETTER_OUTPUT) : path.resolve(projectDir,'../campaign/newsletter_email');
     await generate(posts,outputDir);
+    // Schedule upcoming newsletters in Brevo on real builds only (not on every `serve` rebuild).
+    if (runMode === 'serve' || runMode === 'watch') return;
+    const brevo = require('./brevo-campaigns.cjs');
+    try {
+      require('node:fs').existsSync(path.join(projectDir,'.env')) && process.loadEnvFile?.(path.join(projectDir,'.env'));
+    } catch { /* brevo-campaigns loads .env itself too */ }
+    if (process.env.NEWSLETTER_AUTOSCHEDULE === 'off') return console.log('[brevo-campaigns] NEWSLETTER_AUTOSCHEDULE=off, not scheduling');
+    try { await brevo.run({dir: outputDir}); }
+    catch (err) { console.warn(`[brevo-campaigns] WARNING: newsletters NOT scheduled: ${err.message}`); }
   });
 }
 module.exports = {register,generate};
