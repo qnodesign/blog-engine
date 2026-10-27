@@ -1,7 +1,7 @@
 ---
 title: "Smart Home zur Miete: Was ohne Nachfrage geht"
 date: 2026-11-01
-time: '10:00'
+time: '09:00'
 language: de
 layout: blog-post.njk
 permalink: /de/insights/smart-home-fuer-mieter/

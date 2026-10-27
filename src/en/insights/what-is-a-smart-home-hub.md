@@ -1,7 +1,7 @@
 ---
 title: "What a Smart Home Hub Actually Is"
 date: 2026-11-13
-time: '10:00'
+time: '09:00'
 language: en
 layout: blog-post.njk
 permalink: /en/insights/what-is-a-smart-home-hub/

@@ -1,7 +1,7 @@
 ---
 title: "Your Home, Your Data: Privacy by Default"
 date: 2026-10-05
-time: '10:00'
+time: '09:00'
 language: en
 layout: blog-post.njk
 permalink: /en/insights/privacy-by-default/

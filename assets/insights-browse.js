@@ -44,7 +44,7 @@ function initInsightsBrowse() {
     return {
       el: el,
       date: d.postDate,
-      stamp: d.postDate + ' ' + (typeof normalizePostTime === 'function' ? normalizePostTime(d.postTime) : '07:00'),
+      stamp: d.postDate + ' ' + (typeof normalizePostTime === 'function' ? normalizePostTime(d.postTime) : '09:00'),
       topic: d.topic || '',
       tags: (d.tags || '').split(',').filter(Boolean),
       min: parseInt(d.reading, 10) || 0,

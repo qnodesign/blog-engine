@@ -1,7 +1,7 @@
 ---
 title: "Smartes Licht: Lampen, Streifen und Leuchten, und was es in der Schweiz zu kaufen gibt"
 date: 2026-10-27
-time: '10:00'
+time: '09:00'
 language: de
 layout: blog-post.njk
 permalink: /de/insights/smarte-beleuchtung-schweiz/

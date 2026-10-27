@@ -2,7 +2,7 @@
 layout: blog-post.njk
 title: The Pain Points We Stopped Noticing
 date: 2026-10-17
-time: '10:00'
+time: '09:00'
 language: en
 ogimage: pain-points/og.jpg
 permalink: /en/insights/pain-points-we-stopped-noticing/

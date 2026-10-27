@@ -1,7 +1,7 @@
 ---
 title: Warm bei Ankunft, sparsam bei Abwesenheit
 date: 2026-09-02
-time: '10:00'
+time: '09:00'
 language: de
 layout: blog-post.njk
 permalink: /de/insights/energieeffizienz/

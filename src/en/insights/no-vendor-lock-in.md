@@ -1,7 +1,7 @@
 ---
 title: No Vendor Lock-In
 date: 2026-09-29
-time: '10:00'
+time: '09:00'
 language: en
 layout: blog-post.njk
 permalink: /en/insights/no-vendor-lock-in/

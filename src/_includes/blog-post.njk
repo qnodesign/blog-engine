@@ -26,7 +26,7 @@
 <head>
   <meta charset="UTF-8">
   <!-- Scheduled posts: before their publication date + time (front matter `time: "HH:MM"`,
-       default 07:00, Swiss time) the page behaves like a 404 and is marked noindex, nofollow,
+       default 09:00, Swiss time) the page behaves like a 404 and is marked noindex, nofollow,
        unless the URL has ?devmode=super (then it shows, but still noindex, nofollow).
        Runs first so nothing is shown. Same rule as isPostLive() in scripts.js. -->
   <script>
@@ -41,7 +41,7 @@
       var now = parts.year + '-' + parts.month + '-' + parts.day + 'T' + parts.hour + ':' + parts.minute;
       var published = '{{ page.date.toISOString().slice(0, 10) }}';
       var m = /^(\d{1,2}):(\d{2})/.exec('{{ time }}');
-      var at = (m && +m[1] < 24 && +m[2] < 60) ? (m[1].length < 2 ? '0' : '') + m[1] + ':' + m[2] : '07:00';
+      var at = (m && +m[1] < 24 && +m[2] < 60) ? (m[1].length < 2 ? '0' : '') + m[1] + ':' + m[2] : '09:00';
       window.__scheduledPost = (published + 'T' + at) > now ? published : null;
       window.__scheduledPostTime = at;
       // Not released yet (or a dev preview): tell search engines not to index or follow.

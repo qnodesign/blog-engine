@@ -1,7 +1,7 @@
 ---
 title: "Apple HomeView: Why It Isn't Coming Here, and What That Tells Us"
 date: 2026-10-26
-time: '10:00'
+time: '09:00'
 language: en
 layout: blog-post.njk
 permalink: /en/insights/apple-homeview-switzerland/

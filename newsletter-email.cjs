@@ -25,7 +25,7 @@ function model(post) {
   tracked.searchParams.set('utm_campaign', `blog-${post.slug}`);
   const date = new Date(d.date || post.date).toISOString().slice(0, 10);
   const t = /^(\d{1,2}):(\d{2})/.exec(String(d.time || ''));
-  const time = t && +t[1] < 24 && +t[2] < 60 ? `${t[1].padStart(2,'0')}:${t[2]}` : '07:00';
+  const time = t && +t[1] < 24 && +t[2] < 60 ? `${t[1].padStart(2,'0')}:${t[2]}` : '09:00';
   return {lang, w, title, excerpt, image: rawImage ? absolute(rawImage) : '', alt: opts.imageAlt || title, reading: d.readingtime || '', url: tracked.href, article, subject: opts.subject || w.subject + title, preheader: opts.preheader || excerpt, date, time};
 }
 function render(m) {

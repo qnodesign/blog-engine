@@ -9,7 +9,7 @@
     </header>
     <script type="application/json" id="insights-ui">{{ U.ui | dump | safe }}</script>
     {# Scheduling: every post is rendered; scripts.js (setupInsightsSchedule) removes posts whose date + optional
-       front matter `time: "HH:MM"` (default 07:00, Swiss time) is still in the future unless the URL has ?devmode=super.
+       front matter `time: "HH:MM"` (default 09:00, Swiss time) is still in the future unless the URL has ?devmode=super.
        assets/insights-browse.js then handles topics, search, filters, sorting and infinite scroll on what is left. #}
     {% if posts.length %}
     <div class="insights-topics" role="group" aria-label="{{ U.ui.topic }}">

@@ -1,7 +1,7 @@
 ---
 title: "Ein Zuhause, das für Sie mitdenkt"
 date: 2026-11-07
-time: '10:00'
+time: '09:00'
 language: de
 layout: blog-post.njk
 permalink: /de/insights/adhs-im-alltag/

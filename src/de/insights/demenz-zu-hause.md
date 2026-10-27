@@ -1,7 +1,7 @@
 ---
 title: "Mit Demenz zu Hause leben: Hilfe ohne Überwachung"
 date: 2026-11-05
-time: '10:00'
+time: '09:00'
 language: de
 layout: blog-post.njk
 permalink: /de/insights/demenz-zu-hause/

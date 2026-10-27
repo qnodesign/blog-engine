@@ -1,7 +1,7 @@
 ---
 title: "Heute Nacht wird die Uhr zurückgestellt. Ihr Zuhause merkt es nicht."
 date: 2026-10-24
-time: '10:00'
+time: '09:00'
 language: de
 layout: blog-post.njk
 permalink: /de/insights/zeitumstellung/

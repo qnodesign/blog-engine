@@ -1,7 +1,7 @@
 ---
 title: Läuft das auch in zehn Jahren noch?
 date: 2026-09-10
-time: '10:00'
+time: '09:00'
 language: de
 layout: blog-post.njk
 permalink: /de/insights/zukunftssicher/

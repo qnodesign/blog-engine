@@ -37,7 +37,7 @@ module.exports = function(eleventyConfig) {
       if (!c) return;
       const day = new Date(p.date).toISOString().slice(0, 10);
       const m = /^(\d{1,2}):(\d{2})/.exec(String(p.data.time || ""));
-      const at = m && +m[1] < 24 && +m[2] < 60 ? `${m[1].padStart(2, "0")}:${m[2]}` : "07:00";
+      const at = m && +m[1] < 24 && +m[2] < 60 ? `${m[1].padStart(2, "0")}:${m[2]}` : "09:00";
       const key = `${day}T${at}`;
       if (!out[c] || key < out[c]) out[c] = key;
     });
@@ -86,7 +86,7 @@ module.exports = function(eleventyConfig) {
     return isNaN(d) ? null : d.toISOString().slice(0, 10);
   };
 
-  // Posts whose publication date + time (front matter `time`, default 07:00, Swiss time)
+  // Posts whose publication date + time (front matter `time`, default 09:00, Swiss time)
   // is still in the future at build time are left out of the sitemap. They are added by the
   // first build after their release. Same rule as the scheduling script in blog-post.njk.
   const zurichNow = () => {
@@ -103,7 +103,7 @@ module.exports = function(eleventyConfig) {
     const day = toDay(d.date || item.date);
     if (!day) return false;
     const m = /^(\d{1,2}):(\d{2})/.exec(String(d.time || ""));
-    const at = m && +m[1] < 24 && +m[2] < 60 ? `${m[1].padStart(2, "0")}:${m[2]}` : "07:00";
+    const at = m && +m[1] < 24 && +m[2] < 60 ? `${m[1].padStart(2, "0")}:${m[2]}` : "09:00";
     return `${day}T${at}` > zurichNow();
   };
 

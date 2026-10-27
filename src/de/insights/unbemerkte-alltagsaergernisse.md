@@ -2,7 +2,7 @@
 layout: blog-post.njk
 title: Was uns nicht mehr auffällt
 date: 2026-10-17
-time: '10:00'
+time: '09:00'
 language: de
 ogimage: pain-points/og.jpg
 permalink: /de/insights/unbemerkte-alltagsaergernisse/

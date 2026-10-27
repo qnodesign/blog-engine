@@ -1,7 +1,7 @@
 ---
 title: "Lüften, heizen, Schimmel vermeiden"
 date: 2026-11-09
-time: '10:00'
+time: '09:00'
 language: de
 layout: blog-post.njk
 permalink: /de/insights/schimmel-vermeiden/

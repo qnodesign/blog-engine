@@ -1,7 +1,7 @@
 ---
 title: "Smart Home as a Renter: What You Can Do Without Asking"
 date: 2026-11-01
-time: '10:00'
+time: '09:00'
 language: en
 layout: blog-post.njk
 permalink: /en/insights/smart-home-for-renters/

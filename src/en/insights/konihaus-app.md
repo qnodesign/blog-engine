@@ -1,7 +1,7 @@
 ---
 title: "The Konihaus App: Your Home at a Glance"
 date: 2026-10-20
-time: '10:00'
+time: '09:00'
 language: en
 layout: blog-post.njk
 permalink: /en/insights/konihaus-app/

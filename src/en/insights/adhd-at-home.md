@@ -1,7 +1,7 @@
 ---
 title: "A Home That Remembers for You"
 date: 2026-11-07
-time: '10:00'
+time: '09:00'
 language: en
 layout: blog-post.njk
 permalink: /en/insights/adhd-at-home/

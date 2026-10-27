@@ -973,10 +973,10 @@ function applyDevmodeLinks() {
 
 // ---------------------------------------------------------------------------
 // Publish time: a post goes live at its date + optional time (data-post-time="HH:MM",
-// window.__scheduledPostTime). Without a time it goes live at 07:00. All times are
+// window.__scheduledPostTime). Without a time it goes live at 09:00. All times are
 // Swiss time (Europe/Zurich), independent of the visitor's own time zone.
 // ---------------------------------------------------------------------------
-const DEFAULT_PUBLISH_TIME = '07:00';
+const DEFAULT_PUBLISH_TIME = '09:00';
 const PUBLISH_TZ = 'Europe/Zurich';
 
 function normalizePostTime(time) {

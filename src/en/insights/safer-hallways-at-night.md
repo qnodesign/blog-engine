@@ -1,7 +1,7 @@
 ---
 title: "Darker Evenings, Safer Hallways"
 date: 2026-10-30
-time: '10:00'
+time: '09:00'
 language: en
 layout: blog-post.njk
 permalink: /en/insights/safer-hallways-at-night/

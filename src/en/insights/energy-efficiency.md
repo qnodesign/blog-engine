@@ -1,7 +1,7 @@
 ---
 title: Warm When You Arrive, Quiet When You Leave
 date: 2026-09-02
-time: '10:00'
+time: '09:00'
 language: en
 layout: blog-post.njk
 permalink: /en/insights/energy-efficiency/

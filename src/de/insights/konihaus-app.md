@@ -1,7 +1,7 @@
 ---
 title: "Die Konihaus-App: Ihr Zuhause auf einen Blick"
 date: 2026-10-20
-time: '10:00'
+time: '09:00'
 language: de
 layout: blog-post.njk
 permalink: /de/insights/konihaus-app/

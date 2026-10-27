@@ -1,7 +1,7 @@
 ---
 title: "What does a smart home cost in Switzerland? The honest answer"
 date: 2026-10-22
-time: '10:00'
+time: '09:00'
 language: en
 layout: blog-post.njk
 permalink: /en/insights/smart-home-cost-switzerland/

@@ -1,7 +1,7 @@
 ---
 title: "Frostwache für die Ferienwohnung"
 date: 2026-10-28
-time: '10:00'
+time: '09:00'
 language: de
 layout: blog-post.njk
 permalink: /de/insights/ferienwohnung-frostschutz/

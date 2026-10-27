@@ -1,7 +1,7 @@
 ---
 title: "Sprachsteuerung auf Schweizerdeutsch: ein ehrlicher Zwischenstand"
 date: 2026-11-11
-time: '10:00'
+time: '09:00'
 language: de
 layout: blog-post.njk
 permalink: /de/insights/sprachsteuerung-schweizerdeutsch/

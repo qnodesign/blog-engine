@@ -1,7 +1,7 @@
 ---
 title: Will It Still Work in Ten Years?
 date: 2026-09-10
-time: '10:00'
+time: '09:00'
 language: en
 layout: blog-post.njk
 permalink: /en/insights/future-proof/

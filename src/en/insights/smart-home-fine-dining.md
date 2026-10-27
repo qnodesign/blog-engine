@@ -2,7 +2,7 @@
 layout: blog-post.njk
 title: Smart Home Is Today's Fine Dining
 date: 2026-09-15
-time: '10:00'
+time: '09:00'
 language: en
 ogimage: fine-dining/og.jpg
 permalink: /en/insights/smart-home-fine-dining/

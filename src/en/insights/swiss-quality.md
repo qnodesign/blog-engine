@@ -1,7 +1,7 @@
 ---
 title: "Swiss Quality: Built in Switzerland, Made to Last"
 date: 2026-10-13
-time: '10:00'
+time: '09:00'
 language: en
 layout: blog-post.njk
 permalink: /en/insights/swiss-quality/

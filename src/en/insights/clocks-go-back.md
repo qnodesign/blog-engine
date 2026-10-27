@@ -1,7 +1,7 @@
 ---
 title: "The Clocks Go Back Tonight. Your Home Won't Notice."
 date: 2026-10-24
-time: '10:00'
+time: '09:00'
 language: en
 layout: blog-post.njk
 permalink: /en/insights/clocks-go-back/

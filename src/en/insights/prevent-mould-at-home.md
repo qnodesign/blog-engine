@@ -1,7 +1,7 @@
 ---
 title: "Airing, Heating and Mould"
 date: 2026-11-09
-time: '10:00'
+time: '09:00'
 language: en
 layout: blog-post.njk
 permalink: /en/insights/prevent-mould-at-home/

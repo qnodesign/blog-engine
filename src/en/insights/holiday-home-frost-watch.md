@@ -1,7 +1,7 @@
 ---
 title: "Frost Watch for the Holiday Home"
 date: 2026-10-28
-time: '10:00'
+time: '09:00'
 language: en
 layout: blog-post.njk
 permalink: /en/insights/holiday-home-frost-watch/

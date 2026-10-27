@@ -1,7 +1,7 @@
 ---
 title: "Schweizer Qualität: In der Schweiz gegründet, für die Langlebigkeit gebaut"
 date: 2026-10-13
-time: '10:00'
+time: '09:00'
 language: de
 layout: blog-post.njk
 permalink: /de/insights/schweizer-qualitaet/
