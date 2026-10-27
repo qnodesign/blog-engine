@@ -1,7 +1,7 @@
 ---
 title: "Smart Lights: Bulbs, Strips and Lamps, and What You Can Buy in Switzerland"
 date: 2026-10-27
-time: '09:00'
+time: '10:00'
 language: en
 layout: blog-post.njk
 permalink: /en/insights/smart-lights-switzerland/
