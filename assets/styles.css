@@ -151,7 +151,7 @@ body {
   margin: 0;
   padding: 0;
   touch-action: manipulation;
-  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-font-smoothing: antialiased;
   position: relative;
   -webkit-user-select: text;
   user-select: text;
@@ -582,7 +582,7 @@ html[data-motion="reduce"] .nav__sub, html[data-motion="reduce"] .nav__parent .c
   width: 100%;
   font-family: var(--serif);
   font-size: clamp(56px, 7.5vw, 82px);
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.02;
   letter-spacing: -.03em;
   color: var(--parchment);
@@ -601,7 +601,7 @@ html[data-motion="reduce"] .nav__sub, html[data-motion="reduce"] .nav__parent .c
 
 .hero__sub {
   font-size: 1em;
-  font-weight: 300;
+  font-weight: 400;
   color: rgba(247, 244, 237, .52);
   max-width: 510px;
   line-height: 1.72;
@@ -716,7 +716,7 @@ html[data-motion="reduce"] .nav__sub, html[data-motion="reduce"] .nav__parent .c
 
 .sec-h {
   font-family: var(--serif);
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: -.02em;
   line-height: 1.12;
 }
@@ -748,7 +748,7 @@ html[data-motion="reduce"] .nav__sub, html[data-motion="reduce"] .nav__parent .c
 
 .sec-center p {
   font-size: 0.9375em;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--ink-3);
   max-width: 500px;
   margin: 0 auto;
@@ -781,7 +781,7 @@ html[data-motion="reduce"] .nav__sub, html[data-motion="reduce"] .nav__parent .c
 .intro__h {
   font-family: var(--serif);
   font-size: clamp(36px, 3.5vw, 52px);
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.1;
   letter-spacing: -.02em;
   margin-bottom: 22px;
@@ -796,7 +796,7 @@ html[data-motion="reduce"] .nav__sub, html[data-motion="reduce"] .nav__parent .c
 
 .intro__p {
   font-size: 0.9375em;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--ink-3);
   line-height: 1.78;
   margin-bottom: 16px;
@@ -1120,7 +1120,7 @@ html[data-motion="reduce"] .nav__sub, html[data-motion="reduce"] .nav__parent .c
 .pkg__name {
   font-family: var(--sans);
   font-size: 1.1em;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 4px;
   color: var(--stone);
   text-transform: uppercase;
@@ -1434,7 +1434,7 @@ html[data-motion="reduce"] .nav__sub, html[data-motion="reduce"] .nav__parent .c
 .safety__title {
   font-family: var(--serif);
   font-size: clamp(26px, 2.8vw, 44px);
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: -.02em;
   line-height: 1.25;
   color: var(--ink);
@@ -1532,7 +1532,7 @@ html[data-motion="reduce"] .nav__sub, html[data-motion="reduce"] .nav__parent .c
 .faq-a {
   padding: 0 24px 22px;
   font-size: 0.875em;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--ink-3);
   line-height: 1.7;
 }
@@ -1589,7 +1589,7 @@ html[data-motion="reduce"] .nav__sub, html[data-motion="reduce"] .nav__parent .c
 .proc-h {
   font-family: var(--serif);
   font-size: clamp(30px, 2.8vw, 44px);
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.1;
   letter-spacing: -.02em;
   margin-bottom: 20px;
@@ -1603,7 +1603,7 @@ html[data-motion="reduce"] .nav__sub, html[data-motion="reduce"] .nav__parent .c
 
 .proc-p {
   font-size: 0.875em;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--ink-3);
   line-height: 1.75;
 }
@@ -1663,7 +1663,7 @@ html[data-motion="reduce"] .nav__sub, html[data-motion="reduce"] .nav__parent .c
 .step__t {
   font-family: var(--sans);
   font-size: 1.25em;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 7px;
   color: var(--ink);
   text-transform: uppercase;
@@ -1671,7 +1671,7 @@ html[data-motion="reduce"] .nav__sub, html[data-motion="reduce"] .nav__parent .c
 
 .step__b {
   font-size: 1em;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--ink-3);
   line-height: 1.7;
 }
@@ -1727,7 +1727,7 @@ html[data-motion="reduce"] .nav__sub, html[data-motion="reduce"] .nav__parent .c
 .why__h {
   font-family: var(--serif);
   font-size: clamp(32px, 3vw, 48px);
-  font-weight: 300;
+  font-weight: 400;
   color: var(--parchment);
   letter-spacing: -.02em;
 }
@@ -1849,7 +1849,7 @@ html[data-motion="reduce"] .nav__sub, html[data-motion="reduce"] .nav__parent .c
 .why__t {
   font-family: var(--sans);
   font-size: 1em;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--parchment);
   margin: 9px 0;
   text-transform: uppercase;
@@ -1857,7 +1857,7 @@ html[data-motion="reduce"] .nav__sub, html[data-motion="reduce"] .nav__parent .c
 
 .why__b {
   font-size: 0.8125em;
-  font-weight: 300;
+  font-weight: 400;
   color: rgba(247, 244, 237, .52);
   line-height: 1.7;
 }
@@ -1878,7 +1878,7 @@ html[data-motion="reduce"] .nav__sub, html[data-motion="reduce"] .nav__parent .c
 .dev-h {
   font-family: var(--serif);
   font-size: clamp(30px, 2.8vw, 44px);
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: -.02em;
   margin-bottom: 18px;
 }
@@ -1891,7 +1891,7 @@ html[data-motion="reduce"] .nav__sub, html[data-motion="reduce"] .nav__parent .c
 
 .dev-p {
   font-size: 0.875em;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--ink-3);
   line-height: 1.75;
   margin-bottom: 24px;
@@ -1972,7 +1972,7 @@ html[data-motion="reduce"] .nav__sub, html[data-motion="reduce"] .nav__parent .c
 .hub-name {
   font-family: var(--serif);
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--parchment);
   margin-bottom: 4px;
   display: flex;
@@ -2218,7 +2218,7 @@ html[data-motion="reduce"] .nav__sub, html[data-motion="reduce"] .nav__parent .c
 
 .examples__hook {
   font-size: 0.875em;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--ink-3);
   line-height: 1.65;
   flex: 1;
@@ -2313,7 +2313,7 @@ html[data-motion="reduce"] .nav__sub, html[data-motion="reduce"] .nav__parent .c
 .about__init {
   font-family: var(--serif);
   font-size: 196px;
-  font-weight: 300;
+  font-weight: 400;
   color: rgba(247, 244, 237, .1);
   letter-spacing: -.05em;
   user-select: none;
@@ -2382,7 +2382,7 @@ html[data-motion="reduce"] .nav__sub, html[data-motion="reduce"] .nav__parent .c
 .about-h {
   font-family: var(--serif);
   font-size: clamp(30px, 2.8vw, 44px);
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: -.02em;
   margin-bottom: 20px;
 }
@@ -2395,7 +2395,7 @@ html[data-motion="reduce"] .nav__sub, html[data-motion="reduce"] .nav__parent .c
 
 .about-p {
   font-size: 1em;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--ink-3);
   line-height: 1.8;
   margin-bottom: 14px;
@@ -2465,7 +2465,7 @@ html[data-motion="reduce"] .nav__sub, html[data-motion="reduce"] .nav__parent .c
 .tcard__q {
   font-family: var(--sans);
   font-size: 1em;
-  font-weight: 300;
+  font-weight: 400;
   font-style: italic;
   color: var(--ink-2);
   line-height: 1.6;
@@ -2538,7 +2538,7 @@ html[data-motion="reduce"] .nav__sub, html[data-motion="reduce"] .nav__parent .c
 .cta-h {
   font-family: var(--serif);
   font-size: clamp(36px, 4vw, 60px);
-  font-weight: 300;
+  font-weight: 400;
   color: var(--parchment);
   letter-spacing: -.03em;
   line-height: 1.08;
@@ -2553,7 +2553,7 @@ html[data-motion="reduce"] .nav__sub, html[data-motion="reduce"] .nav__parent .c
 
 .cta-sub {
   font-size: 1em;
-  font-weight: 300;
+  font-weight: 400;
   color: rgba(247, 244, 237, .48);
   max-width: 440px;
   margin: 0 auto 40px;
@@ -2590,7 +2590,7 @@ html[data-motion="reduce"] .nav__sub, html[data-motion="reduce"] .nav__parent .c
 .con-h {
   font-family: var(--serif);
   font-size: clamp(30px, 2.8vw, 44px);
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: -.02em;
   margin-bottom: 18px;
 }
@@ -2603,7 +2603,7 @@ html[data-motion="reduce"] .nav__sub, html[data-motion="reduce"] .nav__parent .c
 
 .con-p {
   font-size: 0.875em;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--ink-3);
   line-height: 1.75;
   margin-bottom: 28px;
@@ -2666,7 +2666,7 @@ html[data-motion="reduce"] .nav__sub, html[data-motion="reduce"] .nav__parent .c
 .fg textarea {
   font-family: var(--sans);
   font-size: 0.875em;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--ink);
   background: var(--cream);
   border: 1.5px solid var(--warm-mid);
@@ -2785,7 +2785,7 @@ html[data-motion="reduce"] .nav__sub, html[data-motion="reduce"] .nav__parent .c
 
 .footer__tagline {
   font-size: 0.8125em;
-  font-weight: 300;
+  font-weight: 400;
   color: rgba(247, 244, 237, .38);
   line-height: 1.65;
   margin-top: 14px;
@@ -2929,7 +2929,7 @@ html[data-motion="reduce"] .nav__sub, html[data-motion="reduce"] .nav__parent .c
 .nav__drawer .drawer-cta { margin-bottom: auto; }
 .drawer-acc {
   display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%;
-  font-family: var(--serif); font-size: 32px; font-weight: 300; letter-spacing: -.01em;
+  font-family: var(--serif); font-size: 32px; font-weight: 400; letter-spacing: -.01em;
   color: rgba(247, 244, 237, .78); background: none; border: 0; border-bottom: 1px solid rgba(247, 244, 237, .06);
   padding: 16px 24px; cursor: pointer;
 }
@@ -2961,7 +2961,7 @@ html[data-contrast="high"] .drawer-acc { color: var(--parchment); }
   display: block;
   font-family: var(--serif);
   font-size: 32px;
-  font-weight: 300;
+  font-weight: 400;
   color: rgba(247, 244, 237, .75);
   padding: 16px 24px;
   letter-spacing: -.01em;
@@ -3862,7 +3862,7 @@ body.cc-lock .cc-banner {
   font-family: var(--serif);
   color: var(--ink);
   font-size: clamp(36px, 3.5vw, 52px);
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.1;
   letter-spacing: -.02em;
   margin: 14px 0 10px;
@@ -3994,7 +3994,7 @@ body.cc-lock .cc-banner {
 
 .example-p {
   font-size: 0.9375em;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--ink-3);
   line-height: 1.75;
 }
@@ -4061,7 +4061,7 @@ body.cc-lock .cc-banner {
 
 .example-sol-b {
   font-size: 0.8125em;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--ink-3);
   line-height: 1.6;
 }
@@ -4387,7 +4387,7 @@ body.cc-lock .cc-banner {
 .legal h1 {
   font-family: var(--serif);
   font-size: clamp(34px, 4vw, 52px);
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: -.02em;
   line-height: 1.1;
   color: var(--ink);
@@ -4691,7 +4691,7 @@ body.cc-lock .cc-banner {
 @media (max-width: 1180px) { .nav__search span, .nav__search kbd { display: none; } .nav__search { width: 40px; padding: 0; justify-content: center; } }
 .drawer-search {
   display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%;
-  font-family: var(--serif); font-size: 32px; font-weight: 300; letter-spacing: -.01em;
+  font-family: var(--serif); font-size: 32px; font-weight: 400; letter-spacing: -.01em;
   color: rgba(247, 244, 237, .78); background: none; border: 0; border-bottom: 1px solid rgba(247, 244, 237, .06);
   padding: 16px 24px; cursor: pointer;
 }
@@ -4768,4 +4768,14 @@ body.bsearch-open { overflow: hidden; }
 }
 @media (max-width: 640px) {
   .nav__searchbar { flex: 1 1 auto; }
+}
+
+/* Crisper type: grayscale antialiasing, kerning/ligatures on, and no hairline weight for the serif headlines
+   (Cormorant 300 is very thin and looks jagged on Windows screens at normal zoom). */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-kerning: normal;
+  -webkit-text-size-adjust: 100%;
 }
