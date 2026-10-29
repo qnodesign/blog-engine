@@ -1307,10 +1307,39 @@ function setupBlogSubscribe() {
   });
 }
 
+// Newsletter click tracking: when a visit arrives from a newsletter link
+// (?utm_source=newsletter&utm_medium=email&utm_campaign=...), report it once per campaign and browser session.
+// Stored by the collector in newsletter-clicks.json (no IP, no cookies). Runs only in a real browser, so mail scanners are not counted.
+const NEWSLETTER_CLICK_ENDPOINT = 'https://project-zovba.vercel.app/api/newsletter-click';
+function trackNewsletterClick() {
+  try {
+    const q = new URLSearchParams(location.search);
+    const source = (q.get('utm_source') || '').toLowerCase();
+    const medium = (q.get('utm_medium') || '').toLowerCase();
+    const campaign = (q.get('utm_campaign') || '').toLowerCase();
+    if (source !== 'newsletter' || medium !== 'email' || !campaign) return;
+    const key = 'nlclick:' + campaign;
+    try { if (sessionStorage.getItem(key)) return; sessionStorage.setItem(key, '1'); } catch (e) { /* storage blocked: still count */ }
+    const m = location.pathname.match(/^\/(de|en)(\/|$)/);
+    fetch(NEWSLETTER_CLICK_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        source, medium, campaign,
+        content: (q.get('utm_content') || '').toLowerCase() || undefined,
+        language: m ? m[1] : (document.documentElement.lang || 'de').slice(0, 2),
+        path: location.pathname
+      }),
+      keepalive: true
+    }).catch(() => {});
+  } catch (e) { /* tracking must never break the page */ }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   setupInsightsSchedule(); // before the page is revealed, so nothing flashes
   setupScheduledPost();
   applyDevmodeLinks();
+  trackNewsletterClick();
   setupBlogSubscribe(); // independent of translations, works even if they fail to load
   setupTopicNav();
   setupBlogSearch();
