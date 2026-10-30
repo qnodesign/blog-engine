@@ -19,8 +19,7 @@ related: [datenschutz-by-default, zeitumstellung, fuer-wen-ist-konihaus]
 author: Koni
 ---
 
-Es ist drei Uhr morgens. Sie wachen auf und müssen ins Bad. Der Schalter ist auf der anderen Seite des Zimmers. Die Deckenlampe wäre grell, und vielleicht weckt sie Ihren Partner. Also stehen Sie im Dunkeln auf, tasten sich der Wand entlang und hoffen, dass die Pantoffeln nicht dort stehen, wo Sie sie hingestellt haben.
-
+Es ist 3 Uhr morgens. Sie wachen auf und müssen ins Bad. Der Schalter ist auf der anderen Seite des Zimmers. Die Deckenlampe wäre grell, und vielleicht weckt sie Ihren Partner. Also stehen Sie im Dunkeln auf, tasten sich an der Wand entlang und hoffen, dass Sie nirgends anstossen oder stolpern.
 Diesen Weg kennt jeder. Die meisten von uns sind ihn tausendmal gegangen, ohne nachzudenken. Aber genau in solchen Momenten passiert es.
 
 <figure class="blog-post__figure">

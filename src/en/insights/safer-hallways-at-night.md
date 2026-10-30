@@ -19,8 +19,7 @@ related: [privacy-by-default, clocks-go-back, who-is-konihaus-for]
 author: Koni
 ---
 
-It's three in the morning. You wake up and need the bathroom. The switch is on the other side of the room. The ceiling light would be blinding, and it might wake your partner. So you get up in the dark, feel your way along the wall, and hope the slippers aren't where you left them.
-
+It's 3 a.m. You wake up and need to go to the bathroom. The switch is on the other side of the room. The ceiling light would be blinding, and it might wake your partner. So you get up in the dark and feel your way along the wall, hoping you won't kick something on the floor or lose your balance.
 Everybody knows this walk. Most of us have done it a thousand times without thinking. But it's exactly the kind of moment where things go wrong.
 
 <figure class="blog-post__figure">
