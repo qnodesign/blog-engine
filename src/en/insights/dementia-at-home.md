@@ -1,6 +1,6 @@
 ---
 title: "Living at Home With Dementia: Help Without Surveillance"
-date: 2026-11-05
+date: 2026-11-09
 time: '09:00'
 language: en
 layout: blog-post.njk

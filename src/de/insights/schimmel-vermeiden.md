@@ -1,6 +1,6 @@
 ---
 title: "Lüften, heizen, Schimmel vermeiden"
-date: 2026-11-09
+date: 2026-11-13
 time: '09:00'
 language: de
 layout: blog-post.njk

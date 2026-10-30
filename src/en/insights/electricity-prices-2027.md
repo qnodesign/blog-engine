@@ -1,6 +1,6 @@
 ---
 title: "Electricity Gets a Little Cheaper in 2027. It's Still Expensive."
-date: 2026-11-03
+date: 2026-11-05
 time: '09:00'
 language: en
 layout: blog-post.njk

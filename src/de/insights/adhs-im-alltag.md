@@ -1,6 +1,6 @@
 ---
 title: "Ein Zuhause, das für Sie mitdenkt"
-date: 2026-11-07
+date: 2026-11-11
 time: '09:00'
 language: de
 layout: blog-post.njk

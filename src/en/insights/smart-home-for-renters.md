@@ -1,6 +1,6 @@
 ---
 title: "Smart Home as a Renter: What You Can Do Without Asking"
-date: 2026-11-01
+date: 2026-11-03
 time: '09:00'
 language: en
 layout: blog-post.njk

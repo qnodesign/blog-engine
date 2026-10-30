@@ -1,6 +1,6 @@
 ---
 title: "Smart Home zur Miete: Was ohne Nachfrage geht"
-date: 2026-11-01
+date: 2026-11-03
 time: '09:00'
 language: de
 layout: blog-post.njk

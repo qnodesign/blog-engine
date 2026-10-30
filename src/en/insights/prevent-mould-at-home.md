@@ -1,6 +1,6 @@
 ---
 title: "Airing, Heating and Mould"
-date: 2026-11-09
+date: 2026-11-13
 time: '09:00'
 language: en
 layout: blog-post.njk

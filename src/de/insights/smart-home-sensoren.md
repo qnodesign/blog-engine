@@ -1,6 +1,6 @@
 ---
 title: "Sensoren im Smart Home: Die fünf Arten, die Ihrem Zuhause sagen, was los ist"
-date: 2026-10-31
+date: 2026-11-02
 time: '09:00'
 language: de
 layout: blog-post.njk
@@ -107,7 +107,7 @@ Tür- und Fensterkontakte kommen danach, sobald Sie wissen, an welchen Türen un
 3. **Platzieren und eine Woche lang die Werte ansehen,** bevor Sie Regeln darauf aufbauen.
 4. **Die Batterieprüfung hinzufügen.** Für jeden Sensor, vom ersten Tag an.
 
-In einem Konihaus-Zuhause melden die Sensoren lokal an die Greenhub, und das System sagt Ihnen, wenn eine Batterie schwach wird. Der nächste Beitrag handelt von Heizung und Klima: Thermostate, Heizkörperventile und die Wärmepumpe als ein System. Wenn Sie ihn nicht verpassen wollen, melden Sie sich unten für den Konihaus-Blog-Newsletter an.
+In einem Konihaus-Zuhause melden die Sensoren lokal an die Greenhub, und das System sagt Ihnen, wenn eine Batterie schwach wird. Der nächste Beitrag der Serie handelt von Heizung und Klima: Thermostate, Heizkörperventile und die Wärmepumpe als ein System. Wenn Sie ihn nicht verpassen wollen, melden Sie sich unten für den Konihaus-Blog-Newsletter an.
 
 ---
 

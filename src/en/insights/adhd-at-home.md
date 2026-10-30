@@ -1,6 +1,6 @@
 ---
 title: "A Home That Remembers for You"
-date: 2026-11-07
+date: 2026-11-11
 time: '09:00'
 language: en
 layout: blog-post.njk

@@ -1,6 +1,6 @@
 ---
 title: "Voice Control in Swiss German: An Honest Progress Report"
-date: 2026-11-11
+date: 2026-11-17
 time: '09:00'
 language: en
 layout: blog-post.njk

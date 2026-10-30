@@ -1,6 +1,6 @@
 ---
 title: "Smarte Heizung: Thermostate, Heizkörperventile und die Wärmepumpe als ein System"
-date: 2026-11-02
+date: 2026-11-04
 time: '09:00'
 language: de
 layout: blog-post.njk

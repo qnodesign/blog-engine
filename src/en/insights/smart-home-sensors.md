@@ -1,6 +1,6 @@
 ---
 title: "Smart Home Sensors: The Five Types That Tell Your Home What Is Going On"
-date: 2026-10-31
+date: 2026-11-02
 time: '09:00'
 language: en
 layout: blog-post.njk
@@ -107,7 +107,7 @@ Door and window contacts come next, once you know which doors and windows you re
 3. **Place them, then watch the numbers for a week** before you build any rules on them.
 4. **Add the battery check.** Every sensor, from day one.
 
-In a Konihaus home, sensors report to the Greenhub, locally, and the system tells you when a battery runs low. The next post covers heating and climate: thermostats, radiator valves and the heat pump as one system. If you don't want to miss it, sign up for the Konihaus Blog newsletter below.
+In a Konihaus home, sensors report to the Greenhub, locally, and the system tells you when a battery runs low. The next post in this series covers heating and climate: thermostats, radiator valves and the heat pump as one system. If you don't want to miss it, sign up for the Konihaus Blog newsletter below.
 
 ---
 

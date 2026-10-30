@@ -1,6 +1,6 @@
 ---
 title: "Smart Heating: Thermostats, Radiator Valves and the Heat Pump as One System"
-date: 2026-11-02
+date: 2026-11-04
 time: '09:00'
 language: en
 layout: blog-post.njk

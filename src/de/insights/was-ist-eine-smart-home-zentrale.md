@@ -1,6 +1,6 @@
 ---
 title: "Was eine Smart-Home-Zentrale eigentlich ist"
-date: 2026-11-13
+date: 2026-11-19
 time: '09:00'
 language: de
 layout: blog-post.njk

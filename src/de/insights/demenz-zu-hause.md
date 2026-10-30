@@ -1,6 +1,6 @@
 ---
 title: "Mit Demenz zu Hause leben: Hilfe ohne Überwachung"
-date: 2026-11-05
+date: 2026-11-09
 time: '09:00'
 language: de
 layout: blog-post.njk

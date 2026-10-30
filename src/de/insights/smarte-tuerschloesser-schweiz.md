@@ -1,6 +1,6 @@
 ---
 title: "Smarte Türschlösser: Die drei Aufgaben der Haustür"
-date: 2026-11-04
+date: 2026-11-06
 time: '09:00'
 language: de
 layout: blog-post.njk

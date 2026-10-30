@@ -1,6 +1,6 @@
 ---
 title: "Strom wird 2027 etwas günstiger. Teuer bleibt er trotzdem."
-date: 2026-11-03
+date: 2026-11-05
 time: '09:00'
 language: de
 layout: blog-post.njk
