@@ -68,7 +68,7 @@ Many older people don't want a pendant around their neck or a camera in the bedr
 
 Parents walking to a crying baby at night. Guests who don't know where the light switch is. Anyone carrying a laundry basket down the cellar stairs. Light that knows when it's needed helps everyone. The same idea helps when [the clocks go back](/en/insights/clocks-go-back/) and evenings get dark early.
 
-If you want to look at the rest of the home too, the BFU has a free online checklist that goes room by room. Light is one part. It's just the part that's easiest to solve.
+If you want to look at the rest of the home too, the BFU has a free [online checklist](https://check.bfu.ch/de/configuration/377bed4a-6bdc-4a65-a817-08aa17920178) that goes room by room. It's only available in German. Light is one part. It's just the part that's easiest to solve.
 
 ---
 

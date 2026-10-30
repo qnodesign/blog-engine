@@ -68,7 +68,7 @@ Viele ältere Menschen wollen keinen Notrufknopf um den Hals und keine Kamera im
 
 Eltern auf dem Weg zum weinenden Baby. Gäste, die den Lichtschalter nicht kennen. Wer mit dem Wäschekorb die Kellertreppe hinuntergeht. Licht, das weiss, wann es gebraucht wird, hilft allen. Dieselbe Idee hilft auch, wenn [die Uhr zurückgestellt wird](/de/insights/zeitumstellung/) und es früh dunkel wird.
 
-Wer auch den Rest der Wohnung anschauen möchte: Die BFU hat eine kostenlose Online-Checkliste, Raum für Raum. Licht ist ein Teil davon. Nur eben der Teil, der am einfachsten zu lösen ist.
+Wer auch den Rest der Wohnung anschauen möchte: Die BFU hat eine kostenlose [Online-Checkliste](https://check.bfu.ch/de/configuration/377bed4a-6bdc-4a65-a817-08aa17920178), Raum für Raum. Licht ist ein Teil davon. Nur eben der Teil, der am einfachsten zu lösen ist.
 
 ---
 
