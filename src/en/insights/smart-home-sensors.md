@@ -34,10 +34,10 @@ This is the third post in the series on the parts of a smart home, after [smart 
   <img src="/images/insights/smart-sensors/02-five-families.webp" alt="Five kinds of sensor: motion and presence, door and window contact, temperature and humidity, air quality, and water leak" width="1536" height="1024" loading="lazy" decoding="async">
 </figure>
 
-**1. Motion and presence.** A motion sensor notices movement. That is all it knows. Its weakness is simple: if you sit still on the sofa reading, the light goes off, because from the sensor's point of view nothing is happening. A presence sensor adds a small radar (mmWave) to the usual infrared eye, so it can also tell that somebody is in the room even when they hardly move. There is no camera and no picture, just a yes or no. Many presence sensors also measure how bright the room is, so a light can switch on only when somebody is there and it is dark, not at noon.
+**1. Motion and presence.** A motion sensor notices movement. That is all it knows. Its weakness is simple: if you stop moving, it thinks you left. In a home that rarely matters, because most lights are still switched by hand. It shows when a light is automatic: you stop on the shared staircase to talk to a neighbour and the light goes off on you, or you stand still at the washing machine in the basement. A presence sensor adds a small radar (mmWave) to the usual infrared eye, so it can also tell that somebody is there even when they hardly move. That is the right tool for places like a basement stair, a laundry room, a workshop, a desk in the office, or the toilet in an office building or a shop, where a light on a sensor is normal and nobody wants it to switch off while they are still there. There is no camera and no picture, just a yes or no. Many presence sensors also measure how bright the room is, so a light can switch on only when somebody is there and it is dark, not at noon.
 
 <figure class="blog-post__figure">
-  <img src="/images/insights/smart-sensors/03-motion-presence.webp" alt="Left: a motion sensor may miss a person reading still on the sofa. Right: a radar presence sensor keeps the light on" width="1536" height="1024" loading="lazy" decoding="async">
+  <img src="/images/insights/smart-sensors/03-motion-presence.webp" alt="Left: a motion sensor switches the stairwell light off while two neighbours stand talking. Right: a radar presence sensor keeps the light on" width="1536" height="1024" loading="lazy" decoding="async">
 </figure>
 
 **2. Door and window contacts.** Two small pieces, one on the frame and one on the door or window. They answer one question: open or closed? That is the basis for "is the window still open?", for heating that pauses while you air the room, and for a message when the holiday home's cellar door stays open.
@@ -62,7 +62,7 @@ Prices as of October 2026. They change and stock varies, so treat them as a guid
 
 **Philips Hue** makes the motion sensor I like best. One device measures motion, light level and temperature, so the same sensor can switch a light on only when it is dark and also tells you how warm the hallway is. It comes as an indoor version (5 m range, CHF 34.50 at Digitec) and an outdoor version (12 m range, 160° angle, battery powered, CHF 50.00). The outdoor one is the only outdoor motion sensor I found reliable. Both are Zigbee devices. They work with the Hue Bridge, which is nice but not necessary: any Zigbee hub works, for example with Zigbee2MQTT.
 
-The Sonoff presence sensor mentioned above works better in my office or in the basement, where I want the light to stay on as long as I am there, even when I sit still. On the stairs and in the hallway, motion sensors are the best choice.
+The Sonoff presence sensor mentioned above works better in my office or in the basement, where I want the light to stay on as long as I am there, even when I stand or sit still. On a staircase where I only walk through, or in the hallway at night, a motion sensor is the better choice: I am moving anyway, and it reacts faster. A night light on the way to the bathroom is the best example. At home I rarely need a presence sensor in the living room at all, because I switch that light by hand.
 
 ## One thing to check before anything else: how it reports
 
@@ -84,7 +84,7 @@ Don't buy one of each. Start with the two or three that answer a question you al
 
 1. **Water leak sensor under the washing machine or dishwasher.** Cheap, and the day it matters it is worth more than anything else on this list.
 2. **A temperature and humidity sensor in the room that worries you.** A cellar, a holiday home, a bathroom, a bedroom with a damp corner. In the [holiday home frost watch](/en/insights/holiday-home-frost-watch/), this is the sensor that does the work.
-3. **A presence sensor in the hallway.** It switches the night light on the way to the bathroom, as in [safer hallways at night](/en/insights/safer-hallways-at-night/), and it can switch off the lights in an empty room, where a plain motion sensor would turn them off on you while you read.
+3. **A motion sensor in the hallway.** It switches the night light on the way to the bathroom, as in [safer hallways at night](/en/insights/safer-hallways-at-night/). You are walking anyway, so a plain motion sensor is the right and faster choice. Keep the presence sensor for the basement, the laundry room or the home office, where you stand or sit still for a while.
 
 Door and window contacts come next, once you know which doors and windows you really care about.
 
@@ -96,7 +96,7 @@ Door and window contacts come next, once you know which doors and windows you re
   <img src="/images/insights/smart-sensors/05-battery-reporting.webp" alt="Three states of a sensor: normal reports, low battery, and missing reports. Watch battery status and last contact" width="1536" height="1024" loading="lazy" decoding="async">
 </figure>
 
-**One sensor, one view.** A plain motion sensor can't see a person sitting still. A radar presence sensor can, but only if it is placed and set up well. A door contact doesn't know a door is ajar, not open. A temperature sensor on a sunny window sill reads high. Good rules combine two signals instead of trusting one.
+**One sensor, one view.** A plain motion sensor can't see a person standing or sitting still. A radar presence sensor can, but only if it is placed and set up well. A door contact doesn't know a door is ajar, not open. A temperature sensor on a sunny window sill reads high. Good rules combine two signals instead of trusting one.
 
 **Not a safety device.** A leak sensor tells you about water. It does not stop it. And none of these replaces a smoke or CO detector, which has to work on its own. Switzerland has no legal obligation to fit smoke alarms, but only alarms certified to EN 14604 may be sold here. A smart one still protects you with its own siren, not with the app. I'll talk about smoke, CO and gas in a later post.
 

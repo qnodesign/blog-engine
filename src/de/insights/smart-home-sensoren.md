@@ -34,10 +34,10 @@ Das ist der dritte Beitrag der Serie über die Teile eines Smart Homes, nach [sm
   <img src="/images/insights/smart-sensors/02-five-families.webp" alt="Fünf Arten von Sensoren: Bewegung und Präsenz, Tür- und Fensterkontakt, Temperatur und Feuchtigkeit, Luftqualität und Wasserleck" width="1536" height="1024" loading="lazy" decoding="async">
 </figure>
 
-**1. Bewegung und Präsenz.** Ein Bewegungsmelder bemerkt Bewegung. Mehr weiss er nicht. Seine Schwäche ist einfach: Wenn Sie ruhig auf dem Sofa lesen, geht das Licht aus, denn aus Sicht des Sensors passiert nichts. Ein Präsenzsensor ergänzt das übliche Infrarotauge um ein kleines Radar (mmWave) und erkennt deshalb auch, dass jemand im Raum ist, selbst wenn er sich kaum bewegt. Es gibt keine Kamera und kein Bild, nur ein Ja oder Nein. Viele Präsenzsensoren messen auch, wie hell der Raum ist, damit ein Licht nur dann angeht, wenn jemand da ist und es dunkel ist, nicht am Mittag.
+**1. Bewegung und Präsenz.** Ein Bewegungsmelder bemerkt Bewegung. Mehr weiss er nicht. Seine Schwäche ist einfach: Wenn Sie sich nicht mehr bewegen, denkt er, Sie seien gegangen. Im Zuhause spielt das selten eine Rolle, denn die meisten Lichter schalten Sie immer noch von Hand. Es fällt erst auf, wenn ein Licht automatisch geht: Sie bleiben im gemeinsamen Treppenhaus für ein Gespräch mit der Nachbarin stehen, und das Licht geht aus, oder Sie stehen im Keller ruhig an der Waschmaschine. Ein Präsenzsensor ergänzt das übliche Infrarotauge um ein kleines Radar (mmWave) und erkennt deshalb auch, dass jemand da ist, selbst wenn er sich kaum bewegt. Das ist das richtige Werkzeug für Orte wie eine Kellertreppe, den Waschraum, die Werkstatt, den Schreibtisch im Büro oder die Toilette in einem Bürogebäude oder Geschäft, wo ein Licht am Sensor normal ist und niemand will, dass es ausgeht, solange er noch da ist. Es gibt keine Kamera und kein Bild, nur ein Ja oder Nein. Viele Präsenzsensoren messen auch, wie hell der Raum ist, damit ein Licht nur dann angeht, wenn jemand da ist und es dunkel ist, nicht am Mittag.
 
 <figure class="blog-post__figure">
-  <img src="/images/insights/smart-sensors/03-motion-presence.webp" alt="Links: Ein Bewegungssensor kann eine still lesende Person auf dem Sofa übersehen. Rechts: Ein Radar-Präsenzsensor lässt das Licht an" width="1536" height="1024" loading="lazy" decoding="async">
+  <img src="/images/insights/smart-sensors/03-motion-presence.webp" alt="Links: Ein Bewegungssensor schaltet das Treppenhauslicht aus, während zwei Nachbarn plaudern. Rechts: Ein Radar-Präsenzsensor lässt das Licht an" width="1536" height="1024" loading="lazy" decoding="async">
 </figure>
 
 **2. Tür- und Fensterkontakte.** Zwei kleine Teile, eines am Rahmen und eines an der Tür oder am Fenster. Sie beantworten eine Frage: offen oder zu? Das ist die Grundlage für «Ist das Fenster noch offen?», für eine Heizung, die beim Lüften pausiert, und für eine Nachricht, wenn die Kellertür der Ferienwohnung offen bleibt.
@@ -62,7 +62,7 @@ Preise Stand Oktober 2026. Sie ändern sich und die Verfügbarkeit schwankt, neh
 
 **Philips Hue** hat den Bewegungssensor, den ich am liebsten mag. Ein Gerät misst Bewegung, Helligkeit und Temperatur, derselbe Sensor schaltet also ein Licht nur bei Dunkelheit ein und zeigt Ihnen auch, wie warm der Flur ist. Es gibt ihn für innen (5 m Reichweite, CHF 34.50 bei Digitec) und für aussen (12 m Reichweite, 160° Winkel, Batterie, CHF 50.00). Der Aussensensor ist der einzige Bewegungssensor für draussen, den ich als zuverlässig erlebt habe. Beide sind Zigbee-Geräte. Sie arbeiten mit der Hue Bridge zusammen, aber die ist nur praktisch und nicht nötig: Jeder Zigbee-Hub funktioniert, zum Beispiel mit Zigbee2MQTT.
 
-Der oben erwähnte Sonoff-Präsenzsensor funktioniert in meinem Büro oder im Keller besser, wo das Licht an bleiben soll, solange ich da bin, auch wenn ich still sitze. Auf der Treppe und im Flur sind Bewegungsmelder die beste Wahl.
+Der oben erwähnte Sonoff-Präsenzsensor funktioniert in meinem Büro oder im Keller besser, wo das Licht an bleiben soll, solange ich da bin, auch wenn ich still stehe oder sitze. Auf einer Treppe, die ich nur durchquere, oder im Flur bei Nacht ist ein Bewegungsmelder die bessere Wahl: Ich bewege mich ohnehin, und er reagiert schneller. Ein Nachtlicht auf dem Weg zum Bad ist das beste Beispiel. Im Wohnzimmer brauche ich zuhause kaum je einen Präsenzsensor, denn dieses Licht schalte ich von Hand.
 
 ## Eines vorab prüfen: wie der Sensor meldet
 
@@ -84,7 +84,7 @@ Kaufen Sie nicht von jedem einen. Beginnen Sie mit den zwei, drei, die eine Frag
 
 1. **Ein Wassersensor unter Waschmaschine oder Geschirrspüler.** Günstig, und an dem Tag, an dem es zählt, ist er mehr wert als alles andere auf dieser Liste.
 2. **Ein Temperatur- und Feuchtigkeitssensor im Raum, der Ihnen Sorgen macht.** Ein Keller, eine Ferienwohnung, ein Bad, ein Schlafzimmer mit feuchter Ecke. Im [Frostschutz für die Ferienwohnung](/de/insights/ferienwohnung-frostschutz/) ist das der Sensor, der die Arbeit macht.
-3. **Ein Präsenzsensor im Flur.** Er schaltet das Nachtlicht auf dem Weg zum Bad ein, wie in [sicher durch die Nacht](/de/insights/sicher-durch-die-nacht/), und er kann das Licht in einem leeren Raum ausschalten, wo ein einfacher Bewegungsmelder es Ihnen beim Lesen ausschalten würde.
+3. **Ein Bewegungsmelder im Flur.** Er schaltet das Nachtlicht auf dem Weg zum Bad ein, wie in [sicher durch die Nacht](/de/insights/sicher-durch-die-nacht/). Sie gehen ohnehin, deshalb ist ein einfacher Bewegungsmelder die richtige und schnellere Wahl. Den Präsenzsensor heben Sie für den Keller, den Waschraum oder das Homeoffice auf, wo Sie eine Weile still stehen oder sitzen.
 
 Tür- und Fensterkontakte kommen danach, sobald Sie wissen, an welchen Türen und Fenstern es Ihnen wirklich liegt.
 
@@ -96,7 +96,7 @@ Tür- und Fensterkontakte kommen danach, sobald Sie wissen, an welchen Türen un
   <img src="/images/insights/smart-sensors/05-battery-reporting.webp" alt="Drei Zustände eines Sensors: normale Meldungen, schwache Batterie und ausbleibende Meldungen. Batteriestatus und letzten Kontakt überwachen" width="1536" height="1024" loading="lazy" decoding="async">
 </figure>
 
-**Ein Sensor, eine Sicht.** Ein einfacher Bewegungsmelder sieht keine Person, die still sitzt. Ein Radar-Präsenzsensor kann es, aber nur, wenn er gut platziert und eingestellt ist. Ein Türkontakt weiss nicht, ob eine Tür angelehnt oder offen ist. Ein Temperatursensor auf einem sonnigen Fensterbrett zeigt zu viel. Gute Regeln verbinden zwei Signale, statt einem zu vertrauen.
+**Ein Sensor, eine Sicht.** Ein einfacher Bewegungsmelder sieht keine Person, die still steht oder sitzt. Ein Radar-Präsenzsensor kann es, aber nur, wenn er gut platziert und eingestellt ist. Ein Türkontakt weiss nicht, ob eine Tür angelehnt oder offen ist. Ein Temperatursensor auf einem sonnigen Fensterbrett zeigt zu viel. Gute Regeln verbinden zwei Signale, statt einem zu vertrauen.
 
 **Kein Sicherheitsgerät.** Ein Wassersensor meldet Wasser. Er stoppt es nicht. Und keiner dieser Sensoren ersetzt einen Rauch- oder CO-Melder, der für sich allein funktionieren muss. In der Schweiz gibt es keine gesetzliche Rauchmelderpflicht, aber es dürfen nur Melder verkauft werden, die nach EN 14604 zertifiziert sind. Auch ein smarter Melder schützt Sie mit seiner eigenen Sirene, nicht mit der App. Über Rauch, CO und Gas spreche ich in einem späteren Beitrag.
 
