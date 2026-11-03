@@ -3,7 +3,9 @@
 # time, a new post is not in sitemap.xml until someone builds again.
 # One-time setup: add the repository secret PAGES_DEPLOY_TOKEN (fine-grained token, repository
 # konihausblog/konihausblog.github.io, permission "Contents: Read and write").
-# Newsletters are NOT scheduled here: brevo-campaigns.cjs only runs when BREVO_API_KEY is set, and there is no .env on the runner.
+# Newsletters: the build also schedules the Brevo campaigns for upcoming posts (brevo-campaigns.cjs). It is safe to run every day:
+# existing scheduled campaigns are updated, sent ones are never touched. Needs the repository secret BREVO_API_KEY.
+# If the key is missing or wrong, the site is still published and the log shows a warning.
 name: Daily build and publish
 
 on:
@@ -22,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       TZ: Europe/Zurich
-      NEWSLETTER_AUTOSCHEDULE: 'off'
+      BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
     steps:
       - name: Check out the blog source
         uses: actions/checkout@v4
