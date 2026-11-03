@@ -1,0 +1,58 @@
+# Rebuilds the blog every weekday after the 09:00 (Swiss time) release and publishes it to GitHub Pages.
+# Why: posts are released by date and time at build time (sitemap, post list). Without a build after the release
+# time, a new post is not in sitemap.xml until someone builds again.
+# One-time setup: add the repository secret PAGES_DEPLOY_TOKEN (fine-grained token, repository
+# konihausblog/konihausblog.github.io, permission "Contents: Read and write").
+# Newsletters are NOT scheduled here: brevo-campaigns.cjs only runs when BREVO_API_KEY is set, and there is no .env on the runner.
+name: Daily build and publish
+
+on:
+  schedule:
+    # Swiss time is UTC+1 (winter) or UTC+2 (summer). Both runs are harmless: the second one finds nothing to change.
+    - cron: '5 7 * * 1-5'   # 09:05 in summer time
+    - cron: '5 8 * * 1-5'   # 09:05 in winter time
+  workflow_dispatch: {}
+
+concurrency:
+  group: daily-build
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Europe/Zurich
+      NEWSLETTER_AUTOSCHEDULE: 'off'
+    steps:
+      - name: Check out the blog source
+        uses: actions/checkout@v4
+
+      - name: Check out the published site
+        uses: actions/checkout@v4
+        with:
+          repository: konihausblog/konihausblog.github.io
+          token: ${{ secrets.PAGES_DEPLOY_TOKEN }}
+          path: pages
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Build into the published folder
+        run: npx eleventy --output=pages
+
+      - name: Commit and push if something changed
+        working-directory: pages
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Nothing to publish."
+            exit 0
+          fi
+          git config user.name "konihaus-blog-bot"
+          git config user.email "hallo@konihaus.ch"
+          git add -A
+          git commit -m "daily build $(date +%F)"
+          git push
