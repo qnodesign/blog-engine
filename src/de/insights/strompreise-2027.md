@@ -15,7 +15,7 @@ keyword: "Strompreise 2027 Schweiz"
 category: energie
 tags: [strompreise, standby, energie-sparen]
 readingtime: 4 Min. Lesezeit
-related: [energieeffizienz, was-kostet-ein-smart-home-schweiz, konihaus-app]
+related: [energieeffizienz, smarte-heizung-schweiz, was-kostet-ein-smart-home-schweiz, konihaus-app]
 author: Koni
 ---
 
@@ -29,19 +29,19 @@ Im September hat die Eidgenössische Elektrizitätskommission (ElCom) die Tarife
 
 Für einen typischen Haushalt mit 4'500 kWh pro Jahr liegt der Medianpreis 2027 bei **26,5 Rappen pro kWh**, rund 4 % weniger als dieses Jahr. Aufs Jahr gerechnet sind das rund **1'194 Franken, also 53 Franken weniger** als 2026.
 
-Hinter dem Durchschnitt bewegen sich zwei Dinge in entgegengesetzte Richtungen. Die Energie selbst wird günstiger (rund 6 % weniger), der Netzanteil wird leicht teurer (rund 2 % mehr). Die ElCom selbst sagt, die Preise stabilisierten sich «auf nach wie vor recht hohem Niveau».
+Hinter dem Durchschnitt bewegen sich zwei Dinge in entgegengesetzte Richtungen. Die Energie selbst wird günstiger (rund 6 % weniger), der Netzanteil wird leicht teurer (rund 2 % mehr). Die ElCom selbst spricht von stabilisierten Preisen auf weiterhin recht hohem Niveau.
 
-Und der Durchschnitt verdeckt grosse Unterschiede. Manche Versorger senken ihre Preise um einen Viertel. Andere erhöhen: Eine Aargauer Gemeinde zahlt 2027 fast 38 Rappen pro kWh. Was Sie zahlen, hängt davon ab, wo Sie wohnen. Ihre Gemeinde finden Sie auf der Vergleichsseite der ElCom, [strompreis.elcom.admin.ch](https://www.strompreis.elcom.admin.ch).
+Und der Durchschnitt verdeckt grosse Unterschiede. Ein Versorger senkt seinen Preis um rund einen Viertel. Andere erhöhen: Eine Aargauer Gemeinde zahlt 2027 fast 38 Rappen pro kWh. Was Sie zahlen, hängt davon ab, wo Sie wohnen. Ihre Gemeinde finden Sie auf der Vergleichsseite der ElCom, [strompreis.elcom.admin.ch](https://www.strompreis.elcom.admin.ch).
 
 ## Was 53 Franken bedeuten
 
-53 Franken im Jahr sind ein schönes Nachtessen. Willkommen, aber sie ändern nicht viel. Wer seine Stromrechnung wirklich senken will, setzt nicht beim Tarif an, sondern dabei, wie viel Strom man braucht, und wann.
+53 Franken im Jahr sind ein schönes Nachtessen. Willkommen, aber sie ändern nicht viel. Wer seine Stromrechnung wirklich senken will, setzt nicht beim Tarif an, sondern dabei, wie viel Strom man braucht.
 
 ## Wohin der Strom geht
 
 Die meisten von uns haben keine Ahnung, welches Gerät wie viel braucht. Ein paar Zahlen helfen:
 
-- **Stand-by.** Laut der Schweizerischen Agentur für Energieeffizienz (S.A.F.E.) macht der Stand-by-Verbrauch in einem durchschnittlichen Haushalt etwa 10 % des Stromverbrauchs aus. Beim typischen Haushalt oben wären das rund 450 kWh, oder etwa 120 Franken im Jahr zum Medianpreis 2027 (meine Rechnung). Der Fernseher, der nie ganz aus ist, der Drucker, die Spielkonsole, die alte Stereoanlage.
+- **Stand-by.** Laut der Schweizerischen Agentur für Energieeffizienz (S.A.F.E.) macht der Stand-by-Verbrauch in einem durchschnittlichen Haushalt etwa 10 % des Stromverbrauchs aus. Beim typischen Haushalt oben wären das rund 450 kWh, oder etwa 120 Franken im Jahr zum Medianpreis 2027 (meine Rechnung). Das ist, was Stand-by insgesamt kostet, nicht, was Sie sparen können. Der Fernseher, der nie ganz aus ist, der Drucker, die Spielkonsole, die alte Stereoanlage.
 - **Die vergessenen Geräte.** Die zweite Gefriertruhe im Keller. Der Kühlschrank von 2004. Der Luftentfeuchter, den im Frühling niemand ausgeschaltet hat.
 - **Heizung und Warmwasser,** wenn sie mit Strom laufen: ein Elektroboiler, alte Elektroheizungen, eine Wärmepumpe. In diesen Haushalten ist das Heizen meist der mit Abstand grösste Posten.
 
@@ -55,7 +55,7 @@ Die meisten von uns haben keine Ahnung, welches Gerät wie viel braucht. Ein paa
 
 **Es schaltet ab, was niemand braucht.** Eine smarte Steckdose kann die TV-Ecke oder das Homeoffice nachts ganz vom Strom nehmen. Ehrlicherweise: Eine smarte Steckdose braucht selbst ein wenig Strom. Sie gehört also dorthin, wo sie mehr spart, als sie kostet, an die Medienecke oder den Schreibtisch, nicht an jedes Handy-Ladegerät.
 
-**Es heizt, wenn jemand da ist.** Wer mit Strom heizt, erreicht am meisten, wenn leere Räume und die Zeit der Abwesenheit kühler bleiben. Darüber habe ich in [Warm bei Ankunft, sparsam bei Abwesenheit](/de/insights/energieeffizienz/) geschrieben.
+**Es heizt, wenn jemand da ist.** Wer mit Strom heizt, erreicht meist am meisten, wenn leere Räume und die Zeit der Abwesenheit kühler bleiben. Darüber habe ich in [Warm bei Ankunft, sparsam bei Abwesenheit](/de/insights/energieeffizienz/) geschrieben. Zu Ventilen und Thermostaten gibt es den [Beitrag zur smarten Heizung](/de/insights/smarte-heizung-schweiz/).
 
 ## Warum ich Ihnen keinen Prozentsatz verspreche
 
@@ -64,6 +64,8 @@ Auf vielen Smart-Home-Seiten steht «bis zu 30 % Ersparnis». Ich schreibe das n
 <figure class="blog-post__figure">
   <img src="/images/insights/electricity-prices-2027/cut-standby.webp" alt="Eine Hand schaltet eine intakte Steckerleiste unter einem Homeoffice-Schreibtisch aus" width="1536" height="1024" loading="lazy" decoding="async">
 </figure>
+
+Einen Hebel habe ich noch nicht behandelt: einen Teil des Stroms selbst zu machen. Lohnt sich Solar in der Schweiz heute? Dazu plane ich für den 10. November einen Beitrag, mit echten Zahlen und den Einspeiseregeln, die sich am 1. Januar ändern. Wenn Sie ihn nicht verpassen möchten, melden Sie sich unten für den Konihaus-Blog-Newsletter an.
 
 ---
 

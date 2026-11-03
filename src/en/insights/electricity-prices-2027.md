@@ -15,7 +15,7 @@ keyword: "electricity prices 2027 Switzerland"
 category: energy
 tags: [electricity-prices, standby, energy-saving]
 readingtime: 4 min read
-related: [energy-efficiency, smart-home-cost-switzerland, konihaus-app]
+related: [energy-efficiency, smart-heating-switzerland, smart-home-cost-switzerland, konihaus-app]
 author: Koni
 ---
 
@@ -29,19 +29,19 @@ In September, the Federal Electricity Commission (ElCom) published next year's t
 
 For a typical household using 4,500 kWh a year, the median price in 2027 is **26.5 centimes per kWh**, about 4% less than this year. Over a year, that's a bill of around **CHF 1,194, or CHF 53 less** than in 2026.
 
-Behind the average, two things move in opposite directions. The energy itself gets cheaper (about 6% less), while the grid part gets slightly more expensive (about 2% more). ElCom itself says prices are stabilising "at a still quite high level".
+Behind the average, two things move in opposite directions. The energy itself gets cheaper (about 6% less), while the grid part gets slightly more expensive (about 2% more). ElCom itself describes prices as stabilising at a level that is still quite high.
 
-And the average hides big differences. Some suppliers cut their prices by a quarter. Others go up: one municipality in Aargau pays almost 38 centimes per kWh in 2027. What you pay depends on where you live. You can look up your own municipality on ElCom's comparison site, [strompreis.elcom.admin.ch](https://www.strompreis.elcom.admin.ch).
+And the average hides big differences. One supplier cuts its price by about a quarter. Others go up: one municipality in Aargau pays almost 38 centimes per kWh in 2027. What you pay depends on where you live. You can look up your own municipality on ElCom's comparison site, [strompreis.elcom.admin.ch](https://www.strompreis.elcom.admin.ch).
 
 ## What CHF 53 means
 
-CHF 53 a year is a nice dinner. It's welcome, but it doesn't change much. If you want your electricity bill to really go down, the lever isn't the tariff. It's how much you use, and when.
+CHF 53 a year is a nice dinner. It's welcome, but it doesn't change much. If you want your electricity bill to really go down, the lever isn't the tariff. It's how much you use.
 
 ## Where the electricity goes
 
 Most of us have no idea which devices use how much. Some numbers help:
 
-- **Stand-by.** According to the Swiss Agency for Efficient Energy Use (S.A.F.E.), stand-by accounts for about 10% of electricity use in an average household. For the typical household above, that would be around 450 kWh, or roughly CHF 120 a year at the 2027 median price (my calculation). The TV that's never quite off, the printer, the game console, the old stereo.
+- **Stand-by.** According to the Swiss Agency for Efficient Energy Use (S.A.F.E.), stand-by accounts for about 10% of electricity use in an average household. For the typical household above, that would be around 450 kWh, or roughly CHF 120 a year at the 2027 median price (my calculation). That is what stand-by costs in total, not what you can save. The TV that's never quite off, the printer, the game console, the old stereo.
 - **The forgotten appliances.** The second freezer in the cellar. The fridge from 2004. The dehumidifier nobody switched off in spring.
 - **Heating and hot water,** if they run on electricity: an electric boiler, old electric heaters, a heat pump. In those homes, heating is usually by far the biggest item.
 
@@ -55,7 +55,7 @@ Most of us have no idea which devices use how much. Some numbers help:
 
 **It switches off what nobody needs.** A smart plug can cut the TV corner or the home office completely at night. One thing to be honest about: a smart plug uses a little electricity itself. So it belongs where it saves more than it costs, at the media corner or the desk, not on every phone charger.
 
-**It heats when someone is there.** If you heat with electricity, lowering the temperature in empty rooms and while you're away has the biggest effect. I wrote about this in [Warm When You Arrive, Quiet When You Leave](/en/insights/energy-efficiency/).
+**It heats when someone is there.** If you heat with electricity, lowering the temperature in empty rooms and while you're away usually has the biggest effect. I wrote about this in [Warm When You Arrive, Quiet When You Leave](/en/insights/energy-efficiency/). The [smart heating post](/en/insights/smart-heating-switzerland/) covers the valves and thermostats.
 
 ## Why I won't promise you a percentage
 
@@ -64,6 +64,8 @@ You'll find "up to 30% savings" on many smart home websites. I don't write that,
 <figure class="blog-post__figure">
   <img src="/images/insights/electricity-prices-2027/cut-standby.webp" alt="A hand switches off an intact power strip beneath a home-office desk" width="1536" height="1024" loading="lazy" decoding="async">
 </figure>
+
+There is one more lever I haven't covered: making some of the electricity yourself. Is solar worth it in Switzerland now? I'm planning a post on that for 10 November, with real numbers and the feed-in rules that change on 1 January. If you don't want to miss it, sign up for the Konihaus Blog newsletter below.
 
 ---
 
