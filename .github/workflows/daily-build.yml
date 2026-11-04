@@ -1,4 +1,4 @@
-name: Daily build and publish
+name: Scheduled build and publish
 
 on:
   workflow_dispatch: {}
