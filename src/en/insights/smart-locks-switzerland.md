@@ -24,6 +24,10 @@ The front door has three jobs. It lets the right people in, it tells you whether
 
 This is the fifth post in the series on the parts of a smart home, after [smart lights](/en/insights/smart-lights-switzerland/), [blinds](/en/insights/smart-blinds-switzerland/), [sensors](/en/insights/smart-home-sensors/) and [heating](/en/insights/smart-heating-switzerland/). Same questions as before: what does it do for you, what should you check before buying, and where are the honest limits. This post covers the lock and the contact. The doorbell and the question of who is outside deserve a post of their own later this month.
 
+<figure class="blog-post__figure">
+  <img src="/images/insights/smart-locks/01-welcome-home.webp" alt="A curly-haired man carrying groceries arrives at a petrol-blue front door with a keypad." width="1536" height="1024" loading="lazy" decoding="async">
+</figure>
+
 ## Job one: let the right people in
 
 The best part of a smart lock is not opening the door with your phone. It is that you can give somebody access without handing over a key.
@@ -36,9 +40,17 @@ The best part of a smart lock is not opening the door with your phone. It is tha
 
 None of that needs a locksmith, and none of it leaves a copied key in somebody's drawer.
 
+<figure class="blog-post__figure">
+  <img src="/images/insights/smart-locks/02-guest-access.webp" alt="A neighbour with a watering can uses the keypad while the resident welcomes her at the doorway." width="1536" height="1024" loading="lazy" decoding="async">
+</figure>
+
 ## Job two: is it closed?
 
 A lock knows whether the bolt is thrown. It does not know whether the door is shut. A door contact, the small sensor from the [sensors post](/en/insights/smart-home-sensors/), closes that gap. Together they answer the question we all ask in the car: did I lock the door? A good evening check then reads: "The front door is closed but not locked", or "still open", and sends a message, or locks it for you.
+
+<figure class="blog-post__figure">
+  <img src="/images/insights/smart-locks/03-lock-and-contact.webp" alt="The inside of a front door with a retrofit smart lock below the handle and a separate two-part contact at the upper frame." width="1536" height="1024" loading="lazy" decoding="async">
+</figure>
 
 ## What you can buy in Switzerland
 
@@ -48,9 +60,16 @@ Prices as of 29 October 2026. They change and stock varies, so treat them as a g
 
 **Aqara** sells the Smart Lock U200 at EUR 189.99 in its EU store. It has fingerprint, PIN (including temporary guest passwords), NFC cards and Apple Home Key, and speaks Thread, Bluetooth and Matter over Thread. Aqara states that the lock needs its M3 hub. It is specified for Euro profile cylinders, not Swiss ones, so check compatibility with your cylinder before you buy.
 
+**UniFi Access** is a different league. It is Ubiquiti's door access system: wired devices that run over the network cable, with an intercom at the door, a hub per door, and electric strikes or magnetic locks instead of a smart cylinder. Swiss shops list the video intercom, the indoor viewer, the door hub and the strikes. If a house or building has several entry doors, a garage door, mailboxes, a doorbell and maybe a magnetic door, this kind of system ties them all together under one set of access rights, and it is much more sophisticated and secure than the cylinders above. It takes planning and cabling, so it is not a weekend job. I have not tried it yet. I want it for me and my neighbours, as we live in semi-detached houses with a shared garage, so I will research it properly, and it deserves its own post.
+
 ## One thing to check before anything else: does your cylinder fit?
 
 Swiss cylinders are not always the same as the European ones. Before you buy any lock, check the cylinder type, whether it has an emergency function (it can be opened with a key from outside even when a key sits in the lock on the inside), and, if you rent, whether you may change it at all. Ask your landlord or property manager first.
+
+<figure class="blog-post__figure">
+  <img src="/images/insights/smart-locks/04-check-the-cylinder.webp" alt="Two different cylinder profiles, a key and a caliper illustrate checking the existing lock before buying." width="1536" height="1024" loading="lazy" decoding="async">
+  <figcaption>Simplified illustration; check the actual cylinder and lock manufacturer compatibility before buying.</figcaption>
+</figure>
 
 ## Honest limits
 
@@ -60,7 +79,13 @@ Swiss cylinders are not always the same as the European ones. Before you buy any
 
 **Batteries again.** Aqara quotes up to six months on its rechargeable pack at about eight unlocks a day. Nuki's Go uses four AA batteries. Whichever you choose, plan a low-battery warning, and keep a mechanical key somewhere safe.
 
+<figure class="blog-post__figure">
+  <img src="/images/insights/smart-locks/05-backup-options.webp" alt="A man turns the inside thumbturn of a petrol-blue door, with a mechanical key, a phone and a charging cable on the console table." width="1536" height="1024" loading="lazy" decoding="async">
+</figure>
+
 **Don't rely on the phone alone.** A flat phone shouldn't mean a locked-out family. A code, a fingerprint or a key should always work as well.
+
+**UniFi Access is a project, not a purchase.** It needs a wired network with power over the cable, a plan for every door, and a decision for each electric strike or magnetic lock: does it stay locked or open when the power fails? Whichever you choose, the door must still open from the inside. If several households share doors, as we do with the garage, everyone has to agree who manages the access rights. Parts that connect to the mains belong in the hands of a qualified electrician. I haven't built it yet, so treat this section as the questions I will ask, not as a recommendation.
 
 **It isn't a burglar alarm.** A smart lock is as strong as the door and the cylinder it sits on. It adds convenience and a log, not a stronger door.
 

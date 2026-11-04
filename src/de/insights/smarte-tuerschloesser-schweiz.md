@@ -24,6 +24,10 @@ Die Haustür hat drei Aufgaben. Sie lässt die richtigen Leute herein, sie sagt 
 
 Das ist der fünfte Beitrag der Serie über die Teile eines Smart Homes, nach [smartem Licht](/de/insights/smarte-beleuchtung-schweiz/), [Storen](/de/insights/smarte-storen-schweiz/), [Sensoren](/de/insights/smart-home-sensoren/) und [Heizung](/de/insights/smarte-heizung-schweiz/). Es sind dieselben Fragen wie zuvor: Was bringt es Ihnen, was sollten Sie vor dem Kauf prüfen, und wo liegen die ehrlichen Grenzen? Dieser Beitrag behandelt das Schloss und den Kontakt. Die Türklingel und die Frage, wer draussen steht, verdienen später in diesem Monat einen eigenen Beitrag.
 
+<figure class="blog-post__figure">
+  <img src="/images/insights/smart-locks/01-welcome-home.webp" alt="Ein lockiger Mann mit Einkäufen kommt an einer petrolblauen Haustür mit Tastenfeld an." width="1536" height="1024" loading="lazy" decoding="async">
+</figure>
+
 ## Aufgabe eins: die richtigen Leute hereinlassen
 
 Das Beste an einem smarten Schloss ist nicht, dass Sie die Tür mit dem Handy öffnen. Es ist, dass Sie jemandem Zugang geben können, ohne einen Schlüssel auszuhändigen.
@@ -36,9 +40,17 @@ Das Beste an einem smarten Schloss ist nicht, dass Sie die Tür mit dem Handy ö
 
 Dafür brauchen Sie keinen Schlüsseldienst, und nirgends bleibt ein kopierter Schlüssel in einer fremden Schublade liegen.
 
+<figure class="blog-post__figure">
+  <img src="/images/insights/smart-locks/02-guest-access.webp" alt="Eine Nachbarin mit Giesskanne benutzt das Tastenfeld und wird an der Tür begrüsst." width="1536" height="1024" loading="lazy" decoding="async">
+</figure>
+
 ## Aufgabe zwei: Ist sie zu?
 
 Ein Schloss weiss, ob der Riegel vorgeschoben ist. Es weiss nicht, ob die Tür geschlossen ist. Ein Türkontakt, der kleine Sensor aus dem [Beitrag über Sensoren](/de/insights/smart-home-sensoren/), schliesst diese Lücke. Zusammen beantworten sie die Frage, die wir uns alle im Auto stellen: Habe ich die Tür abgeschlossen? Ein guter Abendcheck lautet dann: «Die Haustür ist zu, aber nicht abgeschlossen» oder «noch offen», und schickt eine Nachricht oder schliesst für Sie ab.
+
+<figure class="blog-post__figure">
+  <img src="/images/insights/smart-locks/03-lock-and-contact.webp" alt="Innenseite einer Haustür mit nachgerüstetem Smart Lock unter dem Griff und separatem zweiteiligem Türkontakt am oberen Rahmen." width="1536" height="1024" loading="lazy" decoding="async">
+</figure>
 
 ## Was es in der Schweiz zu kaufen gibt
 
@@ -48,9 +60,16 @@ Preise Stand 29. Oktober 2026. Sie ändern sich und die Verfügbarkeit schwankt,
 
 **Aqara** verkauft das Smart Lock U200 für EUR 189.99 im EU-Shop. Es hat Fingerabdruck, PIN (auch temporäre Gästepasswörter), NFC-Karten und Apple Home Key und spricht Thread, Bluetooth und Matter over Thread. Aqara gibt an, dass das Schloss den eigenen M3-Hub braucht. Es ist für Euro-Profilzylinder ausgelegt, nicht für Schweizer, prüfen Sie die Kompatibilität mit Ihrem Zylinder also vor dem Kauf.
 
+**UniFi Access** ist eine andere Liga. Das ist das Zutrittssystem von Ubiquiti: verkabelte Geräte, die über das Netzwerkkabel laufen, mit einer Gegensprechanlage an der Tür, einem Hub pro Tür und elektrischen Türöffnern oder Magnetschlössern statt eines smarten Zylinders. Schweizer Shops führen die Video-Gegensprechanlage, das Innengerät, den Tür-Hub und die Türöffner. Hat ein Haus oder Gebäude mehrere Eingangstüren, ein Garagentor, Briefkästen, eine Klingel und vielleicht eine Magnettür, bindet ein solches System alles unter einer gemeinsamen Zutrittsverwaltung zusammen, und es ist viel ausgereifter und sicherer als die Zylinder oben. Es braucht Planung und Verkabelung, ist also kein Wochenendprojekt. Ich habe es noch nicht ausprobiert. Ich möchte es für mich und meine Nachbarn einbauen, da wir in Doppeleinfamilienhäusern mit gemeinsamer Garage wohnen, deshalb werde ich es gründlich recherchieren, und es verdient einen eigenen Beitrag.
+
 ## Eines vorab prüfen: Passt Ihr Zylinder?
 
 Schweizer Zylinder sind nicht immer dieselben wie die europäischen. Prüfen Sie vor dem Kauf eines Schlosses den Zylindertyp, ob er eine Notfunktion hat (er lässt sich von aussen mit dem Schlüssel öffnen, auch wenn innen ein Schlüssel steckt) und, wenn Sie mieten, ob Sie ihn überhaupt wechseln dürfen. Fragen Sie zuerst Ihre Vermieterschaft oder die Verwaltung.
+
+<figure class="blog-post__figure">
+  <img src="/images/insights/smart-locks/04-check-the-cylinder.webp" alt="Zwei unterschiedliche Zylinderprofile, ein Schlüssel und ein Messschieber zeigen die Prüfung des vorhandenen Schlosses vor dem Kauf." width="1536" height="1024" loading="lazy" decoding="async">
+  <figcaption>Vereinfachte Darstellung; vor dem Kauf den tatsächlichen Zylinder und die Kompatibilität laut Hersteller prüfen.</figcaption>
+</figure>
 
 ## Ehrliche Grenzen
 
@@ -60,7 +79,13 @@ Schweizer Zylinder sind nicht immer dieselben wie die europäischen. Prüfen Sie
 
 **Wieder Batterien.** Aqara nennt bis zu sechs Monate beim Akkupack bei etwa acht Entriegelungen am Tag. Nukis Go nutzt vier AA-Batterien. Was immer Sie wählen: Planen Sie eine Warnung bei schwacher Batterie ein und bewahren Sie einen mechanischen Schlüssel an einem sicheren Ort auf.
 
+<figure class="blog-post__figure">
+  <img src="/images/insights/smart-locks/05-backup-options.webp" alt="Ein Mann dreht den inneren Drehknauf einer petrolblauen Tür; auf dem Konsolentisch liegen ein mechanischer Schlüssel, ein Handy und ein Ladekabel." width="1536" height="1024" loading="lazy" decoding="async">
+</figure>
+
 **Verlassen Sie sich nicht nur aufs Handy.** Ein leeres Handy sollte keine ausgesperrte Familie bedeuten. Ein Code, ein Fingerabdruck oder ein Schlüssel sollte immer auch funktionieren.
+
+**UniFi Access ist ein Projekt, kein Einkauf.** Es braucht ein verkabeltes Netzwerk mit Strom über das Kabel, einen Plan für jede Tür und eine Entscheidung für jeden elektrischen Türöffner oder jedes Magnetschloss: Bleibt es bei Stromausfall verriegelt oder öffnet es? Wie Sie sich auch entscheiden, die Tür muss sich von innen weiterhin öffnen lassen. Teilen sich mehrere Haushalte Türen, wie wir die Garage, müssen sich alle einig sein, wer die Zutrittsrechte verwaltet. Teile, die am Netzstrom hängen, gehören in die Hände einer Elektrofachperson. Ich habe es noch nicht gebaut, verstehen Sie diesen Abschnitt also als die Fragen, die ich stellen werde, nicht als Empfehlung.
 
 **Es ist keine Alarmanlage.** Ein smartes Schloss ist so stark wie die Tür und der Zylinder, an dem es sitzt. Es bringt Komfort und ein Protokoll, keine stärkere Tür.
 
