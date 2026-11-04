@@ -1,18 +1,8 @@
-# Rebuilds the blog every weekday after the 09:00 (Swiss time) release and publishes it to GitHub Pages.
-# Why: posts are released by date and time at build time (sitemap, post list). Without a build after the release
-# time, a new post is not in sitemap.xml until someone builds again.
-# One-time setup: add the repository secret PAGES_DEPLOY_TOKEN (fine-grained token, repository
-# konihausblog/konihausblog.github.io, permission "Contents: Read and write").
-# Newsletters: the build also schedules the Brevo campaigns for upcoming posts (brevo-campaigns.cjs). It is safe to run every day:
-# existing scheduled campaigns are updated, sent ones are never touched. Needs the repository secret BREVO_API_KEY.
-# If the key is missing or wrong, the site is still published and the log shows a warning.
 name: Daily build and publish
 
 on:
   schedule:
-    # Swiss time is UTC+1 (winter) or UTC+2 (summer). Both runs are harmless: the second one finds nothing to change.
-    - cron: '5 7 * * 1-5'   # 09:05 in summer time
-    - cron: '5 8 * * 1-5'   # 09:05 in winter time
+    - cron: '5 7-18 * * 1-5'
   workflow_dispatch: {}
 
 concurrency:

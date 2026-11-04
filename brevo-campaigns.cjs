@@ -1,12 +1,3 @@
-// Konihaus — schedule the generated blog newsletters in Brevo, one campaign per language.
-// Reads ../campaign/newsletter_email/<slug>/campaign.json (written by newsletter-email.cjs on every build) and,
-// for every post whose publish time is still in the future, creates or updates two scheduled campaigns:
-//   "Blog · <slug> · EN" -> list "Blog-nl EN", sender hello@konihaus.ch
-//   "Blog · <slug> · DE" -> list "Blog-nl DE", sender hallo@konihaus.ch
-// Campaigns already sent (or sending) are never touched. Posts in the past are skipped.
-// Usage: node brevo-campaigns.cjs [--dry-run] [--only <slug>]
-// Runs automatically after `npm run build` when BREVO_API_KEY is set in blog-engine/.env and
-// NEWSLETTER_AUTOSCHEDULE is not "off". Language lists are maintained by brevo-sync.js on the NAS.
 const fs = require('node:fs');
 const path = require('node:path');
 
@@ -25,8 +16,8 @@ const CONF = {
 };
 const ADDRESS = 'Konihaus · Im Rebberg 6 · 8910 Affoltern am Albis · Switzerland';
 const MIN_LEAD_MS = 10 * 60 * 1000; // don't schedule anything less than 10 minutes ahead
+const DELAY_MIN = process.env.NEWSLETTER_DELAY_MIN !== undefined && process.env.NEWSLETTER_DELAY_MIN !== '' && Number.isFinite(+process.env.NEWSLETTER_DELAY_MIN) ? +process.env.NEWSLETTER_DELAY_MIN : 30;
 
-// 'YYYY-MM-DDTHH:mm' in Europe/Zurich -> Date (handles summer/winter time)
 function zurich(local) {
   const guess = new Date(`${local}:00Z`);
   const f = new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Zurich', hourCycle: 'h23', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' });
@@ -35,7 +26,6 @@ function zurich(local) {
   return new Date(guess.getTime() - (shown - guess.getTime()));
 }
 
-// Generated files are provider-neutral; make them Brevo-ready.
 const brevoHtml = html => html
   .replace(/https:\/\/konihaus\.ch\/unsubscribe\?email=\{\{CUSTOMER_EMAIL\}\}/g, '{{ unsubscribe }}')
   .replace(/\{\{SENDER_POSTAL_ADDRESS\}\}/g, ADDRESS);
@@ -53,7 +43,6 @@ async function run({ dir, dryRun = false, only = null, log = console.log } = {})
   };
   const tag = '[brevo-campaigns]' + (dryRun ? ' [dry run]' : '');
 
-  // lists + senders by name/email
   const lists = [];
   for (let o = 0; ; o += 50) { const r = await api('GET', `/contacts/lists?limit=50&offset=${o}`); lists.push(...(r.lists || [])); if (!r.lists || r.lists.length < 50) break; }
   const senders = (await api('GET', '/senders')).senders || [];
@@ -63,7 +52,7 @@ async function run({ dir, dryRun = false, only = null, log = console.log } = {})
     if (!c.listId) throw new Error(`Brevo list "${c.list()}" not found - run brevo-sync.js on the NAS first`);
     if (!c.senderId) throw new Error(`Brevo sender ${c.sender} not found`);
   }
-  // existing campaigns by name
+
   const existing = new Map();
   for (let o = 0; ; o += 100) {
     const r = await api('GET', `/emailCampaigns?limit=100&offset=${o}&excludeHtmlContent=true`);
@@ -78,8 +67,8 @@ async function run({ dir, dryRun = false, only = null, log = console.log } = {})
     const manifest = JSON.parse(fs.readFileSync(path.join(dir, slug, 'campaign.json'), 'utf8'));
     for (const [lang, m] of Object.entries(manifest.languages || {})) {
       const c = CONF[lang]; if (!c) continue;
-      const when = zurich(m.publishAtLocal);
-      if (when.getTime() < now + MIN_LEAD_MS) continue; // past or too close: leave alone
+      const when = new Date(zurich(m.publishAtLocal).getTime() + DELAY_MIN * 60 * 1000);
+      if (when.getTime() < now + MIN_LEAD_MS) continue; 
       const name = `Blog · ${slug} · ${lang.toUpperCase()}`;
       const body = {
         name, subject: m.subject, previewText: m.preheader, sender: { id: c.senderId }, replyTo: c.sender,
@@ -88,7 +77,7 @@ async function run({ dir, dryRun = false, only = null, log = console.log } = {})
       };
       const old = existing.get(name);
       if (old && !['draft', 'queued', 'suspended'].includes(old.status)) { log(`${tag} ${name}: already ${old.status}, skipped`); continue; }
-      log(`${tag} ${old ? 'update' : 'create'} ${name} -> ${c.list()} at ${m.publishAtLocal} Zurich`);
+      log(`${tag} ${old ? 'update' : 'create'} ${name} -> ${c.list()} at ${m.publishAtLocal} Zurich + ${DELAY_MIN} min (${when.toISOString()})`);
       if (dryRun) continue;
       if (old) { await api('PUT', `/emailCampaigns/${old.id}`, body); updated++; }
       else { await api('POST', '/emailCampaigns', body); created++; }
