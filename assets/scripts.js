@@ -951,7 +951,7 @@ function openBlogNoVendor() {
 // Dev mode: ?devmode=super shows scheduled (future-dated) posts and is carried
 // along on every link that stays on the blog.
 // ---------------------------------------------------------------------------
-const DEVMODE = new URLSearchParams(window.location.search).get('devmode') === 'super';
+const DEVMODE = new URLSearchParams(window.location.search).get('devmode') === 'super' || /^(localhost|127\.0\.0\.1)$/.test(window.location.hostname);
 const BLOG_HOSTS = [window.location.hostname, 'blog.konihaus.ch'];
 
 function devHref(url) {
@@ -1025,7 +1025,7 @@ function setupInsightsSchedule() {
   const main = document.querySelector('.insights-container');
   if (!main) return;
 
-  const devMode = new URLSearchParams(window.location.search).get('devmode') === 'super';
+  const devMode = DEVMODE;
   const isLive = (card) => isPostLive(card.dataset.postDate, card.dataset.postTime);
   const stampOf = (card) => `${card.dataset.postDate} ${normalizePostTime(card.dataset.postTime)}`;
   const label = main.dataset.scheduledLabel || document.documentElement.dataset.scheduledLabel

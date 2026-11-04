@@ -58,18 +58,47 @@ module.exports = function(eleventyConfig) {
     return t.charAt(0).toUpperCase() + t.slice(1);
   });
 
+  // Unreleased posts (date + time still in the future, Swiss time) are NOT published: they are left out of the
+  // lists below and their output files are deleted after the build (see eleventy.after at the end).
+  // They are rendered normally on the local server (`npm run serve`) or with INCLUDE_UNRELEASED=1.
+  // The newsletter generator still sees them (own collection), so campaigns can be scheduled ahead.
+  const includeUnreleased = () =>
+    process.env.INCLUDE_UNRELEASED === "1" || ["serve", "watch"].includes(process.env.ELEVENTY_RUN_MODE);
+  const unreleasedOutputs = new Set();
+  const publicPosts = (collection, glob) => {
+    return collection.getFilteredByGlob(glob).filter((item) => {
+      if (!isUnreleased(item)) return true;
+      if (includeUnreleased()) return true;
+      if (item.outputPath) unreleasedOutputs.add(item.outputPath);
+      return false;
+    });
+  };
+
   // Collection: all EN insights sorted by date (newest first)
   eleventyConfig.addCollection("insightsEN", (collection) => {
-    return collection
-      .getFilteredByGlob("src/en/insights/*.md")
+    return publicPosts(collection, "src/en/insights/*.md")
       .sort((a, b) => new Date(b.data.date) - new Date(a.data.date));
   });
 
   // Collection: all DE insights sorted by date (newest first)
   eleventyConfig.addCollection("insightsDE", (collection) => {
-    return collection
-      .getFilteredByGlob("src/de/insights/*.md")
+    return publicPosts(collection, "src/de/insights/*.md")
       .sort((a, b) => new Date(b.data.date) - new Date(a.data.date));
+  });
+
+  eleventyConfig.on("eleventy.before", () => { unreleasedOutputs.clear(); });
+  eleventyConfig.on("eleventy.after", () => {
+    if (includeUnreleased()) return;
+    const fs = require("node:fs");
+    const path = require("node:path");
+    unreleasedOutputs.forEach((file) => {
+      try {
+        fs.rmSync(file, { force: true });
+        const dir = path.dirname(file);
+        if (fs.existsSync(dir) && fs.readdirSync(dir).length === 0) fs.rmdirSync(dir);
+        console.log(`[unreleased] not published: ${file}`);
+      } catch (e) { console.warn(`[unreleased] could not remove ${file}: ${e.message}`); }
+    });
   });
 
   // Collection: every public page for sitemap.xml (see src/sitemap.njk)

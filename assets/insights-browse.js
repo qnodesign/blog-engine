@@ -33,7 +33,7 @@ function initInsightsBrowse() {
   var topicLabel = {};
   topicBtns.forEach(function (b) { topicLabel[b.dataset.topic] = b.firstChild.textContent.trim(); });
 
-  var devMode = new URLSearchParams(location.search).get('devmode') === 'super';
+  var devMode = new URLSearchParams(location.search).get('devmode') === 'super' || /^(localhost|127\.0\.0\.1)$/.test(location.hostname);
   var cards = [].slice.call(grid.querySelectorAll('.insights-card')).filter(function (el) {
     // Safety net on top of setupInsightsSchedule(): never list a post that is not due yet.
     if (devMode || typeof isPostLive !== 'function' || isPostLive(el.dataset.postDate, el.dataset.postTime)) return true;
