@@ -9,7 +9,7 @@ permalinkalt: /de/insights/smarte-tuerschloesser-schweiz/
 translationKey: smart-locks
 ogimage: smart-locks/og.jpg
 excerpt: "The front door has three jobs: let the right people in, tell you whether it is closed, and tell you who is there. What smart locks do well in Switzerland, what you can buy, and where the honest gaps are."
-description: "Smart lock in Switzerland: Nuki and Aqara, Matter over Thread, time-limited codes for the cleaner or a nurse, and what still needs the cloud."
+description: "Smart lock in Switzerland: Nuki and Aqara, Matter over Thread, time-limited codes for the cleaner or a tradesperson, and what still needs the cloud."
 seoTitle: "Smart Locks Switzerland: Doors and Access Codes"
 keyword: "smart lock Switzerland"
 category: safety
@@ -34,7 +34,7 @@ The best part of a smart lock is not opening the door with your phone. It is tha
 
 - **A time-limited code for the cleaner**, valid on Thursday mornings only.
 - **A code for the neighbour** who waters the plants while you are away, which you switch off when you are back.
-- **Access for a care visit**, such as a Spitex nurse, which you can see in the log and end when it is no longer needed.
+- **Access for maintenance visits**, for example when you renovate or the mechanic has to fix the washing machine, which you can see in the log and end when the job is done.
 - **Family without keys.** Children and guests don't lose a code the way they lose a key.
 - **Auto-unlock** as you arrive, if you want it, and locking again when you leave.
 
@@ -55,6 +55,8 @@ A lock knows whether the bolt is thrown. It does not know whether the door is sh
 ## What you can buy in Switzerland
 
 Prices as of 29 October 2026. They change and stock varies, so treat them as a guide.
+
+The door contact is a sensor, and what you can buy for it in Switzerland is listed in the [sensors post](/en/insights/smart-home-sensors/#what-you-can-buy). The locks follow here.
 
 **Nuki** is a well-known name here. Digitec lists the Smart Lock Pro (4th generation) in a CH-cylinder version. Price and availability vary, so check before you order. It supports Matter, has an integrated Wi-Fi module, auto-unlock, up to 200 individual access rights and an entry log, and installs without screws or drilling. Home Assistant's own team tested and certified three Nuki locks in July 2025: the Smart Lock Go, the Pro and the Ultra. They connect over Matter over Thread, work locally, and need no cloud account. The Nuki app is needed for setup, and remote access later needs either the Nuki app or Home Assistant Cloud.
 

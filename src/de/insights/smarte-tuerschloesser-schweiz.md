@@ -9,7 +9,7 @@ permalinkalt: /en/insights/smart-locks-switzerland/
 translationKey: smart-locks
 ogimage: smart-locks/og.jpg
 excerpt: "Die Haustür hat drei Aufgaben: die richtigen Leute hereinlassen, Ihnen sagen, ob sie zu ist, und Ihnen sagen, wer davorsteht. Was smarte Schlösser in der Schweiz gut können, was es zu kaufen gibt und wo die ehrlichen Lücken liegen."
-description: "Smartes Türschloss in der Schweiz: Nuki und Aqara, Matter over Thread, Codes mit Zeitfenster für Reinigung oder Pflege und was noch die Cloud braucht."
+description: "Smartes Türschloss in der Schweiz: Nuki und Aqara, Matter over Thread, Codes mit Zeitfenster für Reinigung oder Handwerker und was noch die Cloud braucht."
 seoTitle: "Smartes Türschloss Schweiz: Codes und Grenzen"
 keyword: "smartes Türschloss Schweiz"
 category: sicherheit
@@ -34,7 +34,7 @@ Das Beste an einem smarten Schloss ist nicht, dass Sie die Tür mit dem Handy ö
 
 - **Ein Code mit Zeitfenster für die Reinigung**, nur donnerstags am Vormittag gültig.
 - **Ein Code für die Nachbarin,** die die Pflanzen giesst, während Sie weg sind, und den Sie ausschalten, wenn Sie zurück sind.
-- **Zugang für einen Pflegebesuch,** etwa von der Spitex, den Sie im Protokoll sehen und beenden, wenn er nicht mehr nötig ist.
+- **Zugang für Handwerker und Servicebesuche,** etwa bei einer Renovation oder wenn der Mechaniker die Waschmaschine reparieren muss, den Sie im Protokoll sehen und beenden, wenn die Arbeit erledigt ist.
 - **Familie ohne Schlüssel.** Kinder und Gäste verlieren einen Code nicht so wie einen Schlüssel.
 - **Automatisches Öffnen** bei Ihrer Ankunft, wenn Sie es wollen, und wieder abschliessen, wenn Sie gehen.
 
@@ -55,6 +55,8 @@ Ein Schloss weiss, ob der Riegel vorgeschoben ist. Es weiss nicht, ob die Tür g
 ## Was es in der Schweiz zu kaufen gibt
 
 Preise Stand 29. Oktober 2026. Sie ändern sich und die Verfügbarkeit schwankt, nehmen Sie die Angaben also als Richtwert.
+
+Der Türkontakt ist ein Sensor. Was es dafür in der Schweiz zu kaufen gibt, steht im [Sensoren-Beitrag](/de/insights/smart-home-sensoren/#was-es-zu-kaufen-gibt). Die Schlösser folgen hier.
 
 **Nuki** ist ein hier bekannter Name. Digitec führt das Smart Lock Pro (4. Generation) in einer Version für den CH-Zylinder. Preis und Verfügbarkeit schwanken, prüfen Sie also vor der Bestellung. Es unterstützt Matter, hat ein eingebautes WLAN-Modul, automatisches Öffnen, bis zu 200 einzelne Zugangsrechte und ein Protokoll der Zutritte und wird ohne Schrauben und Bohren montiert. Das Home-Assistant-Team hat im Juli 2025 selbst drei Nuki-Schlösser getestet und zertifiziert: das Smart Lock Go, das Pro und das Ultra. Sie verbinden sich über Matter over Thread, arbeiten lokal und brauchen kein Cloud-Konto. Die Nuki-App ist für die Einrichtung nötig, und der Fernzugriff später braucht entweder die Nuki-App oder Home Assistant Cloud.
 

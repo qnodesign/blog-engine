@@ -442,3 +442,6 @@
         padding-left: 1rem;
     }
 }
+
+/* anchor targets inside posts: keep headings clear of the sticky header */
+.blog-post h2[id] { scroll-margin-top: 90px; }

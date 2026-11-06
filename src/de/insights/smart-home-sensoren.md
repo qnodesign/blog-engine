@@ -50,7 +50,7 @@ Das ist der dritte Beitrag der Serie über die Teile eines Smart Homes, nach [sm
 
 Das sind die fünf Arten, mit denen ich beginnen würde. Es gibt viele weitere Arten von Sensoren, etwa Energiezähler, und jeden Tag kommen neue dazu. Rauch-, CO- und Gasmelder sowie die Strommessung bekommen später in dieser Serie je einen eigenen Beitrag. In einem weiteren Beitrag greife ich ein paar ungewöhnliche Sensoren mit Sonderfällen heraus, damit Sie sehen, wie viel möglich ist. Für den Anfang bleiben wir aber bei den fünf Arten, denn dort würde ich beginnen.
 
-## Was es in der Schweiz zu kaufen gibt
+<h2 id="was-es-zu-kaufen-gibt">Was es in der Schweiz zu kaufen gibt</h2>
 
 Preise Stand Oktober 2026. Sie ändern sich und die Verfügbarkeit schwankt, nehmen Sie die Angaben also als Richtwert.
 

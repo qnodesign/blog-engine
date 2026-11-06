@@ -50,7 +50,7 @@ This is the third post in the series on the parts of a smart home, after [smart 
 
 These are the five types I would start with. There are many more kinds of sensors, such as energy meters, and more arrive every day. Smoke, CO and gas alarms, and energy metering, each get a post of their own later in this series. In another post I will pick a few unusual ones with edge cases, so you can see how much is possible. But for now, back to the five types, because that is where I would start.
 
-## What you can buy in Switzerland
+<h2 id="what-you-can-buy">What you can buy in Switzerland</h2>
 
 Prices as of October 2026. They change and stock varies, so treat them as a guide.
 
