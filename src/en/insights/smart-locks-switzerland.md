@@ -1,7 +1,7 @@
 ---
 title: "Smart Locks and Doors: The Front Door's Three Jobs"
 date: 2026-11-06
-time: '09:00'
+time: '16:00'
 language: en
 layout: blog-post.njk
 permalink: /en/insights/smart-locks-switzerland/

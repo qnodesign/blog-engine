@@ -1,7 +1,7 @@
 ---
 title: "Smarte Türschlösser: Die drei Aufgaben der Haustür"
 date: 2026-11-06
-time: '09:00'
+time: '16:00'
 language: de
 layout: blog-post.njk
 permalink: /de/insights/smarte-tuerschloesser-schweiz/
