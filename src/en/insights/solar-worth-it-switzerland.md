@@ -21,6 +21,10 @@ author: Koni
 
 In the post about [electricity prices in 2027](/en/insights/electricity-prices-2027/) I wrote that the real lever on your bill is how much electricity you buy. Solar is the other lever: you make some of it yourself. So is it worth it in Switzerland in 2027? Often yes, but it depends less on the panels than on how much of the power you use yourself. And one rule changes on 1 January 2027, which makes that point even stronger.
 
+<figure class="blog-post__figure">
+  <img src="/images/insights/solar-worth-it/01-house-flow.webp" alt="A house with solar panels: part of the power goes down into the kitchen, the rest goes out to the grid" width="1536" height="1024" loading="lazy" decoding="async">
+</figure>
+
 ## The short answer
 
 For a house with a reasonable roof, a solar system typically pays back in about 9 to 13 years. The wide range is not vagueness, it is the point: the more of the power you use yourself, the shorter it gets. Below is a worked example, so you can see where the numbers come from.
@@ -53,6 +57,10 @@ This is my own calculation, with assumed numbers: a 10 kWp system that makes abo
 
 It leaves out price changes, maintenance and the day the inverter needs replacing. A real roof and a real household will differ. But the difference between the two lines is the message.
 
+<figure class="blog-post__figure">
+  <img src="/images/insights/solar-worth-it/02-self-consumption.webp" alt="Two bars for the same roof: when 30% of the solar power is used at home 70% is exported, and when 50% is used at home half is exported" width="1500" height="1000" loading="lazy" decoding="async">
+</figure>
+
 ## What changes on 1 January 2027
 
 Until now, feed-in was paid on a price averaged over a quarter, the same for noon and for evening. From 2027, network operators may pay by the spot price at the time of feeding. On a sunny summer noon, every roof produces at once, so that is when prices are lowest. A minimum payment protects small systems, and a utility may pay more than the minimum, so it is worth comparing.
@@ -67,15 +75,19 @@ A smart home does not make electricity. What it does is decide when the power is
 - **It moves the big consumers.** The boiler, the washing machine, the dishwasher and an electric car can run when the sun shines, not at night.
 - **It works with your heating.** With a heat pump, a little extra warmth at midday can use the surplus. The [smart heating post](/en/insights/smart-heating-switzerland/) explains why that needs care.
 
+<figure class="blog-post__figure">
+  <img src="/images/insights/solar-worth-it/03-appliances.webp" alt="A bright kitchen with a dishwasher and washing machine in the sun, and a hot water boiler in the next room" width="1536" height="1024" loading="lazy" decoding="async">
+</figure>
+
 ## What about a battery?
 
-A battery stores the midday surplus for the evening and raises your own use. Price guides give CHF 8,000 to 15,000 for 5 to 10 kWh, and it adds roughly 3 to 5 years to the payback. It can make sense with high evening use or an electric car, but it is not automatic. Ask the installer to calculate with your own consumption, not an average household.
+A battery stores the midday surplus for the evening and raises your own use. In 2025 the median installed price in Switzerland was about CHF 690 per kWh for batteries under 10 kWh and about CHF 500 per kWh for 20 to 30 kWh, before VAT ([EnergieSchweiz price study](https://pubdb.bfe.admin.ch/de/publication/download/12694)). That is roughly CHF 4,300 for 5 kWh and CHF 6,400 for 10 kWh. Prices fell about 19% in one year, and in 2016/17 they were still CHF 1,000 to 2,500 per kWh ([Swissolar](https://www.swissolar.ch/02_markt-politik/batteriesmonitor/130525_batteriespeicher_bericht_sws.pdf)). Cells keep getting cheaper worldwide: [BloombergNEF](https://about.bnef.com/insights/clean-transport/lithium-ion-battery-pack-prices-fall-to-108-per-kilowatt-hour-despite-rising-metal-prices-bloombergnef/) counts about US$108 per kWh for a pack in 2025, against roughly US$1,470 in 2010, in today's money. But planning and installation are about 40% of the Swiss price, so expect gradual declines, not a collapse. On its own, a 10 kWh battery typically needs 15 years or more to pay for itself, less where a local grant applies, so it makes most sense with high evening use or an electric car. Ask the installer to calculate with your own consumption, not an average household.
 
 ## If you rent or co-own
 
 The roof is not yours alone to decide. As a tenant you need the landlord. In a co-owned building, the owners' association decides. That can take time, so clear it up first.
 
-A small option is balcony solar, also called plug-in solar. It is generally allowed up to 600 W if you notify your utility before you start. Ask your landlord or the owners' association before you mount anything on the railing or the façade. EKZ pays a flat CHF 27 a year for plug-in systems up to 600 W. It is only a small share of a household's use, but it is a way in, and I'm writing a separate post about balcony solar for 18 November. I wrote about what renters can do without asking in the [renters post](/en/insights/smart-home-for-renters/).
+A small option is balcony solar, also called plug-in solar. It is generally allowed up to 600 W if you notify your grid operator before you start. That is the company on your electricity bill that runs the local grid, not a separate energy supplier. Ask your landlord or the owners' association before you mount anything on the railing or the façade. EKZ pays a flat CHF 27 a year for plug-in systems up to 600 W. It is only a small share of a household's use, but it is a way in, and I'm writing a separate post about balcony solar for 18 November. I wrote about what renters can do without asking in the [renters post](/en/insights/smart-home-for-renters/).
 
 ## Honest limits
 

@@ -21,6 +21,10 @@ author: Koni
 
 Im Beitrag zu den [Strompreisen 2027](/de/insights/strompreise-2027/) habe ich geschrieben, dass der eigentliche Hebel bei Ihrer Rechnung ist, wie viel Strom Sie einkaufen. Solar ist der andere Hebel: Sie machen einen Teil selbst. Lohnt sich das in der Schweiz 2027? Oft ja, aber es hängt weniger von den Panels ab als davon, wie viel Strom Sie selbst nutzen. Und am 1. Januar 2027 ändert sich eine Regel, die diesen Punkt noch wichtiger macht.
 
+<figure class="blog-post__figure">
+  <img src="/images/insights/solar-worth-it/01-house-flow.webp" alt="Ein Haus mit Solarpanels: ein Teil des Stroms fliesst in die Küche, der Rest ins Netz" width="1536" height="1024" loading="lazy" decoding="async">
+</figure>
+
 ## Die kurze Antwort
 
 Bei einem Haus mit brauchbarem Dach amortisiert sich eine Solaranlage meist in etwa 9 bis 13 Jahren. Die grosse Spanne ist keine Ausrede, sie ist der Punkt: Je mehr Strom Sie selbst nutzen, desto kürzer wird es. Unten finden Sie ein Rechenbeispiel, damit Sie sehen, woher die Zahlen kommen.
@@ -53,6 +57,10 @@ Das ist meine eigene Rechnung mit angenommenen Zahlen: eine Anlage mit 10 kWp, d
 
 Nicht enthalten sind Preisänderungen, Unterhalt und der Tag, an dem der Wechselrichter ersetzt werden muss. Ein echtes Dach und ein echter Haushalt werden abweichen. Aber der Unterschied zwischen den beiden Zeilen ist die Botschaft.
 
+<figure class="blog-post__figure">
+  <img src="/images/insights/solar-worth-it/02-self-consumption.webp" alt="Zwei Balken für dasselbe Dach: Bei 30 % Eigenverbrauch werden 70 % ins Netz gespeist, bei 50 % Eigenverbrauch die Hälfte" width="1500" height="1000" loading="lazy" decoding="async">
+</figure>
+
 ## Was sich am 1. Januar 2027 ändert
 
 Bisher wurde die Einspeisung nach einem über das Quartal gemittelten Preis vergütet, am Mittag gleich wie am Abend. Ab 2027 dürfen die Netzbetreiber nach dem Spotpreis zur Zeit der Einspeisung vergüten. An einem sonnigen Sommermittag produzieren alle Dächer gleichzeitig, dann sind die Preise am tiefsten. Eine Mindestvergütung schützt kleine Anlagen, und ein Werk darf mehr als das Minimum zahlen, ein Vergleich lohnt sich also.
@@ -67,15 +75,19 @@ Ein Smart Home erzeugt keinen Strom. Es entscheidet, wann Strom gebraucht wird. 
 - **Es verschiebt die grossen Verbraucher.** Boiler, Waschmaschine, Geschirrspüler und ein Elektroauto können laufen, wenn die Sonne scheint, nicht in der Nacht.
 - **Es arbeitet mit Ihrer Heizung zusammen.** Mit einer Wärmepumpe kann etwas mehr Wärme am Mittag den Überschuss nutzen. Der [Beitrag zur smarten Heizung](/de/insights/smarte-heizung-schweiz/) erklärt, warum das Vorsicht braucht.
 
+<figure class="blog-post__figure">
+  <img src="/images/insights/solar-worth-it/03-appliances.webp" alt="Eine helle Küche mit Geschirrspüler und Waschmaschine im Sonnenlicht und ein Boiler im Nebenraum" width="1536" height="1024" loading="lazy" decoding="async">
+</figure>
+
 ## Und ein Batteriespeicher?
 
-Ein Speicher hält den Mittagsüberschuss für den Abend bereit und erhöht Ihren Eigenverbrauch. Preisratgeber nennen 8'000 bis 15'000 Franken für 5 bis 10 kWh, und die Amortisation verlängert sich um etwa 3 bis 5 Jahre. Mit hohem Abendverbrauch oder einem Elektroauto kann er sinnvoll sein, aber nicht automatisch. Lassen Sie rechnen mit Ihrem eigenen Verbrauch, nicht mit einem Durchschnittshaushalt.
+Ein Speicher hält den Mittagsüberschuss für den Abend bereit und erhöht Ihren Eigenverbrauch. Im Jahr 2025 lag der Medianpreis für installierte Speicher in der Schweiz bei etwa 690 Franken pro kWh für Speicher unter 10 kWh und bei etwa 500 Franken pro kWh für 20 bis 30 kWh, jeweils ohne MWST ([Preisbeobachtungsstudie von EnergieSchweiz](https://pubdb.bfe.admin.ch/de/publication/download/12694)). Das sind ungefähr 4'300 Franken für 5 kWh und 6'400 Franken für 10 kWh. Die Preise sind innert eines Jahres um rund 19 % gesunken, 2016/17 lagen sie noch bei 1'000 bis 2'500 Franken pro kWh ([Swissolar](https://www.swissolar.ch/02_markt-politik/batteriesmonitor/130525_batteriespeicher_bericht_sws.pdf)). Weltweit werden die Zellen weiter günstiger: [BloombergNEF](https://about.bnef.com/insights/clean-transport/lithium-ion-battery-pack-prices-fall-to-108-per-kilowatt-hour-despite-rising-metal-prices-bloombergnef/) rechnet für 2025 mit etwa 108 US-Dollar pro kWh für ein Batteriepaket, gegenüber rund 1'470 US-Dollar im Jahr 2010, in heutigem Geld. Planung und Installation machen aber etwa 40 % des Schweizer Preises aus, rechnen Sie deshalb mit schrittweise sinkenden Preisen, nicht mit einem Einbruch. Allein gerechnet braucht ein Speicher mit 10 kWh in der Regel 15 Jahre oder mehr, bis er sich bezahlt macht, wo es eine lokale Förderung gibt, weniger. Am meisten Sinn macht er deshalb bei hohem Abendverbrauch oder mit einem Elektroauto. Lassen Sie rechnen mit Ihrem eigenen Verbrauch, nicht mit einem Durchschnittshaushalt.
 
 ## Wenn Sie mieten oder in Stockwerkeigentum wohnen
 
 Über das Dach entscheiden Sie nicht allein. Als Mieterin oder Mieter brauchen Sie die Vermieterschaft. In einem Haus mit Stockwerkeigentum entscheidet die Eigentümergemeinschaft. Das kann Zeit brauchen, klären Sie es deshalb zuerst.
 
-Eine kleine Möglichkeit ist ein Balkonkraftwerk, auch Plug-in-Solar genannt. Es ist in der Regel bis 600 W erlaubt, wenn Sie es vor dem Start Ihrem Netzbetreiber melden. Fragen Sie die Vermieterschaft oder die Eigentümergemeinschaft, bevor Sie etwas am Geländer oder an der Fassade befestigen. EKZ zahlt für Plug-in-Anlagen bis 600 W pauschal 27 Franken im Jahr. Es ist nur ein kleiner Teil des Verbrauchs eines Haushalts, aber ein Einstieg, und ich schreibe für den 18. November einen eigenen Beitrag über Balkonkraftwerke. Was Mieterinnen und Mieter ohne zu fragen tun können, habe ich im [Beitrag für Mieter](/de/insights/smart-home-fuer-mieter/) beschrieben.
+Eine kleine Möglichkeit ist ein Balkonkraftwerk, auch Plug-in-Solar genannt. Es ist in der Regel bis 600 W erlaubt, wenn Sie es vor dem Start Ihrem Netzbetreiber melden. Das ist das Unternehmen auf Ihrer Stromrechnung, das das lokale Netz betreibt, nicht ein separater Energielieferant. Fragen Sie die Vermieterschaft oder die Eigentümergemeinschaft, bevor Sie etwas am Geländer oder an der Fassade befestigen. EKZ zahlt für Plug-in-Anlagen bis 600 W pauschal 27 Franken im Jahr. Es ist nur ein kleiner Teil des Verbrauchs eines Haushalts, aber ein Einstieg, und ich schreibe für den 18. November einen eigenen Beitrag über Balkonkraftwerke. Was Mieterinnen und Mieter ohne zu fragen tun können, habe ich im [Beitrag für Mieter](/de/insights/smart-home-fuer-mieter/) beschrieben.
 
 ## Ehrliche Grenzen
 
