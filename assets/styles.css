@@ -4779,3 +4779,5 @@ html {
   font-kerning: normal;
   -webkit-text-size-adjust: 100%;
 }
+
+.tm { font-size: .4em; font-weight: 400; letter-spacing: 0; vertical-align: super; line-height: 0; margin-left: .08em; }
